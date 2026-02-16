@@ -44,29 +44,21 @@
                                 <i class="fas fa-concierge-bell"></i> Nuestros Servicios
                                 <i class="fas fa-chevron-down"></i>
                             </a>
-                            <div class="dropdown-content" id="dropdownServicios">
-                                <a href="javascript:void(0)" onclick="mostrarServicio('bodas', event)"><i
-                                        class="fas fa-ring"></i> Bodas</a>
-                                <a href="javascript:void(0)" onclick="mostrarServicio('video', event)"><i
-                                        class="fas fa-video"></i> Video</a>
-                                <a href="javascript:void(0)" onclick="mostrarServicio('preboda', event)"><i
-                                        class="fas fa-heart"></i> Pre Boda</a>
-                                <a href="javascript:void(0)" onclick="mostrarServicio('smash', event)"><i
-                                        class="fas fa-camera"></i> Smash</a>
-                                <a href="javascript:void(0)" onclick="mostrarServicio('bautizo', event)"><i
-                                        class="fas fa-cross"></i> Bautizo</a>
-                                <a href="javascript:void(0)" onclick="mostrarServicio('embarazo', event)"><i
-                                        class="fas fa-baby"></i> Embarazo</a>
-                                <a href="javascript:void(0)" onclick="mostrarServicio('quinceanera', event)"><i
-                                        class="fas fa-crown"></i> Quinceañera</a>
-                                <a href="javascript:void(0)" onclick="mostrarServicio('personal', event)"><i
-                                        class="fas fa-user"></i> Personal</a>
+                            <div class="dropdown-content">
+                                <a href="/servicios?tipo=bodas">Bodas</a>
+                                <a href="/servicios?tipo=video">Video</a>
+                                <a href="/servicios?tipo=preboda">Pre Boda</a>
+                                <a href="/servicios?tipo=smash">Smash</a>
+                                <a href="/servicios?tipo=bautizo">Bautizo</a>
+                                <a href="/servicios?tipo=embarazo">Embarazo</a>
+                                <a href="/servicios?tipo=quinceanera">Quinceañera</a>
+                                <a href="/servicios?tipo=personal">Personal</a>
                             </div>
                         </div>
                     </li>
 
-                    <li><a href="#" class="nav-link"><i class="fas fa-bookmark"></i> Referencia</a></li>
-                    <li><a href="#" class="nav-link"><i class="fas fa-envelope"></i> Contáctanos</a></li>
+                    <li><a href="" class="nav-link"><i class="fas fa-bookmark"></i> Referencia</a></li>
+                    <li><a href="" class="nav-link"><i class="fas fa-envelope"></i> Contáctanos</a></li>
                 </ul>
             </nav>
 

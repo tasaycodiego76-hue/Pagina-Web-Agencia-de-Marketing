@@ -3,7 +3,7 @@
 @section('titulo', 'Servicios')
 
 @push('styles')
-    <link rel="stylesheet" href="{{ asset('css/sandro/servicios.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/sandro/nuestros_servicios.css') }}">
 @endpush
 
 @section('contenido')
@@ -15,7 +15,7 @@
             <div class="service-container">
                 <div class="service-package">
                     <div class="package-image">
-                        <img src="images/boda1.jpg" alt="Boda 1">
+                        <img src="images/servicios/boda1.jpg" alt="Boda 1">
                     </div>
                     <div class="package-details">
                         <h3>Paquete Básico</h3>
@@ -29,7 +29,7 @@
 
                 <div class="service-package">
                     <div class="package-image">
-                        <img src="images/boda2.jpg" alt="Boda 2">
+                        <img src="images/servicios/boda2.jpg" alt="Boda 2">
                     </div>
                     <div class="package-details">
                         <h3>Paquete Premium</h3>
@@ -53,7 +53,7 @@
             <!-- Paquetes de Prebodas -->
             <div class="service-package">
                 <div class="package-image">
-                    <img src="images/preboda1.jpg" alt="Preboda 1">
+                    <img src="images/servicios/preboda1.jpg" alt="Preboda 1">
                 </div>
                 <div class="package-details">
                     <h3>Paquete Básico</h3>
@@ -73,7 +73,7 @@
         <div class="service-content">
             <div class="service-package">
                 <div class="package-image">
-                    <img src="images/video1.jpg" alt="Video 1">
+                    <img src="images/servicios/video1.jpg" alt="Video 1">
                 </div>
                 <div class="package-details">
                     <h3>Paquete Básico</h3>
@@ -93,7 +93,7 @@
             <div class="service-content">
                 <div class="service-package">
                     <div class="package-image">
-                        <img src="images/smash1.jpg" alt="Smash 1">
+                        <img src="images/servicios/smash1.jpg" alt="Smash 1">
                     </div>
                     <div class="package-details">
                         <h3>Paquete Básico</h3>
@@ -106,7 +106,7 @@
                 </div>
                 <div class="service-package">
                     <div class="package-image">
-                        <img src="images/smash2.jpg" alt="Smash 2">
+                        <img src="images/servicios/smash2.jpg" alt="Smash 2">
                     </div>
                     <div class="package-details">
                         <h3>Paquete Estándar</h3>
@@ -126,7 +126,7 @@
         <div class="service-content">
             <div class="service-package">
                 <div class="package-image">
-                    <img src="images/bautizo1.jpg" alt="Bautizo 1">
+                    <img src="images/servicios/bautizo1.jpg" alt="Bautizo 1">
                 </div>
                 <div class="package-details">
                     <h3>Paquete Básico</h3>
@@ -139,7 +139,7 @@
             </div>
             <div class="service-package">
                 <div class="package-image">
-                    <img src="images/bautizo2.jpg" alt="Bautizo 2">
+                    <img src="images/servicios/bautizo2.jpg" alt="Bautizo 2">
                 </div>
                 <div class="package-details">
                     <h3>Paquete Estándar</h3>
@@ -159,7 +159,7 @@
             <div class="service-content">
                 <div class="service-package">
                     <div class="package-image">
-                        <img src="images/embarazo1.jpg" alt="Embarazo 1">
+                        <img src="images/servicios/embarazo1.jpg" alt="Embarazo 1">
                     </div>
                     <div class="package-details">
                         <h3>Paquete Básico</h3>
@@ -172,7 +172,7 @@
                 </div>
                 <div class="service-package">
                     <div class="package-image">
-                        <img src="images/embarazo2.jpg" alt="Embarazo 2">
+                        <img src="images/servicios/embarazo2.jpg" alt="Embarazo 2">
                     </div>
                     <div class="package-details">
                         <h3>Paquete Estándar</h3>
@@ -192,7 +192,7 @@
             <div class="service-content">
                 <div class="service-package">
                     <div class="package-image">
-                        <img src="images/quince1.jpg" alt="Quinceañera 1">
+                        <img src="images/servicios/quince1.jpg" alt="Quinceañera 1">
                     </div>
                     <div class="package-details">
                         <h3>Paquete Básico</h3>
@@ -205,7 +205,7 @@
                 </div>
                 <div class="service-package">
                     <div class="package-image">
-                        <img src="images/quince2.jpg" alt="Quinceañera 2">
+                        <img src="images/servicios/quince2.jpg" alt="Quinceañera 2">
                     </div>
                     <div class="package-details">
                         <h3>Paquete Estándar</h3>
@@ -225,7 +225,7 @@
             <div class="service-content">
                 <div class="service-package">
                     <div class="package-image">
-                        <img src="images/personal1.jpg" alt="Personal 1">
+                        <img src="images/servicios/personal1.jpg" alt="Personal 1">
                     </div>
                     <div class="package-details">
                         <h3>Sesión Personal</h3>
@@ -238,7 +238,7 @@
                 </div>
                 <div class="service-package">
                     <div class="package-image">
-                        <img src="images/personal2.jpg" alt="Personal 2">
+                        <img src="images/servicios/personal2.jpg" alt="Personal 2">
                     </div>
                     <div class="package-details">
                         <h3>Sesión Familiar</h3>
@@ -253,32 +253,33 @@
     </div>
     </div>
     <script>
-        function mostrarServicio(idSeccion, event) {
-            // 1. Si viene un evento (clic), evitamos que recargue la página
-            if (event) {
-                event.preventDefault();
-                event.stopPropagation();
-            }
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            // Si no hay 'tipo' en la URL, por defecto usamos 'bodas'
+            const servicioSeleccionado = urlParams.get('tipo') || 'bodas';
 
-            // 2. Buscamos todas las secciones de servicios y las ocultamos
+            mostrarServicio(servicioSeleccionado);
+        });
+
+        function mostrarServicio(idSeccion) {
+            // 1. Ocultar todas las secciones
             const secciones = document.querySelectorAll('.service-section');
-            secciones.forEach(seccion => {
-                seccion.style.display = 'none';
+            secciones.forEach(sec => {
+                sec.style.display = 'none';
             });
 
-            // 3. Mostramos solo la que coincide con el ID
+            // 2. Mostrar la sección seleccionada
             const seccionAMostrar = document.getElementById(idSeccion);
             if (seccionAMostrar) {
                 seccionAMostrar.style.display = 'block';
 
-                // 4. Desplazamiento suave
-                seccionAMostrar.scrollIntoView({ behavior: 'smooth' });
+                // 3. ¡ESTO ES LO MÁS IMPORTANTE!
+                // Fuerza a la ventana a subir al inicio del contenedor
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'instant' // Sube de golpe para que no se note el salto
+                });
             }
         }
-
-        // Mostrar "Bodas" por defecto al cargar
-        document.addEventListener('DOMContentLoaded', () => {
-            mostrarServicio('bodas');
-        });
     </script>
 @endsection

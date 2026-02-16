@@ -11,6 +11,6 @@ Route::get('/quienes-somos', function () {
 Route::get('/trabajos', function () {
     return view('sandro.trabajos');
 });
-Route::get('/nuestros-servicios', function () {
+Route::get('/servicios', function () {
     return view('sandro.nuestros_servicios');
 });
