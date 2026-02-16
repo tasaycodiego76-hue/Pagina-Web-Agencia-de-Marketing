@@ -1,61 +1,97 @@
-/* SECCIÓN EQUIPO */
+/* ================================================== */
+/* SECCIÓN EQUIPO (MEJORADA) */
+/* ================================================== */
+
 .team {
-    padding: 80px 20px;
-    background: #f4f4f4; /* Un gris muy claro de fondo para que resalten las tarjetas */
+    padding: 100px 20px;
+    background: #fdfdfd; /* Un fondo casi blanco para que las tarjetas resalten más */
     text-align: center;
 }
 
 .team h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 2.5rem;
-    margin-bottom: 40px;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 60px;
     color: #1d1d1b;
+    position: relative;
+    display: inline-block;
 }
 
-/* Contenedor que alinea a los miembros */
+/* Opcional: Una línea amarilla debajo del título para dar identidad */
+.team h2::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: #ffeb3b;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
 .team-content {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap; /* Para que en celulares se pongan uno abajo de otro */
+    gap: 40px; /* Más espacio entre miembros */
+    flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Estilo de cada tarjeta blanca */
 .team-member {
-    background: #fff;
-    padding: 40px 20px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Sombra suave */
+    background: #ffffff;
+    padding: 50px 30px;
+    border-radius: 30px; /* Bordes más curvos y modernos */
+    box-shadow: 0 10px 40px rgba(0,0,0,0.03); /* Sombra muy suave de base */
     flex: 1;
     min-width: 280px;
     max-width: 350px;
-    transition: transform 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border: 1px solid #f1f1f1;
 }
 
+/* Efecto al pasar el mouse (Hover) */
 .team-member:hover {
-    transform: translateY(-10px); /* Efecto de levante al pasar el mouse */
+    transform: translateY(-15px); /* Se eleva más suavemente */
+    box-shadow: 0 25px 60px rgba(0,0,0,0.08); /* La sombra se intensifica */
+    border-color: #ffeb3b; /* El borde se vuelve amarillo como tu marca */
 }
 
-/* Fotos circulares */
 .team-member img {
-    width: 180px;
-    height: 180px;
+    width: 200px; /* Un poco más grandes para que luzcan */
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 20px;
-    border: 5px solid #f4f4f4;
+    margin-bottom: 25px;
+    border: 6px solid #f9f9f9; /* Marco sutil para la foto */
+    transition: transform 0.4s ease;
+}
+
+.team-member:hover img {
+    transform: scale(1.05); /* La foto hace un pequeño zoom */
 }
 
 .team-member h3 {
-    font-size: 1.6rem;
-    margin-bottom: 5px;
+    font-size: 1.8rem;
+    margin-bottom: 8px;
     color: #1d1d1b;
+    font-weight: 700;
 }
 
 .team-member p {
-    color: #888;
+    color: #666;
     font-style: italic;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-weight: 400;
 }
+
+/* AJUSTE PARA EL FOOTER (Para que combine con tu nueva barra) */
+footer {
+    background: #1d1d1b;
+    padding: 40px 20px;
+    border-top: 4px solid #ffeb3b;
+    color: #fff;
+}
+
