@@ -1,4 +1,17 @@
 /* Estilos generales */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Esto empuja al footer al fondo aunque no haya texto */
+}
 * {
     margin: 0;
     padding: 0;

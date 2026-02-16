@@ -1,0 +1,417 @@
+.trabajos {
+    position: relative;
+    padding: 60px 0;
+    text-align: center;
+
+    /* EXPLICACIÓN: 
+       ../ sale de 'sandro'
+       ../ sale de 'css'
+       luego entra en 'images/trabajos/' 
+    */
+    background-image: url("../../images/trabajos/work4.jpg") !important;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* IMPORTANTE: Asegúrate de que el pseudo-elemento no tape la imagen */
+.trabajos::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Capa para oscurecer */
+    z-index: 0;
+}
+
+/* Esto asegura que el carrusel y el título se vean por encima */
+.titulo-trabajos,
+.carousel-container {
+    position: relative;
+    z-index: 1;
+}
+
+.trabajos {
+    position: relative;
+    padding: 60px 0;
+    text-align: center;
+
+    /* ESTO COLOCA LA IMAGEN ATRÁS */
+    background-image: url("/images/work4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; /* Esto hace que la imagen no se mueva al hacer scroll */
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Capa oscura para que el carrusel resalte sobre la foto de fondo */
+.trabajos::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(
+        0,
+        0,
+        0,
+        0.5
+    ); /* Ajusta el 0.5 para oscurecer más o menos */
+    z-index: 0;
+}
+
+/* Asegura que el contenido esté por encima de la capa oscura */
+.titulo-trabajos,
+.carousel-container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Estilos generales */
+.trabajos {
+    position: relative;
+    padding: 20px 10px;
+    text-align: center;
+    background: url("/images/work4.jpg") no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Efecto de fondo fijo */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trabajos::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Oscurece el fondo para mayor contraste */
+    z-index: -1; /* Lo coloca detrás del contenido */
+}
+
+.titulo-trabajos {
+    font-size: 2rem; /* Tamaño de fuente más pequeño */
+    margin-bottom: 20px; /* Menor margen inferior */
+    color: #333;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 800px; /* Ancho máximo del carrusel */
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    touch-action: pan-y; /* Permite el desplazamiento táctil */
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 10px; /* Espaciado entre imágenes */
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Altura máxima de las imágenes */
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+    border-radius: 10px;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    z-index: 10; /* Asegura que los botones estén sobre las imágenes */
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+    .titulo-trabajos {
+        font-size: 1.5rem; /* Tamaño de fuente más pequeño en móviles */
+    }
+
+    .carousel-container {
+        max-width: 100%; /* Ocupa todo el ancho en móviles */
+    }
+
+    .carousel-image {
+        max-height: 300px; /* Altura máxima más pequeña en móviles */
+    }
+
+    .carousel-button {
+        padding: 8px; /* Botones más pequeños en móviles */
+        font-size: 1rem;
+    }
+}
+/* Título con fondo amarillo a pantalla completa */
+/* Título con fondo amarillo a pantalla completa pero más delgado */
+.titulo-trabajos {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: #1d1d1b;
+    padding: 20px 0;
+    margin: 50px auto;
+    width: 100%; /* Cubre todo el ancho de la pantalla */
+    max-width: 100vw;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
+    background: white; /* Fondo blanco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Círculo amarillo detrás de la última letra */
+.titulo-trabajos span::after {
+    content: "";
+    position: absolute;
+    width: 70px; /* Tamaño del círculo */
+    height: 70px;
+    background: #edd132; /* Amarillo */
+    border-radius: 50%;
+    top: 50%;
+    right: -15px; /* Se acerca a la última letra */
+    transform: translateY(-50%);
+    z-index: -1; /* Para que esté detrás del texto */
+}
+
+/* Asegurar que el texto esté por encima del círculo */
+.titulo-trabajos span {
+    position: relative;
+    z-index: 1;
+}
+
+/* Estilo del título principal */
+.titulo-trabajos h2 {
+    font-size: 32px; /* Un poco más pequeño */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 5px; /* Reduce el espacio debajo del título */
+}
+
+/* Estilo del subtítulo */
+.titulo-trabajos p {
+    font-size: 16px; /* Más compacto */
+    font-style: italic;
+    color: #222;
+    margin-bottom: 0;
+}
+
+/* Fondo de la página en tono crema */
+body {
+    background-color: #eaeaea; /* Crema suave */
+    font-family: Arial, sans-serif;
+    color: #333; /* Texto en tono oscuro para mejor contraste */
+}
+
+@media (max-width: 1024px) {
+    /* Ajustes para tablets */
+    .home-content {
+        top: 30%;
+    }
+
+    .home h1 {
+        font-size: 3rem;
+    }
+
+    .home p {
+        font-size: 1.3rem;
+    }
+
+    .why-choose-us-item {
+        width: 45%; /* Dos columnas en tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Ajustes para móviles */
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar .logo img {
+        height: 40px; /* Reducir el tamaño del logo */
+    }
+
+    .menu-icon {
+        display: flex; /* Mostrar ícono de hamburguesa */
+    }
+
+    #nav {
+        display: none;
+        position: fixed;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background: #1d1d1b;
+        padding: 10px;
+        z-index: 1000;
+    }
+
+    #nav.active {
+        display: flex;
+    }
+
+    .home-content {
+        top: 10%;
+        padding: 10px;
+    }
+
+    .home h1 {
+        font-size: 2.5rem; /* Reducir tamaño del título */
+    }
+
+    .home p {
+        font-size: 1.2rem; /* Reducir tamaño del texto */
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .why-choose-us-content {
+        flex-direction: column; /* Apilar tarjetas verticalmente */
+    }
+
+    .why-choose-us-item {
+        width: 100%; /* Ocupar todo el ancho */
+        margin-top: 20px;
+    }
+
+    .why-choose-us-title {
+        font-size: 2rem; /* Reducir tamaño del título */
+    }
+
+    .team-content {
+        flex-direction: column; /* Apilar tarjetas verticalmente */
+    }
+
+    .team-member {
+        width: 100%; /* Ocupar todo el ancho */
+    }
+
+    .contact-content {
+        flex-direction: column; /* Apilar formulario e información */
+    }
+
+    .contact-form,
+    .contact-info {
+        width: 100%; /* Ocupar todo el ancho */
+    }
+
+    .contact h2 {
+        font-size: 2rem; /* Reducir tamaño del título */
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    footer p {
+        font-size: 0.9rem; /* Reducir tamaño del texto */
+    }
+
+    .social-links a {
+        margin: 0 5px; /* Reducir espacio entre íconos */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes para móviles pequeños */
+    .home h1 {
+        font-size: 2rem;
+    }
+
+    .home p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .why-choose-us-title {
+        font-size: 1.8rem;
+    }
+
+    .contact h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* ================================================== */
+/* Ajustes Generales para Imágenes y Texto Responsive */
+/* ================================================== */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3 {
+    font-size: clamp(1.5rem, 5vw, 3rem); /* Texto responsive */
+}
+
+p {
+    font-size: clamp(1rem, 3vw, 1.2rem); /* Texto responsive */
+}

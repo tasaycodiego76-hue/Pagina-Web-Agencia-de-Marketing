@@ -35,23 +35,32 @@
                     <li><a href="{{ url('/') }}" class="nav-link"><i class="fas fa-home"></i> Inicio</a></li>
                     <li><a href="{{ url('/quienes-somos') }}" class="nav-link"><i class="fas fa-users"></i> Quiénes
                             Somos</a></li>
-                    <li><a href="#" class="nav-link"><i class="fas fa-briefcase"></i> Trabajos</a></li>
+                    <li><a href="{{ url('/trabajos') }}" class="nav-link"><i class="fas fa-briefcase"></i> Trabajos</a>
+                    </li>
 
                     <li>
                         <div class="dropdown">
-                            <a href="#" id="servicios-menu" class="nav-link">
-                                <i class="fas fa-concierge-bell"></i> Nuestros Servicios <i
-                                    class="fas fa-chevron-down"></i>
+                            <a href="javascript:void(0)" id="servicios-menu" class="nav-link">
+                                <i class="fas fa-concierge-bell"></i> Nuestros Servicios
+                                <i class="fas fa-chevron-down"></i>
                             </a>
                             <div class="dropdown-content" id="dropdownServicios">
-                                <a href="#"><i class="fas fa-ring"></i> Bodas</a>
-                                <a href="#"><i class="fas fa-video"></i> Video</a>
-                                <a href="#"><i class="fas fa-heart"></i> Pre Boda</a>
-                                <a href="#"><i class="fas fa-camera"></i> Smash</a>
-                                <a href="#"><i class="fas fa-cross"></i> Bautizo</a>
-                                <a href="#"><i class="fas fa-baby"></i> Embarazo</a>
-                                <a href="#"><i class="fas fa-crown"></i> Quinceañera</a>
-                                <a href="#"><i class="fas fa-user"></i> Personal</a>
+                                <a href="javascript:void(0)" onclick="mostrarServicio('bodas', event)"><i
+                                        class="fas fa-ring"></i> Bodas</a>
+                                <a href="javascript:void(0)" onclick="mostrarServicio('video', event)"><i
+                                        class="fas fa-video"></i> Video</a>
+                                <a href="javascript:void(0)" onclick="mostrarServicio('preboda', event)"><i
+                                        class="fas fa-heart"></i> Pre Boda</a>
+                                <a href="javascript:void(0)" onclick="mostrarServicio('smash', event)"><i
+                                        class="fas fa-camera"></i> Smash</a>
+                                <a href="javascript:void(0)" onclick="mostrarServicio('bautizo', event)"><i
+                                        class="fas fa-cross"></i> Bautizo</a>
+                                <a href="javascript:void(0)" onclick="mostrarServicio('embarazo', event)"><i
+                                        class="fas fa-baby"></i> Embarazo</a>
+                                <a href="javascript:void(0)" onclick="mostrarServicio('quinceanera', event)"><i
+                                        class="fas fa-crown"></i> Quinceañera</a>
+                                <a href="javascript:void(0)" onclick="mostrarServicio('personal', event)"><i
+                                        class="fas fa-user"></i> Personal</a>
                             </div>
                         </div>
                     </li>
@@ -89,12 +98,14 @@
  FINAL-  WHATSAPP
   ******************************************************+-->
 
-    <footer>
-        <p>&copy; 2025 Rodrigo Felix Fotografía. Todos los derechos reservados.</p>
-        <div class="social-links">
-            <a href="#" target="_blank">Instagram</a>
-            <a href="#" target="_blank">Facebook</a>
-            <a href="#" target="_blank">Twitter</a>
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Rodrigo Felix Fotografía. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+            </div>
         </div>
     </footer>
 
