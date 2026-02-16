@@ -1,0 +1,61 @@
+/* SECCIÓN EQUIPO */
+.team {
+    padding: 80px 20px;
+    background: #f4f4f4; /* Un gris muy claro de fondo para que resalten las tarjetas */
+    text-align: center;
+}
+
+.team h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #1d1d1b;
+}
+
+/* Contenedor que alinea a los miembros */
+.team-content {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Para que en celulares se pongan uno abajo de otro */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo de cada tarjeta blanca */
+.team-member {
+    background: #fff;
+    padding: 40px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Sombra suave */
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px); /* Efecto de levante al pasar el mouse */
+}
+
+/* Fotos circulares */
+.team-member img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid #f4f4f4;
+}
+
+.team-member h3 {
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+    color: #1d1d1b;
+}
+
+.team-member p {
+    color: #888;
+    font-style: italic;
+    font-size: 1rem;
+}
