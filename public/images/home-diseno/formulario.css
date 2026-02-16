@@ -1,0 +1,239 @@
+
+/* **********************************************************************************
+INICIO -DISEÑO DE CONTACTO-HOME
+/* **********************************************************************************
+
+/* DISEÑO MEJORADO - MANTIENIENDO LAYOUT ORIGINAL */
+.high-contrast-contact {
+    background: #ffffff;
+    padding: 80px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hc-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex; /* Mantiene lado a lado */
+    gap: 40px; /* Espacio entre columnas */
+}
+
+/* CABECERA (ocupa todo el ancho) */
+.hc-header {
+    text-align: center;
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+.hc-header h2 {
+    font-size: 2.8rem;
+    color: #ffeb3b;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.hc-subtitle {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* COLUMNA IZQUIERDA - FORMULARIO */
+.hc-form-wrap {
+    flex: 1;
+    background: #111;
+    padding: 40px;
+    border: 2px solid #ffeb3b;
+}
+
+.hc-form h3 {
+    color: #ffeb3b;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.hc-instruction {
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.hc-form-group input,
+.hc-form-group textarea {
+    width: 100%;
+    padding: 15px;
+    background: #222;
+    border: 1px solid #333;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.hc-btn {
+    background: #ffeb3b;
+    color: #000;
+    border: none;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.hc-btn:hover {
+    background: #fff;
+}
+
+/* COLUMNA DERECHA - INFORMACIÓN */
+.hc-info-wrap {
+    flex: 1;
+    background: #111;
+    padding: 40px;
+    border: 2px solid #ffeb3b;
+}
+
+.hc-info-header h3 {
+    color: #ffeb3b;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.hc-info li {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.hc-icon {
+    margin-right: 15px;
+    color: #ffeb3b;
+    font-size: 1.3rem;
+}
+
+/* RESPONSIVE: Solo se apila en móviles */
+@media (max-width: 768px) {
+    .hc-container {
+        flex-direction: column;
+    }
+    
+}
+
+
+
+/* EFECTO DE BRILLO AMARILLO #FFD500 (agregar al final del CSS) */
+.hc-header h2,
+.hc-subtitle,
+.hc-form h3,
+.hc-info-header h3 {
+    text-shadow: 0 0 10px rgba(255, 213, 0, 0.7);
+    animation: brillo-oro 2s infinite alternate;
+}
+
+@keyframes brillo-oro {
+    from { text-shadow: 0 0 10px rgba(255, 213, 0, 0.7); }
+    to { text-shadow: 0 0 15px rgba(255, 213, 0, 0.9), 
+                     0 0 20px rgba(255, 213, 0, 0.5); }
+}
+/*ADICIONAL PARA MEJOR DISEÑO ESTE EN CUADRO Y EL FONDO DE PAGINA BLANCO
+/* FONDO BLANCO CON BORDES AMARILLOS - SE AGREGA AL FINAL */
+.high-contrast-contact {
+    position: relative;
+    isolation: isolate; /* Asegura que el pseudo-elemento no interfiera */
+}
+
+.high-contrast-contact::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+    max-width: 1240px; /* 1200px + 40px de padding */
+    height: calc(100% - 80px);
+    background: rgb(0, 0, 0);
+    border: 2px solid #000000;
+    z-index: -1;
+    box-shadow: 0 0 20px rgba(255, 235, 59, 0.3);
+}
+
+
+/* AJUSTES RESPONSIVE PARA EL FONDO BLANCO */
+@media (max-width: 768px) {
+    .high-contrast-contact::before {
+        top: 30px;
+        height: calc(100% - 60px);
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .high-contrast-contact::before {
+        width: calc(100% - 30px);
+    }
+}
+/* **********************************************************************************
+FIN -DISEÑO DE CONTACTO-HOME
+/* **********************************************************************************
+
+/********************************************************************************************* 
+   INICIO- DISEÑO DE HORARIO DE CONTACTANOS
+/********************************************************************************************* */
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+.hc-schedule {
+    background: #000; /* Fondo negro */
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    border: 2px solid yellow;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hc-schedule-header {
+    font-size: 18px;
+    font-weight: 500;
+    color: yellow; /* Texto amarillo */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hc-schedule-day {
+    display: flex;
+    justify-content: space-between;
+    background: #1a1a1a; /* Fondo gris oscuro */
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    border-left: 4px solid yellow;
+    border-radius: 5px;
+    color: white;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+
+.hc-schedule-day:hover {
+    background: #333; /* Efecto al pasar el mouse */
+}
+
+.hc-schedule-day span {
+    color: yellow; /* Horario en amarillo */
+}
+
+.hc-schedule-day.closed {
+    background: #222; /* Fondo oscuro para cerrados */
+    color: #ff5555; /* Rojo suave */
+    border-left: 4px solid red;
+    font-weight: 400;
+}
+
+
+/********************************************************************************************* 
+   FIN- DISEÑO DE HORARIO DE CONTACTANOS
+/********************************************************************************************* */

@@ -1,0 +1,1016 @@
+/* Navbar */
+/* Tus estilos actuales (no los modifiques) */
+.navbar {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d1d1b; /* Fondo negro */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease-in-out;
+}
+
+/* Animación para ocultar el menú */
+@keyframes slideUp {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+/* Animación para mostrar el menú */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+/* Ocultar el menú con una animación suave */
+.navbar.hide {
+    transform: translateY(-120%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Mostrar el menú con una animación suave */
+.navbar.show {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+@media (max-width: 1024px) { /* Tablets y pantallas medianas */
+    .navbar {
+        height: 60px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) { /* Móviles en modo vertical */
+    .navbar {
+        height: 105px;
+        padding: 6px 12px;
+    }
+    
+}
+
+@media (max-width: 480px) { /* Móviles pequeños */
+    .navbar {
+        height: 50px;
+        padding: 5px 10px;
+    }
+    
+}
+
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    position: relative; /* Necesario para la línea animada */
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ffd500; /* Amarillo */
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.navbar .logo img {
+    height: 50px ;
+    cursor: pointer;
+}
+
+
+.navbar .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Redes Sociales */
+.redes-sociales a {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px; /* Reduce el padding para hacer el ícono más pequeño */
+    border-radius: 50%;
+    margin: 0 4px; /* Reduce ligeramente el espacio entre iconos */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.redes-sociales a i {
+    color: white;
+    font-size: 20px; /* Reduce el tamaño del ícono */
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.redes-sociales a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.redes-sociales a:hover i {
+    color: #f0f0f0;
+    transform: scale(1.15); /* Efecto hover ligeramente menor */
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
+}
+
+
+
+
+
+
+
+
+/* Estilos para el ícono de hamburguesa */
+/* Estilos para el ícono de hamburguesa */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    margin-left: auto; /* Mantiene la posición derecha */
+    margin-top: -50px; /* Ajusta el valor según lo necesites */
+}
+
+/* Contenedor del ícono (cuadro con bordes) */
+.menu-icon .icon-container {
+    width: 40px; /* Tamaño del cuadro */
+    height: 40px; /* Tamaño del cuadro */
+    border: 2px solid white; /* Borde del cuadro */
+    border-radius: 5px; /* Bordes redondeados */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px; /* Espacio interno */
+    box-sizing: border-box; /* Asegura que el borde esté incluido en el tamaño */
+}
+
+/* Barras del ícono de hamburguesa */
+.menu-icon .bar {
+    width: 20px; /* Ancho de las barras */
+    height: 2px; /* Grosor de las barras */
+    background-color: white; /* Color de las barras */
+    margin: 3px 0; /* Espacio entre las barras */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Estilos cuando el menú está activo (ícono en "X") */
+.menu-icon.active .icon-container {
+    border-color: #ffd500; /* Cambia el color del borde al activo (opcional) */
+}
+
+.menu-icon.active .bar:nth-child(1) {
+    transform: translateY(20px) rotate(45deg); /* Ajusta el valor de translateY */
+}
+
+.menu-icon.active .bar:nth-child(2) {
+    opacity: 0; /* Oculta la segunda barra */
+}
+
+.menu-icon.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg); /* Rota la tercera barra */
+}
+
+
+
+
+/* Aplicar TIPO DE LETRA DEL MENU*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Nunito:wght@300;400;500&display=swap');
+
+#nav ul {
+    font-family: 'Poppins', 'Nunito', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 6px; /* Reduce más el espacio entre palabras */
+    list-style: none;
+    padding: 0;
+    margin-left: 15px;
+}
+
+#nav .nav-link {
+    font-family: 'Poppins', 'Nunito', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 3px; /* Espacio más reducido entre ícono y texto */
+    text-decoration: none;
+    color: white;
+    font-size: 16px; /* Tamaño equilibrado */
+    font-weight: 400; /* Grosor más ligero pero aún legible */
+    padding: 5px;
+    white-space: nowrap;
+}
+
+.dropdown-content a {
+    font-family: 'Poppins', 'Nunito', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+    font-weight: 400; /* Misma reducción de grosor */
+    white-space: nowrap;
+}
+
+/* FIN TIPO DE LETRA DEL MENU*/
+.dropdown-content a {
+    font-size: 16px !important;
+}
+
+/* Fondo oscuro cuando el menú está activo */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none; /* Oculto por defecto */
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        z-index: 1001;
+        margin-top: 0; /* Ajusta según necesidad */
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .navbar .logo {
+        position: absolute;
+        left: 0; /* Ajusta según necesidad */
+    }
+
+    .redes-sociales {
+        display: flex;
+        align-items: center;
+        gap: 0; /* Reduce la separación */
+    }
+
+    .menu-icon .bar {
+        width: 30px;
+        height: 4px;
+        background-color: white;
+        margin: 5px 0;
+    }
+
+    /* Menú oculto inicialmente */
+    #nav {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100vh;
+        background: #1d1d1b;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra el contenido horizontalmente */
+        padding-top: 80px; /* Ajusta este valor para mover el menú más arriba */
+        transition: right 0.3s ease-in-out;
+        z-index: 1000;
+    }
+
+    /* Mostrar el menú cuando esté activo */
+    #nav.active {
+        right: 0;
+        width: 35%;
+        top: 0px;
+    }
+
+    /* Fondo oscuro cuando el menú está activo */
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        display: none;
+    }
+
+    .overlay.active {
+        display: block;
+    }
+
+    /* Asegurar que los elementos del menú estén en orden y centrados */
+    #nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los elementos horizontalmente */
+        gap: 15px; /* Ajusta el espacio entre elementos */
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center; /* Centra el texto */
+    }
+
+    #nav ul li {
+        padding: 10px;
+    }
+
+    #nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+}
+
+/* Submenú */
+/* Estilos generales para el submenú (versión de escritorio) */
+.navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1d1d1b; /* Fondo negro */
+    min-width: 160px;
+    z-index: 10;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    
+}
+
+/* Mostrar submenú al pasar el mouse (versión de escritorio) */
+.navbar .dropdown:hover .dropdown-content {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.navbar a:hover,
+.dropdown-content a:hover {
+    color: #ffd500 !important; /* Amarillo */
+}
+/* Estilos de los enlaces del submenú */
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    position: relative; /* Necesario para la línea animada */
+}
+
+/* Línea animada para los enlaces del submenú */
+.dropdown-content a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ffd500; /* Amarillo */
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Activar la línea al pasar el mouse */
+.dropdown-content a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Posición relativa para dropdown */
+.dropdown {
+    position: relative;
+}
+
+
+/* Home Section AQUI EMPIEZA EL HOME* */
+
+.home {
+    position: relative;
+    min-height: auto;
+    overflow: hidden;
+    background-color: #000;
+    padding-top: 35px; /* Ajustamos el padding superior para evitar el solapamiento */
+    background-size: cover;
+    background-position: center;
+    
+    
+    
+}
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* Hace que la imagen cubra todo */
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0; /* Oculta las imágenes por defecto */
+    transition: opacity 1s ease-in-out;
+}
+
+
+
+/* Fondo con parallax y transiciones suaves */
+.home-slider {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Hace que ocupe toda la pantalla */
+    overflow: hidden;
+}
+
+/* Ajuste para el contenido del Home */
+.home-content {
+    position: absolute;
+    top: 10%; /* Disminuye este valor para subir el texto */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 100;
+    max-width: 90%;
+    padding: 20px; /* Espacio interno para que el texto no esté pegado a los bordes */
+    background: rgba(0, 0, 0, 0.3); /* Fondo negro semi-transparente */
+    border-radius: 30px; /* Bordes redondeados */
+}
+
+
+.slide:first-child {
+    opacity: 1;
+}
+
+.slide:nth-child(1) { animation-delay: 0s; }
+.slide:nth-child(2) { animation-delay: 4s; }
+.slide:nth-child(3) { animation-delay: 8s; }
+
+@keyframes fade {
+    0% { opacity: 0; }
+    8% { opacity: 1; }
+    33% { opacity: 1; }
+    41% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* Mejoras de tipografía */
+.home h1 {
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7), 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+.home h1 span {
+    color: #ffd500;
+    text-shadow: 2px 2px 15px #ffd500b1;
+}
+
+.home p {
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 1), 
+    -4px -4px 10px rgba(0, 0, 0, 1);
+
+}
+
+/* Botón de llamada a la acción */
+.cta-button {
+    background-color: #25d366!important; /* Verde WhatsApp */
+    color: white!important;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espacio entre icono y texto */
+    font-weight: 400;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 50px; /* Mueve el botón hacia abajo */
+    border: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto hover */
+.cta-button:hover {
+    background-color: #1ebe5d!important;
+}
+
+/* Ajustar el icono */
+.cta-button img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle; /* Asegura que esté alineado con el texto */
+}
+
+
+
+
+
+
+/* FORMA DE IMAGEN DE INICIO ¿Por qué elegirnos? Section ESTA ES OTRA SECCION DE HOME */
+
+#why-choose-us {
+    margin-top: 50px; /* Ajusta la separación */
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+.why-choose-us {
+    margin-top: 0px; /* Mantiene el ajuste original */
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+    width: 100%; /* Mantiene el ancho completo */
+    position: relative;
+}
+
+/* Fondo amarillo de lado a lado solo detrás del título */
+.why-choose-us-title {
+    position: relative;
+    display: inline-block; /* Ajusta el fondo al tamaño del texto */
+    color: #1d1d1b; /* Negro */
+    padding: 15px 30px; /* Espaciado para que se vea elegante */
+    border-radius: 5px; /* Bordes redondeados */
+    text-transform: uppercase; /* Mayúsculas para un mejor impacto */
+    font-weight: bold;
+    font-size: 2.5rem; /* Tamaño de letra más grande */
+    z-index: 2; /* Asegura que el texto esté encima */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra para resaltar */
+    animation: fadeIn 1s ease-in-out; /* Animación al cargar */
+    margin-top: -50px;
+    
+}
+
+/* Barra amarilla de lado a lado */
+.why-choose-us-title::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -200vw; /* Se extiende a la izquierda */
+    width: 400vw; /* Se extiende a la derecha */
+    height: 80px; /* Altura del fondo amarillo */
+    background-color: #ffd500; /* Amarillo */
+    z-index: -1; /* Detrás del texto */
+    transform: translateY(-50%);
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+.why-choose-us-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Para que se ajuste en pantallas pequeñas */
+    gap: 30px;
+}
+
+
+.why-choose-us-item {
+    width: 30%;
+    margin-top: 30px;
+}
+
+.why-choose-us-item img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.why-choose-us-item h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.why-choose-us-item p {
+    color: #000000;
+    text-shadow: none !important;
+}
+
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat span {
+    font-size: 2.5em;
+    font-weight: bold;
+    background: linear-gradient(45deg, #FFD700, #FFA500, #FF4500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    background-clip: text;
+    color: transparent;
+    mask-image: linear-gradient(45deg, #FFD700, #FFA500, #FF4500);
+    -webkit-mask-image: linear-gradient(45deg, #FFD700, #FFA500, #FF4500);
+}
+
+
+
+.stat p {
+    color: #000000;
+    text-shadow: none !important;
+}
+
+/* Team Section */
+.team {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: var(--fondo-claro);
+}
+
+.team h2 {
+    font-size: 2.5rem;
+    color: var(--color-primario);
+    margin-bottom: 30px;
+}
+
+.team-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; /* Mayor espacio entre los miembros */
+}
+
+.team-member {
+    background: var(--fondo-card);
+    border-radius: 20px;
+    padding: 30px;
+    width: 350px; /* Aumentamos el tamaño de la tarjeta */
+    text-align: center;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+.team-member img {
+    width: 250px; /* Imagen más grande */
+    height: 250px;
+    object-fit: contain; /* La imagen se ajusta sin cortes */
+    border-radius: 50%;
+    border: 6px solid var(--color-secundario);
+    background-color: white;
+}
+
+.team-member h3 {
+    margin-top: 15px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--texto-oscuro);
+}
+
+.team-member p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--texto-claro);
+}
+
+
+/* Services Section */
+.services {
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.services h2 {
+    font-size: 2.5em;
+    color: #ff4500;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.services {
+    display: none; 
+}
+
+.service-section {
+    display: none;
+}
+
+.service-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.service-package {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.package-image img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+.package-details {
+    flex: 1;
+}
+
+.package-details h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.package-details p {
+    color: #666;
+}
+
+.promo-price {
+    font-size: 1.2em;
+    color: #ff4500;
+    margin: 15px 0;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #666;
+}
+
+.discount {
+    color: #ff4500;
+    font-weight: bold;
+}
+
+
+/*****************************************************************************
+INICIO - CARRUSEL INICIO
+******************************************************************************/
+
+.image-carousel {
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 2rem 0;
+    white-space: nowrap; /* evita saltos al hacer scroll */
+}
+
+.image-track {
+    display: flex;
+    width: fit-content;
+}
+
+.image-slide {
+    flex: 0 0 33.3333%; /* 3 imágenes visibles */
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.image-slide img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.image-carousel {
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 2rem 0;
+    white-space: nowrap;
+    border-top: 4px solid #FFD500;
+    border-bottom: 4px solid #FFD500;
+    box-sizing: border-box;
+}
+
+@media (max-width: 992px) {
+    .image-slide {
+        flex: 0 0 50%; /* 2 imágenes visibles en tablets */
+    }
+    .image-slide img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 600px) {
+    .image-slide {
+        flex: 0 0 100%; /* 1 imagen visible en móviles */
+        padding: 0 0.5rem;
+    }
+    .image-slide img {
+        height: 200px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+}
+
+.image-slide img {
+    transition: transform 0.3s ease; /* transición suave */
+}
+
+.image-slide img:hover {
+    transform: scale(1.05); /* escala un 5% al pasar el mouse */
+    z-index: 10; /* para que sobresalga encima de otras imágenes */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* opcional, sombra más marcada */
+}
+
+/*****************************************************************************
+FIN - CARRUSEL INICIO
+******************************************************************************/
+
+
+
+/*****************************************************************************
+INICIO - LINEA AMARILLA DE NUMERACION
+******************************************************************************/
+
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.stat {
+    border: 3px solid #FFD700; /* línea amarilla */
+    border-radius: 15px;
+    padding: 1.5rem 2rem;
+    min-width: 180px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background-color: transparent; /* fondo transparente */
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: default;
+    user-select: none;
+    transition: transform 0.3s ease;
+}
+
+.stat:hover {
+    transform: scale(1.05);
+}
+
+.stat span {
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+.stat p {
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+/*****************************************************************************
+FIN - LINEA AMARILLA DE NUMERACION
+******************************************************************************/
+
+
+
+/*****************************************************************************
+DISEÑO MAQUINA DE ESCRIBIR
+******************************************************************************/
+
+
+.typewriter-text {
+  font-size: clamp(0.95rem, 2vw, 1.3rem); /* Tamaño más pequeño pero adaptable */
+  color: #f1f1f1;
+  font-family: 'Courier New', monospace;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.4rem 0.8rem;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  display: inline-block;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  margin: 1rem auto 0 auto;
+}
+
+/* Efecto cursor */
+.typewriter-text::after {
+  content: "|";
+  animation: blink 1s infinite;
+  margin-left: 5px;
+  color: #f1f1f1;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@media (max-width: 480px) {
+  .typewriter-text {
+    font-size: 0.95rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 8px;
+  }
+}
+
+/*****************************************************************************
+FIN - DISEÑO MAQUINA DE ESCRIBIR
+******************************************************************************/
+
+
+
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    padding-top: 70px;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+    z-index: 1000; /* Asegura que el menú esté por encima del contenido */
+    
+}
+
+
