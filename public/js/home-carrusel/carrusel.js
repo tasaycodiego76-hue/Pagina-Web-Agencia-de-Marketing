@@ -1,7 +1,29 @@
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const track = document.getElementById("track");
 
+    if (!track) return;
+
+    let speed = 1; // píxeles por frame, súbelo para ir más rápido
+    let position = 0;
+    const totalWidth = track.scrollWidth / 2; // mitad porque tienes imágenes duplicadas
+
+    function animate() {
+        position -= speed;
+
+        // Cuando recorre la mitad, reinicia sin que se note
+        if (Math.abs(position) >= totalWidth) {
+            position = 0;
+        }
+
+        track.style.transform = `translateX(${position}px)`;
+        requestAnimationFrame(animate);
+    }
+
+    animate();
+});
 
 
 
