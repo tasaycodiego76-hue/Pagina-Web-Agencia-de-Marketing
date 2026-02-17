@@ -10,7 +10,7 @@
     margin-top: 0; /* Asegura que el título pegue arriba */
     text-align: center;
     padding: 20px 0;
-}   
+}
 
 .titulo-servicios::after {
     content: "";
@@ -26,11 +26,13 @@
 /* Rejilla de Paquetes */
 .service-container,
 .service-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    display: flex;
+    flex-wrap: wrap; /* Para que si no caben, bajen a la siguiente fila */
+    justify-content: center; /* Centra las tarjetas */
     gap: 30px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 30px auto;
+    padding: 0 20px;
 }
 
 /* Tarjeta de Paquete (Cards) */
@@ -39,11 +41,14 @@
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
+
+    /* AJUSTE DINÁMICO */
+    flex: 1 1 350px; /* Crece si hay espacio, pero su base es 350px */
+    max-width: 600px; /* Cuando esté sola, se verá grande pero no gigante */
+    min-width: 300px; /* Para que en celular no se vea mal */
+    transition: transform 0.3s ease;
 }
 
 .service-package:hover {
@@ -54,7 +59,7 @@
 /* Imagen del Paquete */
 .package-image {
     width: 100%;
-    height: 250px;
+    height: 350px; /* Aumentamos de 250 a 350 para que luzca más la foto */
     overflow: hidden;
 }
 

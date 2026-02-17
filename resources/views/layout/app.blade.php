@@ -46,8 +46,8 @@
                             </a>
                             <div class="dropdown-content">
                                 <a href="/servicios?tipo=bodas">Bodas</a>
-                                <a href="/servicios?tipo=video">Video</a>
                                 <a href="/servicios?tipo=preboda">Pre Boda</a>
+                                <a href="/servicios?tipo=video">Video</a>   
                                 <a href="/servicios?tipo=smash">Smash</a>
                                 <a href="/servicios?tipo=bautizo">Bautizo</a>
                                 <a href="/servicios?tipo=embarazo">Embarazo</a>
@@ -65,7 +65,7 @@
             <div class="redes-sociales">
                 <a href="https://www.youtube.com" target="_blank" class="social-icon youtube"><i
                         class="fab fa-youtube"></i></a>
-                <a href="https://www.facebook.com" target="_blank" class="social-icon facebook"><i
+                <a href="https://www.facebook.com/profile.php?id=61579324451249#" target="_blank" class="social-icon facebook"><i
                         class="fab fa-facebook-f"></i></a>
                 <a href="https://www.instagram.com" target="_blank" class="social-icon instagram"><i
                         class="fab fa-instagram"></i></a>

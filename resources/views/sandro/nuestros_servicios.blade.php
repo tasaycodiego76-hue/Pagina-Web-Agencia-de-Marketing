@@ -73,7 +73,7 @@
         <div class="service-content">
             <div class="service-package">
                 <div class="package-image">
-                    <img src="images/servicios/video1.jpg" alt="Video 1">
+                    <img src="images/servicios/video1.jpeg" alt="Video 1">
                 </div>
                 <div class="package-details">
                     <h3>Paquete Básico</h3>
