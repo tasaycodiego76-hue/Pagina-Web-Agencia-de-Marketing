@@ -7,7 +7,7 @@
     <title>Agencia de Marketing - @yield('titulo')</title>
 
     <link rel="stylesheet" href="{{ asset('css/sandro/layout.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
@@ -47,7 +47,7 @@
                             <div class="dropdown-content">
                                 <a href="/servicios?tipo=bodas">Bodas</a>
                                 <a href="/servicios?tipo=preboda">Pre Boda</a>
-                                <a href="/servicios?tipo=video">Video</a>   
+                                <a href="/servicios?tipo=video">Video</a>
                                 <a href="/servicios?tipo=smash">Smash</a>
                                 <a href="/servicios?tipo=bautizo">Bautizo</a>
                                 <a href="/servicios?tipo=embarazo">Embarazo</a>
@@ -57,7 +57,8 @@
                         </div>
                     </li>
 
-                    <li><a href="" class="nav-link"><i class="fas fa-bookmark"></i> Referencia</a></li>
+                    <li><a href="{{ url('/referencias') }}" class="nav-link"><i class="fas fa-bookmark"></i>
+                            Referencia</a></li>
                     <li><a href="" class="nav-link"><i class="fas fa-envelope"></i> Contáctanos</a></li>
                 </ul>
             </nav>
@@ -65,8 +66,8 @@
             <div class="redes-sociales">
                 <a href="https://www.youtube.com" target="_blank" class="social-icon youtube"><i
                         class="fab fa-youtube"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=61579324451249#" target="_blank" class="social-icon facebook"><i
-                        class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61579324451249#" target="_blank"
+                    class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://www.instagram.com" target="_blank" class="social-icon instagram"><i
                         class="fab fa-instagram"></i></a>
                 <a href="https://www.tiktok.com" target="_blank" class="social-icon tiktok"><i
@@ -93,10 +94,16 @@
     <footer class="main-footer">
         <div class="footer-content">
             <p>&copy; 2026 Rodrigo Felix Fotografía. Todos los derechos reservados.</p>
-            <div class="footer-links">
-                <a href="#">Instagram</a>
-                <a href="#">Facebook</a>
-                <a href="#">Twitter</a>
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank" class="facebook" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="instagram" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.x.com" target="_blank" class="x-twitter" title="X">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
             </div>
         </div>
     </footer>

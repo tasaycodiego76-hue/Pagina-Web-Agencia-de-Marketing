@@ -14,3 +14,6 @@ Route::get('/trabajos', function () {
 Route::get('/servicios', function () {
     return view('sandro.nuestros_servicios');
 });
+Route::get('/referencias', function () {
+    return view('sandro.referencia');
+});

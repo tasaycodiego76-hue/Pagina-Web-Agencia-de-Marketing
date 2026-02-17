@@ -1,0 +1,145 @@
+/* =========================================
+   SECCIÓN REFERENCIAS - CÓDIGO UNIFICADO
+   ========================================= */
+
+/* 1. CONTENEDOR PRINCIPAL (SUBIDO Y EQUILIBRADO) */
+.reference {
+    padding: 40px 0; /* Espacio interno reducido para subir el contenido */
+    margin-top: 40px; /* Ajuste de altura para que no quede tan bajo */
+    overflow: hidden;
+    background-color: #fcfcfc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 2. TÍTULO Y LÍNEA AMARILLA */
+.reference h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 10px; /* Título más pegado al borde superior de la sección */
+    margin-bottom: 70px; /* Espacio suficiente para que el hover no lo tape */
+    text-transform: uppercase;
+    position: relative;
+    font-weight: 800;
+    color: #222;
+}
+
+.reference h2::after {
+    content: "";
+    width: 280px; /* Línea grande como pediste */
+    height: 7px; /* Un poco más de grosor para impacto */
+    background: #ffcc00; /* Tu color de marca */
+    position: absolute;
+    bottom: -20px; /* Posición equilibrada */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 3. CARRUSEL (ÁREA DE MOVIMIENTO) */
+.reference-carousel {
+    width: 100%;
+    overflow: hidden;
+    padding: 30px 0 60px 0; /* Espacio extra abajo para que la sombra no se corte */
+    position: relative;
+}
+
+.reference-track {
+    display: flex;
+    width: calc((400px + 40px) * 12); /* Cálculo exacto para 12 items */
+    gap: 40px;
+    animation: scroll-infinito 30s linear infinite; /* Velocidad estándar */
+}
+
+/* Pausa la animación al pasar el cursor */
+.reference-track:hover {
+    animation-play-state: paused;
+}
+
+/* 4. TARJETA INDIVIDUAL (ESTILO JUAN PÉREZ) */
+.reference-item {
+    flex: 0 0 400px; /* Ancho de tarjeta grande */
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #eee;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* EFECTO AL PASAR EL MOUSE (HOVER) */
+.reference-item:hover {
+    background-color: #ffcc00; /* Fondo amarillo */
+    transform: translateY(-15px); /* Se eleva sutilmente */
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15); /* Sombra profunda */
+    border-color: transparent;
+}
+
+/* Textos cambian a negro puro en hover para legibilidad */
+.reference-item:hover p,
+.reference-item:hover strong {
+    color: #000;
+}
+
+/* 5. IMAGEN DEL CLIENTE */
+.reference-item img {
+    width: 120px; /* Tamaño grande */
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #ffcc00;
+    background: white;
+    transition: border-color 0.4s ease;
+}
+
+/* Borde de la imagen cambia a blanco cuando la tarjeta es amarilla */
+.reference-item:hover img {
+    border-color: white;
+}
+
+/* 6. ESTILOS DE TEXTO INTERNO */
+.reference-item p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.reference-item strong {
+    display: block;
+    margin-top: 20px;
+    font-size: 1.4rem;
+    color: #000;
+    font-weight: 700;
+}
+
+/* 7. ANIMACIÓN INFINITA (LOGICA DE REPETICIÓN) */
+@keyframes scroll-infinito {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* Se desplaza exactamente 6 tarjetas + sus espacios */
+        transform: translateX(calc((-400px - 40px) * 6));
+    }
+}
+
+/* 8. RESPONSIVE (CELULARES) */
+@media (max-width: 768px) {
+    .reference {
+        margin-top: 20px; /* Aún más arriba en móviles */
+    }
+    .reference h2 {
+        font-size: 2.2rem;
+    }
+    .reference-item {
+        flex: 0 0 300px; /* Tarjetas más pequeñas para pantallas chicas */
+    }
+    @keyframes scroll-infinito {
+        100% {
+            transform: translateX(calc((-300px - 40px) * 6));
+        }
+    }
+}

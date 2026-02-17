@@ -1,5 +1,6 @@
 /* Estilos generales */
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
 }
@@ -18,7 +19,7 @@ main {
     box-sizing: border-box;
 }
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     background-color: #f4f4f4;
     color: #333;
     margin: 0;
@@ -32,7 +33,6 @@ header {
     width: 100%;
     background: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
     z-index: 1000; /* Asegura que el menú esté por encima del contenido */
-    
 }
 /* Navbar */
 /* Tus estilos actuales (no los modifiques) */
@@ -47,7 +47,9 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease-in-out;
+    transition:
+        transform 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.5s ease-in-out;
 }
 
 /* Animación para ocultar el menú */
@@ -79,7 +81,9 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+    transition:
+        transform 0.6s ease-in-out,
+        opacity 0.6s ease-in-out;
 }
 
 /* Ocultar el menú con una animación suave */
@@ -96,29 +100,29 @@ header {
     pointer-events: auto;
 }
 
-@media (max-width: 1024px) { /* Tablets y pantallas medianas */
+@media (max-width: 1024px) {
+    /* Tablets y pantallas medianas */
     .navbar {
         height: 60px;
         padding: 8px 16px;
     }
 }
 
-@media (max-width: 768px) { /* Móviles en modo vertical */
+@media (max-width: 768px) {
+    /* Móviles en modo vertical */
     .navbar {
         height: 105px;
         padding: 6px 12px;
     }
-    
 }
 
-@media (max-width: 480px) { /* Móviles pequeños */
+@media (max-width: 480px) {
+    /* Móviles pequeños */
     .navbar {
         height: 50px;
         padding: 5px 10px;
     }
-    
 }
-
 
 .navbar a {
     color: #fff;
@@ -147,26 +151,14 @@ header {
 }
 
 .navbar .logo img {
-    height: 50px ;
+    height: 50px;
     cursor: pointer;
 }
-
 
 .navbar .dropdown {
     position: relative;
     display: inline-block;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* Redes Sociales */
 .redes-sociales a {
@@ -175,14 +167,18 @@ header {
     padding: 8px; /* Reduce el padding para hacer el ícono más pequeño */
     border-radius: 50%;
     margin: 0 4px; /* Reduce ligeramente el espacio entre iconos */
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
 }
 
 .redes-sociales a i {
     color: white;
     font-size: 20px; /* Reduce el tamaño del ícono */
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
-    transition: color 0.3s ease, transform 0.3s ease;
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
 }
 
 .redes-sociales a:hover {
@@ -194,13 +190,6 @@ header {
     transform: scale(1.15); /* Efecto hover ligeramente menor */
     text-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
 }
-
-
-
-
-
-
-
 
 /* Estilos para el ícono de hamburguesa */
 /* Estilos para el ícono de hamburguesa */
@@ -231,7 +220,9 @@ header {
     height: 2px; /* Grosor de las barras */
     background-color: white; /* Color de las barras */
     margin: 3px 0; /* Espacio entre las barras */
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
 }
 
 /* Estilos cuando el menú está activo (ícono en "X") */
@@ -256,7 +247,7 @@ header {
     .menu-icon {
         display: flex;
     }
-    
+
     #nav {
         display: none;
         flex-direction: column;
@@ -293,13 +284,12 @@ header {
         display: flex;
         flex-direction: column;
     }
-    
 }
 /* Aplicar TIPO DE LETRA DEL MENU*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Nunito:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Nunito:wght@300;400;500&display=swap");
 
 #nav ul {
-    font-family: 'Poppins', 'Nunito', sans-serif;
+    font-family: "Poppins", "Nunito", sans-serif;
     display: flex;
     align-items: center;
     gap: 6px; /* Reduce más el espacio entre palabras */
@@ -309,7 +299,7 @@ header {
 }
 
 #nav .nav-link {
-    font-family: 'Poppins', 'Nunito', sans-serif;
+    font-family: "Poppins", "Nunito", sans-serif;
     display: flex;
     align-items: center;
     gap: 3px; /* Espacio más reducido entre ícono y texto */
@@ -322,7 +312,7 @@ header {
 }
 
 .dropdown-content a {
-    font-family: 'Poppins', 'Nunito', sans-serif;
+    font-family: "Poppins", "Nunito", sans-serif;
     display: flex;
     align-items: center;
     gap: 6px;
@@ -477,7 +467,6 @@ header {
     }
 }
 
-
 /* Submenú */
 /* Estilos generales para el submenú (versión de escritorio) */
 .navbar .dropdown-content {
@@ -488,10 +477,11 @@ header {
     background-color: #1d1d1b; /* Fondo negro */
     min-width: 160px;
     z-index: 10;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
     opacity: 0;
     visibility: hidden;
-    
 }
 
 /* Mostrar submenú al pasar el mouse (versión de escritorio) */
@@ -552,7 +542,7 @@ header {
         left: 0;
         top: 0px; /* Baja la barra de menú desde arriba */
     }
-    
+
     #nav ul {
         display: flex;
         justify-content: center; /* Centra los elementos de la lista */
@@ -560,7 +550,7 @@ header {
         margin: 0;
         list-style: none;
     }
-    
+
     #nav ul li {
         text-align: center; /* Centra el texto dentro de cada <li> */
         display: flex;
@@ -568,7 +558,7 @@ header {
         padding-top: 5px; /* Ajusta el desplazamiento hacia abajo */
         padding-bottom: 5px; /* Ajusta el espacio inferior */
     }
-    
+
     #nav ul li a {
         color: white;
         text-decoration: none;
@@ -579,10 +569,7 @@ header {
     }
     .home-content {
         top: 10% !important;
-        
     }
-
-    
 }
 
 /* Para pantallas grandes (más de 1025px), mantenemos los estilos como están */
@@ -604,7 +591,7 @@ header {
 /* Estilos específicos para la versión móvil */
 @media (max-width: 768px) {
     /* Ocultar submenú inicialmente */
-    
+
     .navbar .dropdown-content {
         display: none;
         position: absolute;
@@ -725,13 +712,12 @@ footer p {
     display: none !important;
 }
 
-
 /* WHATSAPP BOTON */
 .chat-button {
     position: fixed;
     bottom: 20px; /* Distancia desde el borde inferior */
     left: 20px; /* Distancia desde el borde izquierdo */
-    background-color: #25D366; /* Color de WhatsApp */
+    background-color: #25d366; /* Color de WhatsApp */
     color: white;
     padding: 12px 24px; /* Padding para el botón */
     border-radius: 50px; /* Bordes redondeados */
@@ -742,11 +728,13 @@ footer p {
     z-index: 1000; /* Asegura que esté por encima de otros elementos */
     cursor: pointer;
     text-decoration: none;
-    font-family: 'Poppins', Arial, sans-serif; /* Fuente moderna */
+    font-family: "Poppins", Arial, sans-serif; /* Fuente moderna */
     font-size: 16px; /* Tamaño de la fuente */
     font-weight: 500; /* Peso de la fuente (menos gruesa, pero notable) */
     letter-spacing: 0.5px; /* Espaciado entre letras */
-    transition: background-color 0.3s, transform 0.2s; /* Transición suave */
+    transition:
+        background-color 0.3s,
+        transform 0.2s; /* Transición suave */
 }
 
 .chat-button img {
@@ -755,15 +743,140 @@ footer p {
 }
 
 .chat-button:hover {
-    background-color: #128C7E; /* Cambio de color al pasar el mouse */
+    background-color: #128c7e; /* Cambio de color al pasar el mouse */
     transform: scale(1.05); /* Efecto de escala al pasar el mouse */
 }
 
+/* CONTENEDOR DE REDES SOCIALES */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* ESTILO BASE DE LOS ICONOS/LINKS */
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo sutil */
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* EFECTOS INDIVIDUALES POR MARCA (HOVER) */
+
+/* Instagram: Graduado clásico */
+.social-links a.instagram:hover {
+    background: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+    );
+    color: white;
+    border-color: transparent;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(214, 36, 159, 0.3);
+}
+
+/* Facebook: Azul oficial */
+.social-links a.facebook:hover {
+    background-color: #1877f2;
+    color: white;
+    border-color: transparent;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(24, 119, 242, 0.3);
+}
+
+/* Twitter / X: Negro elegante o azul original */
+.social-links a.twitter:hover {
+    background-color: #1da1f2; /* Azul Twitter */
+    color: white;
+    border-color: transparent;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(29, 161, 242, 0.3);
+}
+
+/* WHATSAPP (Si lo tienes) */
+.social-links a.whatsapp:hover {
+    background-color: #25d366;
+    color: white;
+    border-color: transparent;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+}
+
+/* CONTENEDOR DE REDES SOCIALES */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Un poco más de espacio entre ellos */
+    margin-top: 25px;
+}
+
+/* ESTILO BASE CIRCULAR */
+/* Estilo base para todos los iconos */
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1); /* Fondo oscuro sutil */
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Estilo específico para X */
+.social-links a.x-twitter:hover {
+    background-color: #000000; /* Fondo negro puro */
+    color: #ffffff;
+    border-color: #ffffff;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Instagram: Gradiente Realista */
+.social-links a.instagram:hover {
+    background: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+    );
+    color: white;
+    border-color: transparent;
+    transform: translateY(-8px) scale(1.1);
+    box-shadow: 0 10px 25px rgba(214, 36, 159, 0.4);
+}
+
+/* Facebook: Azul Moderno */
+.social-links a.facebook:hover {
+    background-color: #1877f2;
+    color: white;
+    border-color: transparent;
+    transform: translateY(-8px) scale(1.1);
+    box-shadow: 0 10px 25px rgba(24, 119, 242, 0.4);
+}
 
 /*****************************************************************************
 INICIO - LINEA AMARILLA DE NUMERACION
 ******************************************************************************/
-
 
 .stats {
     display: flex;
@@ -774,15 +887,15 @@ INICIO - LINEA AMARILLA DE NUMERACION
 }
 
 .stat {
-    border: 3px solid #FFD700; /* línea amarilla */
+    border: 3px solid #ffd700; /* línea amarilla */
     border-radius: 15px;
     padding: 1.5rem 2rem;
     min-width: 180px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     background-color: transparent; /* fondo transparente */
     color: #333;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     cursor: default;
     user-select: none;
     transition: transform 0.3s ease;
