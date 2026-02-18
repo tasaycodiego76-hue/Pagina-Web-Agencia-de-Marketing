@@ -2,12 +2,6 @@
     position: relative;
     padding: 60px 0;
     text-align: center;
-
-    /* EXPLICACIÓN: 
-       ../ sale de 'sandro'
-       ../ sale de 'css'
-       luego entra en 'images/trabajos/' 
-    */
     background-image: url("../../images/trabajos/work4.jpg") !important;
 
     background-repeat: no-repeat;
@@ -60,30 +54,6 @@
     justify-content: center;
 }
 
-/* Capa oscura para que el carrusel resalte sobre la foto de fondo */
-.trabajos::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(
-        0,
-        0,
-        0,
-        0.5
-    ); /* Ajusta el 0.5 para oscurecer más o menos */
-    z-index: 0;
-}
-
-/* Asegura que el contenido esté por encima de la capa oscura */
-.titulo-trabajos,
-.carousel-container {
-    position: relative;
-    z-index: 1;
-}
-
 /* Estilos generales */
 .trabajos {
     position: relative;
@@ -100,15 +70,9 @@
     align-items: center;
 }
 
-.trabajos::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3); /* Oscurece el fondo para mayor contraste */
-    z-index: -1; /* Lo coloca detrás del contenido */
+.titulo-trabajos span::after {
+    /* ... tus otros estilos ... */
+    right: -25px; /* Aléjalo un poco más para que no pise la letra 'S' */
 }
 
 .titulo-trabajos {
@@ -133,36 +97,87 @@
 }
 
 .carousel-item {
-    min-width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+
+    /* ESTO ES LO QUE FALTA */
+    min-width: 100%; /* Cada imagen ocupará todo el ancho disponible */
     box-sizing: border-box;
-    padding: 10px; /* Espaciado entre imágenes */
+}
+
+.work-description {
+    position: absolute;
+    bottom: -100%; /* Escondido abajo por defecto */
+    left: 0;
+    width: 100%;
+    height: 40%; /* Solo ocupa la parte inferior */
+    background: linear-gradient(
+        transparent,
+        rgba(0, 0, 0, 0.9)
+    ); /* Degradado elegante */
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1); /* Movimiento suave */
+    z-index: 2;
+}
+
+.work-description h4 {
+    color: #edd132;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.work-description p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    opacity: 0.9;
+}
+
+.work-description {
+    padding-bottom: 40px; /* Le da espacio para que las flechas amarillas no tapen el texto */
+    background: linear-gradient(
+        transparent,
+        rgba(0, 0, 0, 0.85)
+    ); /* Degradado un poco más oscuro para leer mejor */
+}
+
+/* EFECTO HOVER: Sube la descripción y hace zoom a la foto */
+.carousel-item:hover .work-description {
+    bottom: 0;
+}
+
+.carousel-item:hover .carousel-image {
+    transform: scale(1.1); /* Zoom suave a la imagen */
+    filter: brightness(0.7); /* Oscurece la foto para leer mejor */
 }
 
 .carousel-image {
+    transition: all 0.6s ease;
     width: 100%;
-    height: auto;
-    max-height: 400px; /* Altura máxima de las imágenes */
-    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
-    border-radius: 10px;
+    display: block;
 }
 
 .carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
+    background: rgba(237, 209, 50, 0.8); /* Tu amarillo con transparencia */
+    color: #1d1d1b;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
     border-radius: 50%;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease;
-    z-index: 10; /* Asegura que los botones estén sobre las imágenes */
+    border: 2px solid #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .carousel-button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background: #edd132;
+    transform: translateY(-05%) scale(1.1);
 }
 
 .prev {

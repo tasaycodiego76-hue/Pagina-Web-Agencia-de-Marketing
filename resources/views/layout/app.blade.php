@@ -5,7 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agencia de Marketing - @yield('titulo')</title>
-
+    <link rel="stylesheet" href="{{ asset('images/home-diseno/home.css') }}">
+    <link rel="stylesheet" href="{{ asset('images/home-diseno/preguntas.css') }}">
+    <link rel="stylesheet" href="{{ asset('images/home-diseno/formulario.css') }}">
+    <script src="{{ asset('js/home-carrusel/carrusel.js') }}"></script>
+    <script src="{{ asset('js/preguntas.js') }}"></script>
+    <script src="{{ asset('js/numeros.js') }}"></script>
+    <script src="{{ asset('js/formulario.js') }}"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Enlace a una fuente de Google Fonts para mejorar la tipografía -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Flickity CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.min.css">
     <link rel="stylesheet" href="{{ asset('css/sandro/layout.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.min.css">
@@ -59,7 +75,8 @@
 
                     <li><a href="{{ url('/referencias') }}" class="nav-link"><i class="fas fa-bookmark"></i>
                             Referencia</a></li>
-                    <li><a href="{{ url('/contacto') }}" class="nav-link"><i class="fas fa-envelope"></i> Contáctanos</a></li>
+                    <li><a href="{{ url('/contacto') }}" class="nav-link"><i class="fas fa-envelope"></i>
+                            Contáctanos</a></li>
                 </ul>
             </nav>
 

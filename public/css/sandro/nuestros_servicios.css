@@ -1,54 +1,54 @@
-/* Esto asegura que el contenedor no guarde espacios de secciones ocultas */
+/* Asegura que no haya huecos arriba */
 .service-main-section {
-    padding-top: 50px; /* Ajusta según tu header */
-    display: block;
+    padding-top: 20px; /* Reduce esto si el header está muy pegado */
+    margin: 0;
     width: 100%;
-    position: relative;
 }
 
 .titulo-servicios {
-    margin-top: 0; /* Asegura que el título pegue arriba */
-    text-align: center;
-    padding: 20px 0;
+    text-align: center; /* Centra el texto */
+    margin: 40px auto; /* Centra el bloque del título y da espacio arriba/abajo */
+    width: 100%; /* Asegura que ocupe todo el ancho para poder centrarse */
+    display: block; /* Lo trata como un bloque independiente */
+    position: relative; /* Necesario para que la línea amarilla se ubique respecto a este título */
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #1d1d1b;
 }
 
+/* La línea amarilla debajo del título */
 .titulo-servicios::after {
     content: "";
-    width: 80px;
-    height: 4px;
-    background: #ffcc00; /* Color amarillo de tu logo */
     position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: -10px; /* Distancia entre el texto y la línea */
+    left: 50%; /* Lo mueve al centro exacto */
+    transform: translateX(
+        -50%
+    ); /* Ajuste fino para que el centro de la línea coincida con el centro del texto */
+    width: 80px; /* Largo de la línea */
+    height: 5px; /* Grosor de la línea */
+    background-color: #edd132; /* Tu amarillo corporativo */
+    border-radius: 2px;
 }
 
 /* Rejilla de Paquetes */
 .service-container,
 .service-content {
-    display: flex;
-    flex-wrap: wrap; /* Para que si no caben, bajen a la siguiente fila */
-    justify-content: center; /* Centra las tarjetas */
+    display: grid;
+    /* Esto crea columnas automáticas que se ajustan al tamaño de la pantalla */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
-    max-width: 1200px;
-    margin: 30px auto;
-    padding: 0 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* Tarjeta de Paquete (Cards) */
 .service-package {
+    max-width: 100%; /* Deja que el grid controle el ancho */
     background: #fff;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    display: flex;
-    flex-direction: column;
-
-    /* AJUSTE DINÁMICO */
-    flex: 1 1 350px; /* Crece si hay espacio, pero su base es 350px */
-    max-width: 600px; /* Cuando esté sola, se verá grande pero no gigante */
-    min-width: 300px; /* Para que en celular no se vea mal */
-    transition: transform 0.3s ease;
+    border-radius: 15px;
+    border: 1px solid #ddd; /* Un borde sutil para que resalten sobre el fondo crema */
 }
 
 .service-package:hover {

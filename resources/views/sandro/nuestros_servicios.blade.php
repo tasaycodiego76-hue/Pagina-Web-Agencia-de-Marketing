@@ -262,22 +262,24 @@
         });
 
         function mostrarServicio(idSeccion) {
-            // 1. Ocultar todas las secciones
             const secciones = document.querySelectorAll('.service-section');
             secciones.forEach(sec => {
                 sec.style.display = 'none';
+                sec.style.opacity = '0'; // Preparamos para una transición suave
             });
 
-            // 2. Mostrar la sección seleccionada
             const seccionAMostrar = document.getElementById(idSeccion);
             if (seccionAMostrar) {
                 seccionAMostrar.style.display = 'block';
+                // Un pequeño truco para que aparezca con un efecto suave (FadeIn)
+                setTimeout(() => {
+                    seccionAMostrar.style.opacity = '1';
+                    seccionAMostrar.style.transition = 'opacity 0.5s ease';
+                }, 10);
 
-                // 3. ¡ESTO ES LO MÁS IMPORTANTE!
-                // Fuerza a la ventana a subir al inicio del contenedor
                 window.scrollTo({
                     top: 0,
-                    behavior: 'instant' // Sube de golpe para que no se note el salto
+                    behavior: 'smooth' // 'smooth' queda mucho más elegante que 'instant'
                 });
             }
         }
