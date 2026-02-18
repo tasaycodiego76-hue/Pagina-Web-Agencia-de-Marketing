@@ -28,17 +28,28 @@ class ContactoController extends Controller
         $apiInstance = new TransactionalEmailsApi($client, $config);
 
         // Preparar el contenido del correo electrónico
-        $sendSmtpEmail = new SendSmtpEmail([
-            'subject' => 'Nuevo mensaje de contacto',
-            'sender' => ['name' => $data['name'], 'email' => $data['email']],
-            'to' => [['email' => 'rodrigofelix.fotografo@gmail.com', 'name' => 'Rodrigo']],
-            'htmlContent' => "
-                <p><strong>Nombre:</strong> {$data['name']}</p>
-                <p><strong>Email:</strong> {$data['email']}</p>
-                <p><strong>Teléfono:</strong> {$data['phone']}</p>
-                <p><strong>Mensaje:</strong><br>{$data['message']}</p>
-            "
-        ]);
+$sendSmtpEmail = new SendSmtpEmail([
+    'subject' => 'Nuevo mensaje de contacto',
+    'sender' => [
+        'name' => 'Web Rodrigo Felix',
+        'email' => 'tasaycodiego76@gmail.com' // tu correo verificado en Brevo
+    ],
+    'to' => [
+        [
+            'email' => 'rodrigofelix.fotografo@gmail.com',
+            'name' => 'Rodrigo'
+        ]
+    ],
+    'htmlContent' => "
+        <p><strong>Nombre:</strong> {$data['name']}</p>
+        <p><strong>Email:</strong> {$data['email']}</p>
+        <p><strong>Teléfono:</strong> {$data['phone']}</p>
+        <p><strong>Mensaje:</strong><br>{$data['message']}</p>
+    "
+]);
+
+
+
 
         try {
             // Enviar el correo utilizando la API de Brevo
