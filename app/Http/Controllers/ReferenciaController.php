@@ -21,7 +21,7 @@ class ReferenciaController extends Controller
             'nombre' => $request->name,
             'comentario' => $request->message,
             'foto' => 'cliente.png', // Tu imagen estándar
-            'cargo' => 'Cliente Nuevo', // Puedes personalizar esto o dejarlo fijo
+            'cargo' => 'Cliente Nuevo'
         ]);
 
         // REDIRECCIÓN: Te manda a la ruta /referencias y salta al ID #referencia

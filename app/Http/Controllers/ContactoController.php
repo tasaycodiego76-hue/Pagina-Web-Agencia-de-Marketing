@@ -30,14 +30,22 @@ class ContactoController extends Controller
         // Preparar el contenido del correo electrónico
         $sendSmtpEmail = new SendSmtpEmail([
             'subject' => 'Nuevo mensaje de contacto',
-            'sender' => ['name' => $data['name'], 'email' => $data['email']],
-            'to' => [['email' => 'rodrigofelix.fotografo@gmail.com', 'name' => 'Rodrigo']],
+            'sender' => [
+                'name' => 'Web Rodrigo Felix',
+                'email' => 'tasaycodiego76@gmail.com' // tu correo verificado en Brevo
+            ],
+            'to' => [
+                [
+                    'email' => 'rodrigofelix.fotografo@gmail.com',
+                    'name' => 'Rodrigo'
+                ]
+            ],
             'htmlContent' => "
-                <p><strong>Nombre:</strong> {$data['name']}</p>
-                <p><strong>Email:</strong> {$data['email']}</p>
-                <p><strong>Teléfono:</strong> {$data['phone']}</p>
-                <p><strong>Mensaje:</strong><br>{$data['message']}</p>
-            "
+        <p><strong>Nombre:</strong> {$data['name']}</p>
+        <p><strong>Email:</strong> {$data['email']}</p>
+        <p><strong>Teléfono:</strong> {$data['phone']}</p>
+        <p><strong>Mensaje:</strong><br>{$data['message']}</p>
+    "
         ]);
 
         try {
@@ -49,7 +57,7 @@ class ContactoController extends Controller
             return back()->with('error', 'Error al enviar el mensaje: ' . $e->getMessage());
         }
     }
-  
-    }
-    
-    
+
+}
+
+
