@@ -1,0 +1,153 @@
+/* Esto asegura que el contenedor no guarde espacios de secciones ocultas */
+.service-main-section {
+    padding-top: 50px; /* Ajusta según tu header */
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.titulo-servicios {
+    margin-top: 0; /* Asegura que el título pegue arriba */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.titulo-servicios::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: #ffcc00; /* Color amarillo de tu logo */
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Rejilla de Paquetes */
+.service-container,
+.service-content {
+    display: flex;
+    flex-wrap: wrap; /* Para que si no caben, bajen a la siguiente fila */
+    justify-content: center; /* Centra las tarjetas */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Tarjeta de Paquete (Cards) */
+.service-package {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+
+    /* AJUSTE DINÁMICO */
+    flex: 1 1 350px; /* Crece si hay espacio, pero su base es 350px */
+    max-width: 600px; /* Cuando esté sola, se verá grande pero no gigante */
+    min-width: 300px; /* Para que en celular no se vea mal */
+    transition: transform 0.3s ease;
+}
+
+.service-package:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen del Paquete */
+.package-image {
+    width: 100%;
+    height: 350px; /* Aumentamos de 250 a 350 para que luzca más la foto */
+    overflow: hidden;
+}
+
+.package-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.service-package:hover .package-image img {
+    transform: scale(1.1);
+}
+
+/* Detalles del Paquete */
+.package-details {
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.package-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.package-details p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+/* Precios */
+.promo-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 10px;
+    font-weight: 400;
+}
+
+.discount {
+    color: #e74c3c;
+    display: block;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+
+/* Botón WhatsApp */
+.cta-button {
+    display: inline-block;
+    background-color: #25d366;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #128c7e;
+    color: #fff;
+}
+
+.service-section {
+    width: 100%;
+    margin-top: 0 !important; /* Quita cualquier margen que las empuje hacia abajo */
+    padding-top: 0 !important;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

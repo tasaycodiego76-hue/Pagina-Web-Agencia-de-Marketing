@@ -1,0 +1,96 @@
+/* 1. REDUCIR EL RELLENO SUPERIOR DE LA SECCIÓN */
+.team {
+    padding: 80px 20px; /* Reducido de 120px para que no flote tanto */
+    background: #ffffff;
+    text-align: center;
+}
+
+/* 2. TÍTULO MÁS COMPACTO Y CENTRADO */
+.team h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 3.2rem; /* Un toque más pequeño para mejor balance */
+    font-weight: 800;
+    margin-bottom: 50px; /* REDUCIDO: De 80px a 50px para acercarlo a los empleados */
+    color: #1d1d1b;
+    position: relative;
+    display: inline-block;
+    letter-spacing: -1px;
+}
+
+/* 3. LÍNEA AMARILLA ESTILO REFERENCIAS (CENTRADA) */
+.team h2::after {
+    content: "";
+    width: 180px; /* Ancho fijo para que no sea excesivo */
+    height: 10px; /* Grosor con impacto */
+    background: #ffcc00;
+    position: absolute;
+    bottom: -10px; /* Justo debajo de las letras */
+    left: 50%; /* Centrada */
+    transform: translateX(-50%); /* Ajuste perfecto al centro */
+    z-index: 1; /* Ahora se ve delante, estilo moderno */
+    border-radius: 5px;
+}
+
+.team-content {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* TARJETAS: Minimalismo puro */
+.team-member {
+    background: #ffffff;
+    padding: 60px 40px;
+    border-radius: 40px; /* Curva más pronunciada */
+    flex: 1;
+    min-width: 300px;
+    max-width: 380px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    border: 1px solid #f0f0f0;
+}
+
+.team-member:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.06); /* Sombra elegante, no pesada */
+    border-color: #ffcc00;
+}
+
+/* IMAGEN: Círculo con borde flotante */
+.team-member img {
+    width: 200px; /* Mantenemos el tamaño del círculo */
+    height: 200px; /* Mantenemos el tamaño del círculo */
+    border-radius: 50%;
+    object-fit: cover;
+
+    /* EL TRUCO: */
+    padding: 15px; /* Esto aleja la foto del borde amarillo, haciéndola más pequeña */
+    background-color: #fff; /* Fondo blanco para el espacio del padding */
+
+    margin-bottom: 30px;
+    border: 4px solid #ffcc00; /* Tu círculo amarillo se queda fijo */
+    transition: all 0.5s ease;
+}
+
+.team-member:hover img {
+    padding: 8px; /* La foto se agranda un poquito al hacer hover */
+    transform: scale(1.05);
+}
+
+/* TEXTOS */
+.team-member h3 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    color: #111;
+    font-weight: 700;
+}
+
+.team-member p {
+    color: #ffcc00; /* El cargo ahora resalta en tu color de marca */
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase; /* Estilo más profesional para cargos */
+    letter-spacing: 1px;
+}
