@@ -59,7 +59,7 @@
 
                     <li><a href="{{ url('/referencias') }}" class="nav-link"><i class="fas fa-bookmark"></i>
                             Referencia</a></li>
-                    <li><a href="" class="nav-link"><i class="fas fa-envelope"></i> Contáctanos</a></li>
+                    <li><a href="{{ url('/contacto') }}" class="nav-link"><i class="fas fa-envelope"></i> Contáctanos</a></li>
                 </ul>
             </nav>
 

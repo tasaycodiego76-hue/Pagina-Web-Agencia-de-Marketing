@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ReferenciaController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -17,3 +18,9 @@ Route::get('/servicios', function () {
 Route::get('/referencias', function () {
     return view('sandro.referencia');
 });
+
+Route::get('/contacto', function () {
+    return view('sandro.contact');
+});
+
+Route::post('/enviar-referencia', [ReferenciaController::class, 'store'])->name('referencia.store');

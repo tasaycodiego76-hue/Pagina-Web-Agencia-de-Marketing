@@ -46,9 +46,23 @@
 
 .reference-track {
     display: flex;
-    width: calc((400px + 40px) * 12); /* Cálculo exacto para 12 items */
-    gap: 40px;
-    animation: scroll-infinito 30s linear infinite; /* Velocidad estándar */
+    width: max-content; /* Importante para que no se amontone */
+    animation: scroll-loop 40s linear infinite;
+}
+
+@keyframes scroll-loop {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* Usamos la variable calculada por JS */
+        transform: translateX(var(--scroll-width));
+    }
+}
+
+/* Pausar al pasar el mouse (opcional, muy pro) */
+.reference-carousel:hover .reference-track {
+    animation-play-state: paused;
 }
 
 /* Pausa la animación al pasar el cursor */
