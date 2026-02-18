@@ -1,97 +1,96 @@
-/* ================================================== */
-/* SECCIÓN EQUIPO (MEJORADA) */
-/* ================================================== */
-
+/* 1. REDUCIR EL RELLENO SUPERIOR DE LA SECCIÓN */
 .team {
-    padding: 100px 20px;
-    background: #fdfdfd; /* Un fondo casi blanco para que las tarjetas resalten más */
+    padding: 80px 20px; /* Reducido de 120px para que no flote tanto */
+    background: #ffffff;
     text-align: center;
 }
 
+/* 2. TÍTULO MÁS COMPACTO Y CENTRADO */
 .team h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 60px;
+    font-family: "Poppins", sans-serif;
+    font-size: 3.2rem; /* Un toque más pequeño para mejor balance */
+    font-weight: 800;
+    margin-bottom: 50px; /* REDUCIDO: De 80px a 50px para acercarlo a los empleados */
     color: #1d1d1b;
     position: relative;
     display: inline-block;
+    letter-spacing: -1px;
 }
 
-/* Opcional: Una línea amarilla debajo del título para dar identidad */
+/* 3. LÍNEA AMARILLA ESTILO REFERENCIAS (CENTRADA) */
 .team h2::after {
-    content: '';
-    width: 60px;
-    height: 4px;
-    background: #ffeb3b;
+    content: "";
+    width: 180px; /* Ancho fijo para que no sea excesivo */
+    height: 10px; /* Grosor con impacto */
+    background: #ffcc00;
     position: absolute;
-    bottom: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 2px;
+    bottom: -10px; /* Justo debajo de las letras */
+    left: 50%; /* Centrada */
+    transform: translateX(-50%); /* Ajuste perfecto al centro */
+    z-index: 1; /* Ahora se ve delante, estilo moderno */
+    border-radius: 5px;
 }
 
 .team-content {
     display: flex;
     justify-content: center;
-    gap: 40px; /* Más espacio entre miembros */
+    gap: 50px;
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
 }
 
+/* TARJETAS: Minimalismo puro */
 .team-member {
     background: #ffffff;
-    padding: 50px 30px;
-    border-radius: 30px; /* Bordes más curvos y modernos */
-    box-shadow: 0 10px 40px rgba(0,0,0,0.03); /* Sombra muy suave de base */
+    padding: 60px 40px;
+    border-radius: 40px; /* Curva más pronunciada */
     flex: 1;
-    min-width: 280px;
-    max-width: 350px;
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-    border: 1px solid #f1f1f1;
+    min-width: 300px;
+    max-width: 380px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    border: 1px solid #f0f0f0;
 }
 
-/* Efecto al pasar el mouse (Hover) */
 .team-member:hover {
-    transform: translateY(-15px); /* Se eleva más suavemente */
-    box-shadow: 0 25px 60px rgba(0,0,0,0.08); /* La sombra se intensifica */
-    border-color: #ffeb3b; /* El borde se vuelve amarillo como tu marca */
+    transform: translateY(-20px);
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.06); /* Sombra elegante, no pesada */
+    border-color: #ffcc00;
 }
 
+/* IMAGEN: Círculo con borde flotante */
 .team-member img {
-    width: 200px; /* Un poco más grandes para que luzcan */
-    height: 200px;
+    width: 200px; /* Mantenemos el tamaño del círculo */
+    height: 200px; /* Mantenemos el tamaño del círculo */
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 25px;
-    border: 6px solid #f9f9f9; /* Marco sutil para la foto */
-    transition: transform 0.4s ease;
+
+    /* EL TRUCO: */
+    padding: 15px; /* Esto aleja la foto del borde amarillo, haciéndola más pequeña */
+    background-color: #fff; /* Fondo blanco para el espacio del padding */
+
+    margin-bottom: 30px;
+    border: 4px solid #ffcc00; /* Tu círculo amarillo se queda fijo */
+    transition: all 0.5s ease;
 }
 
 .team-member:hover img {
-    transform: scale(1.05); /* La foto hace un pequeño zoom */
+    padding: 8px; /* La foto se agranda un poquito al hacer hover */
+    transform: scale(1.05);
 }
 
+/* TEXTOS */
 .team-member h3 {
-    font-size: 1.8rem;
-    margin-bottom: 8px;
-    color: #1d1d1b;
+    font-size: 2rem;
+    margin-bottom: 5px;
+    color: #111;
     font-weight: 700;
 }
 
 .team-member p {
-    color: #666;
-    font-style: italic;
-    font-size: 1.1rem;
-    font-weight: 400;
+    color: #ffcc00; /* El cargo ahora resalta en tu color de marca */
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase; /* Estilo más profesional para cargos */
+    letter-spacing: 1px;
 }
-
-/* AJUSTE PARA EL FOOTER (Para que combine con tu nueva barra) */
-footer {
-    background: #1d1d1b;
-    padding: 40px 20px;
-    border-top: 4px solid #ffeb3b;
-    color: #fff;
-}
-

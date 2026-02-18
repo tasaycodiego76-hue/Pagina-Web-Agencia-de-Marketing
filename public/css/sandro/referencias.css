@@ -14,11 +14,12 @@
 }
 
 /* 2. TÍTULO Y LÍNEA AMARILLA */
+/* 2. TÍTULO Y LÍNEA AMARILLA (VERSIÓN MAXI-LONG) */
 .reference h2 {
     text-align: center;
     font-size: 3rem;
-    margin-top: 10px; /* Título más pegado al borde superior de la sección */
-    margin-bottom: 70px; /* Espacio suficiente para que el hover no lo tape */
+    margin-top: 10px;
+    margin-bottom: 100px; /* Aumentado para equilibrar la línea gigante */
     text-transform: uppercase;
     position: relative;
     font-weight: 800;
@@ -27,13 +28,30 @@
 
 .reference h2::after {
     content: "";
-    width: 280px; /* Línea grande como pediste */
-    height: 7px; /* Un poco más de grosor para impacto */
-    background: #ffcc00; /* Tu color de marca */
+    /* Ancho extendido: 850px para dar ese efecto de 2cm extra a los lados */
+    width: 850px;
+    height: 12px; /* Grosor sólido para que no se pierda */
+    background: #ffcc00;
     position: absolute;
-    bottom: -20px; /* Posición equilibrada */
+    bottom: -35px; /* Más separación del texto */
     left: 50%;
     transform: translateX(-50%);
+    border-radius: 50px; /* Bordes redondeados tipo cápsula */
+}
+
+/* Ajuste para pantallas de laptops donde 850px podría ser mucho */
+@media (max-width: 1024px) {
+    .reference h2::after {
+        width: 90%; /* Se vuelve elástica para no salirse */
+    }
+}
+
+@media (max-width: 768px) {
+    .reference h2::after {
+        width: 95%;
+        height: 8px;
+        bottom: -25px;
+    }
 }
 
 /* 3. CARRUSEL (ÁREA DE MOVIMIENTO) */
