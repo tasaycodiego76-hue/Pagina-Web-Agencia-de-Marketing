@@ -58,7 +58,7 @@
                     <p><strong>Luis Ramírez</strong></p>
                     <p>Cliente</p>
                 </div>
-                {{-- Obtenemos todas las referencias de la base de datos --}}
+               {{-- Obtenemos todas las referencias de la base de datos --}}
                 @php $referencias = \App\Models\Referencia::all(); @endphp
 
                 @foreach($referencias as $ref)
