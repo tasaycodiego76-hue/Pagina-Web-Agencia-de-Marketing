@@ -1,20 +1,25 @@
+// Espera a que todo esté visible antes de iniciar
+function startImageCarousel() {
+    const track = document.getElementById('track');
+    const slides = document.querySelectorAll('.image-slide');
+    
+    if (!track || slides.length === 0) return;
 
+    const slideWidth = slides[0].offsetWidth;
+    
+    // Si el ancho es 0, el elemento está oculto, reintenta
+    if (slideWidth === 0) {
+        setTimeout(startImageCarousel, 200);
+        return;
+    }
 
-
-document.addEventListener("DOMContentLoaded", function () {
-    const track = document.getElementById("track");
-
-    if (!track) return;
-
-    let speed = 1; // píxeles por frame, súbelo para ir más rápido
+    const totalOriginal = slides.length / 2;
     let position = 0;
-    const totalWidth = track.scrollWidth / 2; // mitad porque tienes imágenes duplicadas
 
     function animate() {
-        position -= speed;
+        position -= 0.5;
 
-        // Cuando recorre la mitad, reinicia sin que se note
-        if (Math.abs(position) >= totalWidth) {
+        if (Math.abs(position) >= slides[0].offsetWidth * totalOriginal) {
             position = 0;
         }
 
@@ -22,13 +27,17 @@ document.addEventListener("DOMContentLoaded", function () {
         requestAnimationFrame(animate);
     }
 
-    animate();
-});
+    requestAnimationFrame(animate);
+}
+
+// Inicia cuando carga la página
+document.addEventListener('DOMContentLoaded', startImageCarousel);
 
 
 
 
 
+//MAQUINA DE ESCRIBIR
 const frases = [
   "Fotografía de bodas inolvidables...",
   "Sesiones de embarazo llenas de magia...",

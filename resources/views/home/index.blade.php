@@ -9,7 +9,8 @@
      <link rel="stylesheet" href="{{ asset('images/home-diseno/formulario.css') }}">
      <script src="{{ asset('js/home-carrusel/carrusel.js') }}"></script>
      <script src="{{ asset('js/preguntas.js') }}"></script> 
-     <script src="{{ asset('js/carga.js') }}"></script> 
+     <script src="{{ asset('js/numeros.js') }}"></script> 
+      <script src="{{ asset('js/formulario.js') }}"></script> 
          <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <!-- Enlace a una fuente de Google Fonts para mejorar la tipografía -->
