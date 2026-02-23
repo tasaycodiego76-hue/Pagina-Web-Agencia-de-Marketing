@@ -155,6 +155,11 @@
 
     <!-- SECCION EMBARAZO -->
     <div id="embarazo" class="service-section" style="display: none;">
+        <!-- PORTADA -->
+    <img src="images/servicios/PORTADA_WEB_SESIONES_DE_EMBARAZO.png" alt="Fotografía"
+        style="width:100%; max-width:100%; height: 500px; object-fit: cover; border-radius:20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 30px;">
+
+
         <h2 id="titulo-servicios" class="titulo-servicios">Servicios de Embarazo</h3>
             <div class="service-content">
                 <div class="service-package">
