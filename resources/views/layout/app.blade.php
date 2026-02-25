@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{ asset('css/sandro/layout.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
         rel="stylesheet">
@@ -91,22 +92,6 @@
  FINAL-  WHATSAPP
   ******************************************************+-->
 
-    <footer class="main-footer">
-        <div class="footer-content">
-            <p>&copy; 2026 Rodrigo Felix Fotografía. Todos los derechos reservados.</p>
-            <div class="social-links">
-                <a href="https://www.facebook.com" target="_blank" class="facebook" title="Facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://www.instagram.com" target="_blank" class="instagram" title="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.x.com" target="_blank" class="x-twitter" title="X">
-                    <i class="fa-brands fa-x-twitter"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.pkgd.min.js"></script>
     <script src="{{ asset('js/script.js') }}"></script>

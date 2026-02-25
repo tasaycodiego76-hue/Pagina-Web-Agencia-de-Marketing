@@ -344,6 +344,13 @@
     </div>
     
 </div>
+<footer style="margin:0; padding:0;">
+
+    <img src="images/servicios/FOOTER.png"
+         alt="Contacto Empresa"
+         style="width:100vw; height:auto; display:block;">
+
+</footer>
 
 </body>
 </html>

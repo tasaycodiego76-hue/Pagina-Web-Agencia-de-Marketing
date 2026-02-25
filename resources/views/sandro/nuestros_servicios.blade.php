@@ -156,9 +156,170 @@
     <!-- SECCION EMBARAZO -->
     <div id="embarazo" class="service-section" style="display: none;">
         <!-- PORTADA -->
-    <img src="images/servicios/PORTADA_WEB_SESIONES_DE_EMBARAZO.png" alt="Fotografía"
-                style="width:100%; max-width:1600px; height: 500px; border-radius:20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+<section style="
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    padding: 20px 20px 0 20px;
+">
+    <div style="
+        position: relative;
+        width: clamp(320px, 75vw, 1100px);
+        min-width: 320px;
+    ">
+        <img src='images/servicios/PORTADA_WEB_SESIONES_DE_EMBARAZO.png'
+             alt='Portada Embarazo'
+             style="
+                width: 100%;
+                height: auto;
+                display: block;
+                border-radius: 8px;
+             ">
 
+        <!-- Degradado izquierda -->
+        <div style="
+            position: absolute;
+            top: 0; left: 0;
+            width: 80px; height: 100%;
+            background: linear-gradient(to right, #000, transparent);
+            border-radius: 8px 0 0 8px;
+        "></div>
+
+        <!-- Degradado derecha -->
+        <div style="
+            position: absolute;
+            top: 0; right: 0;
+            width: 80px; height: 100%;
+            background: linear-gradient(to left, #000, transparent);
+            border-radius: 0 8px 8px 0;
+        "></div>
+    </div>
+</section>
+
+ <!-- SOBRE NOSOTROS -->
+    <section class="sobre-nosotros">
+        <div class="col-imagen">
+            <img src="images/servicios/EMBARAZO.png" alt="Sobre Nosotros">
+        </div>
+        <div class="col-texto">
+            <h2>Sobre Nosotros</h2>
+            <p>
+                Nos encanta capturar los <strong>momentos</strong> más <strong>especiales</strong> de tu
+                vida, creando recuerdos que duren para siempre. Con un
+                enfoque <strong>profesional</strong> y una mirada <strong>creativa</strong>, buscamos
+                reflejar tu estilo y la esencia de cada celebración de una
+                manera única.
+            </p>
+            <p>
+                Queremos que tu sesión sea una <strong>experiencia divertida</strong> y
+                <strong class="subrayado">auténtica</strong>, donde te sientas cómodo y disfrutes el momento
+                mientras inmortalizamos recuerdos que realmente cuenten
+                tu historia.
+            </p>
+        </div>
+
+
+    </section>
+<!-- BLOQUE 1: Imagen grande con recuadro superpuesto -->
+<div class="bloque-hero">
+    <img class="img-hero" src="images/servicios/EMBARAZOS1.jpg" alt="Embarazo">
+    <div class="recuadro-texto">
+        <p class="subtitulo">Sesiones de</p>
+        <h2>Embarazo</h2>
+        <p>
+            Celebra la <strong>llegada de tu bebé</strong> con una sesión fotográfica que capture la magia de
+            este <strong>momento único</strong>. Ofrecemos sesiones personalizadas, desde fotos al aire libre
+            rodeado de naturaleza hasta estudios con iluminación especial, resaltando cada
+            detalle de tu belleza y emoción en esta etapa tan especial.
+        </p>
+    </div>
+</div>
+
+<div class="grid-galeria">
+    <div class="celda">
+        <img src="images/servicios/EMBARAZOS5.png" alt="Embarazo 1">
+    </div>
+    <div class="celda">
+        <img src="images/servicios/EMBARAZOS4.jpg" alt="Embarazo 2">
+    </div>
+    <div class="celda">
+        <img src="images/servicios/EMBARAZOS2.jpg" alt="Embarazo 3">
+    </div>
+</div>
+
+ <!-- PAQUETES -->
+<section class="paquetes-section">
+
+    <div class="paquetes-titulo">
+        <p>Paquete Embarazo</p>
+        <h2>en Exteriores</h2>
+        <div class="linea"></div>
+    </div>
+
+    <div class="paquetes-grid">
+
+        <!-- BÁSICO -->
+        <div class="card">
+            <h3>Básico-Digital</h3>
+            <ul>
+                <li>01 Fotógrafo</li>
+                <li>01 Asistente de fotografía</li>
+                <li>45min de sesión</li>
+                <li>01 Cambio de ropa</li>
+                <li>20 Fotos en digital (previa edición)</li>
+                <li>Material en digital</li>
+            </ul>
+            <div class="precio"><span>S/.</span> 200.00</div>
+            <a class="btn-wsp" href="https://wa.me/51XXXXXXXXX?text=Hola%20Rodrigo!%20Me%20interesa%20el%20Paquete%20B%C3%A1sico-Digital%20de%20Embarazo%20S%2F.200.00" target="_blank">
+                📲 Quiero este paquete
+            </a>
+        </div>
+
+        <!-- ESTÁNDAR -->
+        <div class="card destacado">
+            <h3>Estándar</h3>
+            <span class="badge">⭐ Mi primer bebe</span>
+            <ul>
+                <li>01 Fotógrafo</li>
+                <li>01 Asistente de fotografía</li>
+                <li>01 Hora de sesión</li>
+                <li>01 Cambio de ropa</li>
+                <li>30 Fotos en digital (previa edición)</li>
+                <li>05 Fotos impresas (10 X 15 cm)</li>
+                <li>01 Cuadro + Foto (20X15 cm)</li>
+                <li>Material en digital + impresiones</li>
+            </ul>
+            <div class="precio"><span>S/.</span> 250.00</div>
+            <a class="btn-wsp" href="https://wa.me/51XXXXXXXXX?text=Hola%20Rodrigo!%20Me%20interesa%20el%20Paquete%20Est%C3%A1ndar%20de%20Embarazo%20S%2F.250.00" target="_blank">
+                📲 Quiero este paquete
+            </a>
+        </div>
+
+        <!-- FULL -->
+        <div class="card">
+            <h3>Full</h3>
+            <ul>
+                <li>01 Fotógrafo</li>
+                <li>01 Asistente de fotografía</li>
+                <li>01 Hora 30 min de sesión</li>
+                <li>02 Cambios de ropa</li>
+                <li>40 Fotos en digital (previa edición)</li>
+                <li>10 Fotos impresas (10 X 15 cm)</li>
+                <li>01 Cuadro + Foto (20X30 cm)</li>
+                <li>01 Video resumen (1-3 min aprox.)</li>
+                <li>Material en digital + impresiones</li>
+            </ul>
+            <div class="precio"><span>S/.</span> 350.00</div>
+            <a class="btn-wsp" href="https://wa.me/51XXXXXXXXX?text=Hola%20Rodrigo!%20Me%20interesa%20el%20Paquete%20Full%20de%20Embarazo%20S%2F.350.00" target="_blank">
+                📲 Quiero este paquete
+            </a>
+        </div>
+
+    </div>
+</section>
 
         <h2 id="titulo-servicios" class="titulo-servicios">Servicios de Embarazo</h3>
             <div class="service-content">
@@ -256,6 +417,13 @@
                 </div>
             </div>
     </div>
+<footer style="margin:0; padding:0;">
+
+    <img src="images/servicios/FOOTER.png"
+         alt="Contacto Empresa"
+         style="width:100vw; height:auto; display:block;">
+
+</footer>
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
