@@ -61,14 +61,15 @@
                                 <i class="fas fa-chevron-down"></i>
                             </a>
                             <div class="dropdown-content">
-                                <a href="/servicios?tipo=bodas">Bodas</a>
-                                <a href="/servicios?tipo=preboda">Pre Boda</a>
-                                <a href="/servicios?tipo=video">Video</a>
-                                <a href="/servicios?tipo=smash">Smash</a>
+                                <a href="/servicios?tipo=fiesta_infantil">Fiesta Infantil</a>
+                                <a href="/servicios?tipo=pedida_mano">Pedida de Mano</a>
+                                <a href="/servicios?tipo=baby_shower">Baby Shower</a>
                                 <a href="/servicios?tipo=bautizo">Bautizo</a>
+                                <a href="/servicios?tipo=bodas">Boda</a>
+                                <a href="/servicios?tipo=infantil">Sesiones Infantiles</a>
                                 <a href="/servicios?tipo=embarazo">Embarazo</a>
-                                <a href="/servicios?tipo=quinceanera">Quinceañera</a>
-                                <a href="/servicios?tipo=personal">Personal</a>
+                                <a href="/servicios?tipo=parejas">Parejas</a>
+                                <a href="/servicios?tipo=quinceanera">Quince Años</a>
                             </div>
                         </div>
                     </li>
@@ -79,16 +80,22 @@
                             Contáctanos</a></li>
                 </ul>
             </nav>
-
             <div class="redes-sociales">
-                <a href="https://www.youtube.com" target="_blank" class="social-icon youtube"><i
-                        class="fab fa-youtube"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=61579324451249#" target="_blank"
-                    class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com" target="_blank" class="social-icon instagram"><i
-                        class="fab fa-instagram"></i></a>
-                <a href="https://www.tiktok.com" target="_blank" class="social-icon tiktok"><i
-                        class="fab fa-tiktok"></i></a>
+                <a href="https://www.youtube.com" target="_blank" class="social-icon youtube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" class="social-icon facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com" target="_blank" class="social-icon tiktok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.X.com" target="_blank" class="social-icon tiktok">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
             </div>
         </div>
     </header>
@@ -108,21 +115,11 @@
  FINAL-  WHATSAPP
   ******************************************************+-->
 
-    <footer class="main-footer">
-        <div class="footer-content">
-            <p>&copy; 2026 Rodrigo Felix Fotografía. Todos los derechos reservados.</p>
-            <div class="social-links">
-                <a href="https://www.facebook.com" target="_blank" class="facebook" title="Facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://www.instagram.com" target="_blank" class="instagram" title="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.x.com" target="_blank" class="x-twitter" title="X">
-                    <i class="fa-brands fa-x-twitter"></i>
-                </a>
-            </div>
-        </div>
+    <footer class="main-footer" style="background: transparent; padding: 0; margin: 0; line-height: 0;">
+        <a href="{{ url('/') }}" style="display: block; text-decoration: none; border: none;">
+            <img src="{{ asset('images/footer.png') }}" alt="footer"
+                style="width: 100%; max-width: 100%; height: auto; display: block; border: none; outline: none;">
+        </a>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.pkgd.min.js"></script>
