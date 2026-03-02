@@ -1,3 +1,30 @@
+
+/* RESET BÁSICO PARA CERO ERRORES */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+html {
+    overflow-y: scroll; /* Fuerza a que siempre aparezca la barra de scroll a la derecha */
+    overflow-x: hidden; /* Evita que la página se mueva a los lados */
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Jost', sans-serif;
+    -webkit-overflow-scrolling: touch; /* Hace que el scroll en iPhone sea suave */
+}
+
+/* Asegura que el contenedor de los paquetes no sea más ancho que la pantalla */
+#embarazo-estudio-full {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
 /* Esto asegura que el contenedor no guarde espacios de secciones ocultas */
 .service-main-section {
     padding-top: 50px; /* Ajusta según tu header */
@@ -387,73 +414,615 @@ body { background: var(--gris); font-family: 'Jost', sans-serif; }
 
 
 /*SECCION DE PAQUETES*/
-.paquetes-section {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    font-family: 'Nunito', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+        #tarifario-fotos-transparente {
+            font-family: 'Montserrat', sans-serif;
+            padding: 40px 10px;
+            color: #000;
+            /* Se eliminó el background-color para que sea transparente */
+        }
+
+        .titulo-seccion {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .titulo-seccion h1 {
+            font-weight: 900;
+            font-size: 2.2rem;
+            margin: 0;
+            line-height: 1.1;
+        }
+
+        .titulo-seccion .barra-amarilla {
+            width: 70px;
+            height: 4px;
+            background-color: #fcdb05;
+            margin: 10px auto;
+        }
+
+        .contenedor-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 1100px;
+            margin: 0 auto;
+            align-items: stretch;
+        }
+
+        .card-paquete {
+            border: 1px solid #000;
+            width: 300px;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            background: transparent; /* Ahora es transparente */
+        }
+
+        .card-paquete h2 {
+            font-weight: 900;
+            font-size: 1.8rem;
+            text-align: center;
+            margin: 0 0 10px 0;
+        }
+
+        .badge-negro {
+            background-color: #000;
+            color: #fff;
+            padding: 5px 15px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-align: center;
+            align-self: center;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        .badge-vacio {
+            height: 30px;
+            margin-bottom: 20px;
+        }
+
+        .lista-items {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            flex-grow: 1;
+        }
+
+        .lista-items li {
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .lista-items li::before {
+            content: '✔';
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .footer-card {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .precio {
+            background-color: #fcdb05;
+            display: inline-block;
+            padding: 8px 25px;
+            border-radius: 8px;
+            font-weight: 900;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .btn-wsp {
+            background-color: #25d366;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            display: block;
+            transition: transform 0.2s;
+        }
+
+        .btn-wsp:hover {
+            transform: scale(1.03);
+            background-color: #128c7e;
+        }
+
+        @media (max-width: 768px) {
+            .card-paquete { width: 100%; max-width: 320px; }
+        }
+
+        /* GALERÍA */
+        /* Importar la fuente Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+#embarazo-exteriores-full {
+    font-family: 'Montserrat', sans-serif;
+    padding: 60px 20px;
+    color: #000;
 }
 
-.paquetes-titulo {
+/* --- ENCABEZADO --- */
+.seccion-header {
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 50px;
 }
 
-.paquetes-titulo p { font-size: 1rem; font-weight: 600; color: #222; }
-.paquetes-titulo h2 { font-size: 2.4rem; font-weight: 900; color: #111; }
-.paquetes-titulo .linea { width: 60px; height: 3px; background: #f5c800; margin: 8px auto 0; }
-
-.paquetes-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 16px;
-    align-items: stretch;
-    max-width: 860px;
-    margin: 0 auto;
+.seccion-header h1 {
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin: 0;
+    line-height: 1.2;
+    text-transform: none;
 }
 
-.card {
-    border: 2px solid #111;
-    padding: 24px 20px 20px;
+.seccion-header .separador {
+    width: 80px;
+    height: 5px;
+    background-color: #fcdb05;
+    margin: 15px auto;
+}
+
+/* --- CONTENEDOR DE PAQUETES --- */
+.bloque-paquetes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto 80px auto;
+    align-items: stretch; /* Esto iguala la altura de todas las tarjetas */
+}
+
+.tarjeta {
+    border: 1.5px solid #000;
+    width: 320px;
+    padding: 40px 25px;
     display: flex;
     flex-direction: column;
-    background: #fff;
+    box-sizing: border-box;
+    background: transparent;
 }
 
-.card h3 { font-size: 1.4rem; font-weight: 900; margin-bottom: 6px; }
-
-.card .badge {
-    background: #f5c800;
-    font-size: 0.7rem;
-    font-weight: 800;
-    padding: 3px 10px;
-    display: inline-block;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
-}
-
-.card ul { list-style: none; margin-bottom: 20px; flex: 1; }
-.card ul li { font-size: 0.82rem; color: #333; padding: 3px 0 3px 16px; position: relative; line-height: 1.4; }
-.card ul li::before { content: '✪'; color: #f5c800; position: absolute; left: 0; font-size: 0.65rem; top: 5px; }
-
-.card .precio { font-size: 2rem; font-weight: 900; margin-bottom: 14px; }
-.card .precio span { font-size: 0.9rem; font-weight: 600; }
-
-.btn-wsp {
-    display: block;
-    background: #25D366;
-    color: #fff;
+.tarjeta h2 {
+    font-weight: 900;
+    font-size: 1.8rem;
     text-align: center;
-    padding: 10px;
-    font-size: 0.85rem;
-    font-weight: 800;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background 0.3s;
-    margin-top: auto;
+    margin: 0 0 15px 0;
 }
-.btn-wsp:hover { background: #1ebe5d; }
 
-@media (max-width: 700px) {
-    .paquetes-grid { grid-template-columns: 1fr; }
+/* Etiquetas negras y espacios niveladores */
+.tag-negro {
+    background-color: #000;
+    color: #fff;
+    padding: 6px 15px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 25px;
+    border-radius: 4px;
+}
+
+.tag-vacio {
+    height: 35px; /* Misma altura que el tag-negro para nivelar */
+    margin-bottom: 25px;
+}
+
+/* Lista de servicios */
+.lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1; /* Empuja el footer hacia el final de la tarjeta */
+}
+
+.lista li {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.lista li::before {
+    content: '✔';
+    margin-right: 12px;
+    font-weight: bold;
+}
+
+/* --- FOOTER DE TARJETA (PRECIO Y BOTÓN) --- */
+.card-footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.precio-tag {
+    background-color: #fcdb05;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 12px;
+    font-weight: 900;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.btn-ws {
+    background-color: #25d366;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.btn-ws:hover {
+    background-color: #128c7e;
+    transform: translateY(-3px);
+}
+
+/* --- GALERÍA DE IMÁGENES --- */
+.bloque-galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px; /* Espaciado amplio entre fotos */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.bloque-galeria img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+    .tarjeta {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .bloque-galeria {
+        grid-template-columns: 1fr; /* Una sola columna en móvil */
+        gap: 20px;
+    }
+
+    .seccion-header h1 {
+        font-size: 1.8rem;
+    }
+}
+
+
+/* PAQUETES EN ESTUDIO 
+/* --- SECCIÓN EMBARAZO ESTUDIO: COMPACTA Y CENTRADA --- */
+#embarazo-estudio-full {
+    font-family: 'Montserrat', sans-serif;
+    padding: 40px 20px;
+    color: #000;
+}
+
+.estudio-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.estudio-header h1 {
+    font-weight: 900;
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.estudio-separador {
+    width: 60px;
+    height: 4px;
+    background-color: #fcdb05;
+    margin: 10px auto;
+}
+
+/* CONTENEDOR PRINCIPAL: Mantiene paquetes y fotos alineados al centro */
+.estudio-contenido-row {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* COLUMNA DE PAQUETES: Más pequeña y compacta */
+.estudio-bloque-paquetes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 280px; /* Ancho reducido para que no se vean grandes */
+    flex-shrink: 0;
+}
+
+.estudio-tarjeta {
+    border: 1px solid #000;
+    padding: 20px 15px; /* Relleno reducido */
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+}
+
+.estudio-tarjeta h2 {
+    font-weight: 900;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0 0 8px 0;
+}
+
+.estudio-tag-negro {
+    background-color: #000;
+    color: #fff;
+    padding: 4px 12px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 12px;
+    border-radius: 3px;
+}
+
+.estudio-tag-vacio {
+    height: 25px;
+    margin-bottom: 12px;
+}
+
+.estudio-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+.estudio-lista li {
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.estudio-lista li::before {
+    content: '✔';
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.estudio-footer {
+    text-align: center;
+}
+
+.estudio-precio {
+    background-color: #fcdb05;
+    display: inline-block;
+    padding: 6px 20px;
+    border-radius: 8px;
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.estudio-btn-ws {
+    background-color: #25d366;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 0.75rem;
+    display: block;
+}
+
+/* COLUMNA DE GALERÍA (Sin cambios en tamaño) */
+.estudio-galeria-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+}
+
+.pareja-fotos {
+    display: flex;
+    gap: 12px;
+}
+
+.pareja-fotos img {
+    width: 170px; /* Tamaño controlado */
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+    .estudio-contenido-row {
+        flex-direction: column;
+    }
+    .estudio-bloque-paquetes {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* GALERÍA FINAL */
+/* --- ESTILOS EXCLUSIVOS PARA PORTAFOLIO COMPACTO --- */
+.p-portafolio-contenedor {
+    font-family: 'Montserrat', sans-serif;
+    padding: 60px 20px;
+    background-color: #fff; /* Fondo blanco para limpieza */
+}
+
+.p-titulo-seccion {
+    text-align: center;
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #000;
+}
+
+/* Contenedor principal de fotos: CONTROL DE ANCHO MÁXIMO */
+.p-bloque-fotos {
+    max-width: 1000px; /* IMPORTANTE: Limita el ancho total para que no sea gigante */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Espacio vertical entre filas */
+}
+
+/* Fila de fotos: Centrado vertical y horizontal */
+.p-fila-fotos {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* NUEVO: Centra verticalmente las fotos entre sí */
+    gap: 20px; /* Espacio horizontal entre fotos */
+}
+
+/* Configuración base de la foto */
+.p-foto {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-foto img {
+    width: 100%; /* Ocupa todo el ancho de su contenedor (.p-foto) */
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px; /* Bordes suaves como en la referencia */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* Sombra muy suave para dar realce */
+}
+
+/* --- CONTROL DE TAMAÑOS POR COLUMNA --- */
+
+/* Fotos Laterales (Izquierda y Derecha): Son más pequeñas */
+.p-foto-lateral {
+    width: 28%; /* Ancho proporcional menor */
+}
+
+/* FOTO CENTRAL: Es más grande pero no ocupa todo el espacio */
+.p-foto-central {
+    width: 36%; /* Ancho proporcional mayor (un 30% más grande que las laterales) */
+}
+
+/* Ajuste Responsive para dispositivos móviles */
+@media (max-width: 768px) {
+    .p-portafolio-contenedor {
+        padding: 40px 15px;
+    }
+    .p-fila-fotos {
+        flex-direction: column; /* Una debajo de otra en celular */
+        gap: 20px;
+    }
+    .p-foto-lateral, .p-foto-central {
+        width: 100%; /* Pantalla completa en móvil */
+        max-width: 400px; /* Limita el ancho en móvil para que no se estire */
+    }
+}
+
+
+
+
+
+/*BAUTIZOS */
+
+
+
+
+#sobre-nosotros-estilo {
+    width: 100%;
+    background-color: #fff;
+    padding: 100px 20px;
+    overflow: hidden; /* Evita scroll lateral si la línea sobresale */
+}
+
+.sobre-nosotros-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.bloque-imagen { flex: 1; }
+.bloque-imagen img { width: 100%; height: auto; display: block; }
+
+.bloque-texto { 
+    flex: 1.2; 
+    position: relative; /* Base para la línea */
+}
+
+/* CONTENEDOR DE TÍTULO Y LÍNEA */
+.contenedor-titulo-linea {
+    position: relative;
+    margin-bottom: 30px;
+    padding-top: 20px; /* Espacio para la línea arriba del texto */
+}
+
+/* LA LÍNEA QUE VA DE LARGO */
+.linea-decorativa-larga {
+    position: absolute;
+    top: 0;
+    left: -100px; /* Hace que empiece un poco "dentro" de la imagen o el gap */
+    width: calc(100% + 100px); /* Se extiende a todo lo ancho */
+    display: flex;
+    height: 6px;
+}
+
+.l-negra {
+    background-color: #000;
+    flex: 2; /* Parte negra más larga */
+}
+
+.l-amarilla {
+    background-color: #fcdb05;
+    flex: 1; /* Parte amarilla al final */
+}
+
+.bloque-texto h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem; /* Grande como en la imagen */
+    color: #000;
+    margin: 0;
+    line-height: 1;
+}
+
+.cuerpo-texto {
+    max-width: 500px; /* Limita el ancho del párrafo para que se vea ordenado */
+}
+
+.bloque-texto p {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left; /* Alineado a la izquierda */
+}
+
+.bloque-texto strong { font-weight: 700; color: #000; }
+
+/* Móvil */
+@media (max-width: 850px) {
+    .sobre-nosotros-contenido { flex-direction: column; }
+    .linea-decorativa-larga { left: 0; width: 100%; }
+    .bloque-texto h2 { font-size: 2.5rem; }
 }

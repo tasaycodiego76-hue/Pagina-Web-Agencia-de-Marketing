@@ -121,42 +121,55 @@
     </div>
 
     <!-- SECCION BAUTIZO -->
-    <div id="bautizo" class="service-section" style="display: none;">
-        <h2 id="titulo-servicios" class="titulo-servicios">Servicios de Bautizo</h2>
-        <div class="service-content">
-            <div class="service-package">
-                <div class="package-image">
-                    <img src="images/servicios/bautizo1.jpg" alt="Bautizo 1">
-                </div>
-                <div class="package-details">
-                    <h3>Paquete Básico</h3>
-                    <p>Incluye una sesión de fotos de 2 horas, 1 fotógrafo y 100 fotos editadas.</p>
-                    <p class="promo-price">Precio: <span class="original-price">180 Soles</span> <span class="discount">¡En
-                            promoción!</span></p>
-                    <a href="https://wa.me/51987654321?text=Hola,%20estoy%20interesado%20en%20el%20Paquete%20Básico%20de%20Bautizo"
-                        class="cta-button" target="_blank">Me interesa</a>
-                </div>
+  <div id="bautizo" class="service-section" style="display: none;">
+    
+    <section style="width: 100%; margin-top: -40px; display: flex; justify-content: center; align-items: center; background-color: #000; padding: 20px 20px 0 20px;">
+        <div style="position: relative; width: clamp(320px, 75vw, 1100px); min-width: 320px;">
+            <img src='images/servicios/PORTADA_WEB_PAQUETE_BAUTIZO.png' 
+                 alt='Portada Bautizo' 
+                 style="width: 100%; height: auto; display: block; border-radius: 8px;">
+            <div style="position: absolute; top: 0; left: 0; width: 80px; height: 100%; background: linear-gradient(to right, #000, transparent); border-radius: 8px 0 0 8px;"></div>
+            <div style="position: absolute; top: 0; right: 0; width: 80px; height: 100%; background: linear-gradient(to left, #000, transparent); border-radius: 0 8px 8px 0;"></div>
+        </div>
+    </section>
+
+    <section style="width: 100%; padding: 80px 0; overflow: hidden; background-color: #fff;">
+        <div style="max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 60px; padding: 0 20px;">
+            
+            <div style="flex: 1;">
+                <img src="images/servicios/BAUTIZO01.jpg" alt="Bautizo" style="width: 100%; height: auto; display: block; border-radius: 4px;">
             </div>
-            <div class="service-package">
-                <div class="package-image">
-                    <img src="images/servicios/bautizo2.jpg" alt="Bautizo 2">
+
+            <div style="flex: 1.2; position: relative;">
+                
+                <div style="position: relative; margin-bottom: 30px; padding-top: 20px;">
+                    <div style="position: absolute; top: 0; left: -120px; width: 200vw; display: flex; height: 7px;">
+                        <div style="background-color: #000; width: 480px;"></div> 
+                        <div style="background-color: #fcdb05; flex-grow: 1;"></div> 
+                    </div>
+                    
+                    <h2 style="font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 3.5rem; color: #000; margin: 0; letter-spacing: -1px; text-align: left;">Sobre Nosotros</h2>
                 </div>
-                <div class="package-details">
-                    <h3>Paquete Estándar</h3>
-                    <p>Incluye una sesión de fotos de 4 horas, 1 fotógrafo y 200 fotos editadas.</p>
-                    <p class="promo-price">Precio: <span class="original-price">300 Soles</span> <span class="discount">¡En
-                            promoción!</span></p>
-                    <a href="https://wa.me/51987654321?text=Hola,%20estoy%20interesado%20en%20el%20Paquete%20Estándar%20de%20Bautizo"
-                        class="cta-button" target="_blank">Me interesa</a>
+                
+                <div style="text-align: left; font-family: 'Jost', sans-serif; font-size: 1.1rem; line-height: 1.6; color: #1a1a1a;">
+                    <p style="margin-bottom: 25px;">
+                        Nos encanta capturar los <strong>momentos</strong> más <strong>especiales</strong> de tu vida, creando recuerdos que duren para siempre. Con un enfoque <strong>profesional</strong> y una mirada <strong>creativa</strong>, buscamos reflejar tu estilo y la esencia de cada celebración de una manera única.
+                    </p>
+                    <p>
+                        Queremos que tu sesión sea una <strong>experiencia divertida</strong> y <strong>auténtica</strong>, donde te sientas cómodo y disfrutes el momento mientras inmortalizamos recuerdos que realmente cuenten tu historia.
+                    </p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+</div>
+
+
 
     <!-- SECCION EMBARAZO -->
     <div id="embarazo" class="service-section" style="display: none;">
         <!-- PORTADA -->
-<section style="
+ <section style="
     width: 100%;
     margin-top: -40px;
     display: flex;
@@ -164,7 +177,7 @@
     align-items: center;
     background-color: #000;
     padding: 20px 20px 0 20px;
-">
+ ">
     <div style="
         position: relative;
         width: clamp(320px, 75vw, 1100px);
@@ -197,7 +210,7 @@
             border-radius: 0 8px 8px 0;
         "></div>
     </div>
-</section>
+ </section>
 
  <!-- SOBRE NOSOTROS -->
     <section class="sobre-nosotros">
@@ -251,20 +264,20 @@
 </div>
 
  <!-- PAQUETES -->
-<section class="paquetes-section">
 
-    <div class="paquetes-titulo">
-        <p>Paquete Embarazo</p>
-        <h2>en Exteriores</h2>
-        <div class="linea"></div>
+<section id="embarazo-exteriores-full">
+    
+    <div class="seccion-header">
+        <h1>Paquete Embarazo<br>en Exteriores</h1>
+        <div class="separador"></div>
     </div>
 
-    <div class="paquetes-grid">
-
-        <!-- BÁSICO -->
-        <div class="card">
-            <h3>Básico-Digital</h3>
-            <ul>
+    <div class="bloque-paquetes">
+        
+        <article class="tarjeta">
+            <h2>Básico-Digital</h2>
+            <div class="tag-vacio"></div>
+            <ul class="lista">
                 <li>01 Fotógrafo</li>
                 <li>01 Asistente de fotografía</li>
                 <li>45min de sesión</li>
@@ -272,85 +285,154 @@
                 <li>20 Fotos en digital (previa edición)</li>
                 <li>Material en digital</li>
             </ul>
-            <div class="precio"><span>S/.</span> 200.00</div>
-            <a class="btn-wsp" href="https://wa.me/51XXXXXXXXX?text=Hola%20Rodrigo!%20Me%20interesa%20el%20Paquete%20B%C3%A1sico-Digital%20de%20Embarazo%20S%2F.200.00" target="_blank">
-                📲 Quiero este paquete
-            </a>
-        </div>
+            <div class="card-footer">
+                <div class="precio-tag">S/. 200.00</div>
+                <a href="https://wa.me/51931826325?text=Hola,%20me%20interesa%20el%20Paquete%20Básico-Digital" class="btn-ws" target="_blank">ME INTERESA ESTE PAQUETE</a>
+            </div>
+        </article>
 
-        <!-- ESTÁNDAR -->
-        <div class="card destacado">
-            <h3>Estándar</h3>
-            <span class="badge">⭐ Mi primer bebe</span>
-            <ul>
+        <article class="tarjeta">
+            <h2>Estándar</h2>
+            <div class="tag-negro">Mi primer bebe</div>
+            <ul class="lista">
                 <li>01 Fotógrafo</li>
                 <li>01 Asistente de fotografía</li>
                 <li>01 Hora de sesión</li>
                 <li>01 Cambio de ropa</li>
                 <li>30 Fotos en digital (previa edición)</li>
-                <li>05 Fotos impresas (10 X 15 cm)</li>
+                <li>05 Fotos impresas (10 x 15 cm)</li>
                 <li>01 Cuadro + Foto (20X15 cm)</li>
                 <li>Material en digital + impresiones</li>
             </ul>
-            <div class="precio"><span>S/.</span> 250.00</div>
-            <a class="btn-wsp" href="https://wa.me/51XXXXXXXXX?text=Hola%20Rodrigo!%20Me%20interesa%20el%20Paquete%20Est%C3%A1ndar%20de%20Embarazo%20S%2F.250.00" target="_blank">
-                📲 Quiero este paquete
-            </a>
-        </div>
+            <div class="card-footer">
+                <div class="precio-tag">S/. 250.00</div>
+                <a href="https://wa.me/51931826325?text=Hola,%20me%20interesa%20el%20Paquete%20Estándar" class="btn-ws" target="_blank">ME INTERESA ESTE PAQUETE</a>
+            </div>
+        </article>
 
-        <!-- FULL -->
-        <div class="card">
-            <h3>Full</h3>
-            <ul>
+        <article class="tarjeta">
+            <h2>Full</h2>
+            <div class="tag-vacio"></div>
+            <ul class="lista">
                 <li>01 Fotógrafo</li>
                 <li>01 Asistente de fotografía</li>
                 <li>01 Hora 30 min de sesión</li>
                 <li>02 Cambios de ropa</li>
                 <li>40 Fotos en digital (previa edición)</li>
-                <li>10 Fotos impresas (10 X 15 cm)</li>
+                <li>10 Fotos impresas (10 x 15 cm)</li>
                 <li>01 Cuadro + Foto (20X30 cm)</li>
-                <li>01 Video resumen (1-3 min aprox.)</li>
+                <li>01 Video resumen de sesión</li>
                 <li>Material en digital + impresiones</li>
             </ul>
-            <div class="precio"><span>S/.</span> 350.00</div>
-            <a class="btn-wsp" href="https://wa.me/51XXXXXXXXX?text=Hola%20Rodrigo!%20Me%20interesa%20el%20Paquete%20Full%20de%20Embarazo%20S%2F.350.00" target="_blank">
-                📲 Quiero este paquete
-            </a>
+            <div class="card-footer">
+                <div class="precio-tag">S/. 350.00</div>
+                <a href="https://wa.me/51931826325?text=Hola,%20me%20interesa%20el%20Paquete%20Full" class="btn-ws" target="_blank">ME INTERESA ESTE PAQUETE</a>
+            </div>
+        </article>
+    </div>
+
+    <div class="bloque-galeria">
+        <img src="images/servicios/EMBARAZO6.jpg" alt="Sesión de embarazo 1">
+        <img src="images/servicios/EMBARAZO7.jpg" alt="Sesión de embarazo 2">
+        <img src="images/servicios/EMBARAZO8.jpg" alt="Sesión de embarazo 3">
+        <img src="images/servicios/EMBARAZO9.jpg" alt="Sesión de embarazo 4">
+        <img src="images/servicios/EMBARAZO10.jpg" alt="Sesión de embarazo 5">
+        <img src="images/servicios/EMBARAZO11.jpg" alt="Sesión de embarazo 6">
+    </div>
+
+</section>
+<section id="embarazo-estudio-full">
+    
+    <div class="estudio-header">
+        <h1>Paquete Embarazo<br>en Estudio</h1>
+        <div class="estudio-separador"></div>
+    </div>
+
+    <div class="estudio-contenido-row">
+        
+        <div class="estudio-bloque-paquetes">
+            <article class="estudio-tarjeta">
+                <h2>Básico-Digital</h2>
+                <div class="estudio-tag-vacio"></div>
+                <ul class="estudio-lista">
+                    <li>01 Fotógrafo</li>
+                    <li>45min de sesión</li>
+                    <li>01 Cambio de ropa</li>
+                    <li>15 Fotos en digital</li>
+                    <li>Material en digital</li>
+                </ul>
+                <div class="estudio-footer">
+                    <div class="estudio-precio">S/. 250.00</div>
+                    <a href="https://wa.me/51931826325?text=Info Estudio Básico" class="estudio-btn-ws" target="_blank">ME INTERESA</a>
+                </div>
+            </article>
+
+            <article class="estudio-tarjeta">
+                <h2>Estándar</h2>
+                <div class="estudio-tag-negro">Mi primer bebe</div>
+                <ul class="estudio-lista">
+                    <li>01 Fotógrafo</li>
+                    <li>01 Hora de sesión</li>
+                    <li>01 Cambio de ropa</li>
+                    <li>20 Fotos en digital</li>
+                    <li>10 Fotos impresas</li>
+                    <li>01 Cuadro + Foto</li>
+                </ul>
+                <div class="estudio-footer">
+                    <div class="estudio-precio">S/. 350.00</div>
+                    <a href="https://wa.me/51931826325?text=Info Estudio Estándar" class="estudio-btn-ws" target="_blank">ME INTERESA</a>
+                </div>
+            </article>
+        </div>
+
+        <div class="estudio-galeria-vertical">
+            <div class="pareja-fotos">
+                <img src="images/servicios/EMBARAZO12.png" alt="Estudio 1">
+                <img src="images/servicios/EMBARAZO13.png" alt="Estudio 2">
+            </div>
+            <div class="pareja-fotos">
+                <img src="images/servicios/EMBARAZO14.png" alt="Estudio 3">
+                <img src="images/servicios/EMBARAZO15.png" alt="Estudio 4">
+            </div>
         </div>
 
     </div>
 </section>
 
-        <h2 id="titulo-servicios" class="titulo-servicios">Servicios de Embarazo</h3>
-            <div class="service-content">
-                <div class="service-package">
-                    <div class="package-image">
-                        <img src="images/servicios/embarazo1.jpg" alt="Embarazo 1">
-                    </div>
-                    <div class="package-details">
-                        <h3>Paquete Básico</h3>
-                        <p>Incluye una sesión de fotos de 1 hora, 1 fotógrafo y 50 fotos editadas.</p>
-                        <p class="promo-price">Precio: <span class="original-price">120 Soles</span> <span
-                                class="discount">¡En promoción!</span></p>
-                        <a href="https://wa.me/51987654321?text=Hola,%20estoy%20interesado%20en%20el%20Paquete%20Básico%20de%20Embarazo"
-                            class="cta-button" target="_blank">Me interesa</a>
-                    </div>
-                </div>
-                <div class="service-package">
-                    <div class="package-image">
-                        <img src="images/servicios/embarazo2.jpg" alt="Embarazo 2">
-                    </div>
-                    <div class="package-details">
-                        <h3>Paquete Estándar</h3>
-                        <p>Incluye una sesión de fotos de 2 horas, 1 fotógrafo y 100 fotos editadas.</p>
-                        <p class="promo-price">Precio: <span class="original-price">200 Soles</span> <span
-                                class="discount">¡En promoción!</span></p>
-                        <a href="https://wa.me/51987654321?text=Hola,%20estoy%20interesado%20en%20el%20Paquete%20Estándar%20de%20Embarazo"
-                            class="cta-button" target="_blank">Me interesa</a>
-                    </div>
-                </div>
+<section class="p-portafolio-contenedor">
+    
+    <h2 class="p-titulo-seccion">Nuestro Portafolio</h2>
+
+    <div class="p-bloque-fotos">
+        
+        <div class="p-fila-fotos">
+            <div class="p-foto p-foto-lateral">
+                <img src="images/servicios/EMBARAZO16.png" alt="Sesión de estudio 16">
             </div>
+            <div class="p-foto p-foto-central">
+                <img src="images/servicios/EMBARAZO17.png" alt="Sesión de estudio 17">
+            </div>
+            <div class="p-foto p-foto-lateral">
+                <img src="images/servicios/EMBARAZO18.png" alt="Sesión de estudio 18">
+            </div>
+        </div>
+
+        <div class="p-fila-fotos">
+            <div class="p-foto p-foto-lateral">
+                <img src="images/servicios/EMBARAZO19.png" alt="Sesión de estudio 19">
+            </div>
+            <div class="p-foto p-foto-central">
+                <img src="images/servicios/EMBARAZO20.png" alt="Sesión de estudio 20">
+            </div>
+            <div class="p-foto p-foto-lateral">
+                <img src="images/servicios/EMBARAZO21.png" alt="Sesión de estudio 21">
+            </div>
+        </div>
+
     </div>
+
+</section>
+
 
     <!-- SECCION QUINCEAÑERA -->
     <div id="quinceanera" class="service-section" style="display: none;">
@@ -455,4 +537,5 @@
             }
         }
     </script>
+    
 @endsection
