@@ -45,15 +45,16 @@
                                 <i class="fas fa-concierge-bell"></i> Nuestros Servicios
                                 <i class="fas fa-chevron-down"></i>
                             </a>
-                            <div class="dropdown-content">
-                                <a href="/servicios?tipo=bodas">Bodas</a>
-                                <a href="/servicios?tipo=preboda">Pre Boda</a>
-                                <a href="/servicios?tipo=video">Video</a>
-                                <a href="/servicios?tipo=smash">Smash</a>
+                           <div class="dropdown-content">
+                                <a href="/servicios?tipo=fiesta_infantil">Fiesta Infantil</a>
+                                <a href="/servicios?tipo=pedida_mano">Pedida de Mano</a>
+                                <a href="/servicios?tipo=baby_shower">Baby Shower</a>
                                 <a href="/servicios?tipo=bautizo">Bautizo</a>
+                                <a href="/servicios?tipo=bodas">Boda</a>
+                                <a href="/servicios?tipo=infantil">Sesiones Infantiles</a>
                                 <a href="/servicios?tipo=embarazo">Embarazo</a>
-                                <a href="/servicios?tipo=quinceanera">Quinceañera</a>
-                                <a href="/servicios?tipo=personal">Personal</a>
+                                <a href="/servicios?tipo=parejas">Parejas</a>
+                                <a href="/servicios?tipo=quinceanera">Quince Años</a>
                             </div>
                         </div>
                     </li>
