@@ -1123,7 +1123,7 @@
    </div> 
 
     <!-- SECCION QUINCEAÑERA -->
-     <div id="quinceanera" class="service-section" style="display: none;">
+   <div id="quinceanera" class="service-section" style="display: none; background-color: #fff;">
         <!-- PORTADA -->
             <section class="portada-section">
             <div class="portada-wrapper" style="margin-top: 20px;">
