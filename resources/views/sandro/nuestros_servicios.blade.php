@@ -701,7 +701,7 @@
     
         <section class="portada-section">
             <div class="portada-wrapper" style="margin-top: 20px;">
-                <img src="images/servicios/bautizo/PORTADA_WEB_PAQUETE_BAUTIZO.png" alt="Portada Baby Shower" class="portada-img">
+                <img src="images/servicios/bautizo/PORTADA_WEB_PAQUETE_BAUTIZO.png" alt="Portada Bautizo" class="portada-img">
             </div>
         </section>
 
@@ -895,7 +895,7 @@
         <!-- PORTADA -->
              <section class="portada-section">
             <div class="portada-wrapper" style="margin-top: 20px;">
-                <img src="images/servicios/embarazo/PORTADA_WEB_SESIONES_DE_EMBARAZO.png" alt="Portada Baby Shower" class="portada-img">
+                <img src="images/servicios/embarazo/PORTADA_WEB_SESIONES_DE_EMBARAZO.png" alt="Portada embarazo" class="portada-img">
             </div>
         </section>
 
@@ -1127,7 +1127,7 @@
         <!-- PORTADA -->
             <section class="portada-section">
             <div class="portada-wrapper" style="margin-top: 20px;">
-                <img src="images/servicios/quinceanera/QUINO_PORTADA.png" alt="Portada Baby Shower" class="portada-img">
+                <img src="images/servicios/quinceanera/QUINO_PORTADA.png" alt="Portada quinceañera" class="portada-img">
             </div>
         </section>
 
@@ -1442,14 +1442,14 @@
     <!-- PORTADA -->
         <section class="portada-section">
             <div class="portada-wrapper" style="margin-top: 20px;">
-                <img src="images/servicios/pareja/PAREJA_PORTADA.png" alt="Portada Baby Shower" class="portada-img">
+                <img src="images/servicios/pareja/PAREJA_PORTADA.png" alt="Portada parejas" class="portada-img">
             </div>
         </section>
 
 
     <section style="width: 100%; max-width: 1100px; margin: 0 auto; padding: 80px 20px; font-family: 'Montserrat', sans-serif; background-color: #fff; position: relative; overflow: hidden;">
         
-        <div style="position: absolute; top: 35%; left: 0; width: 100%; height: 6px; display: flex; z-index: 1;">
+        <div style="position: absolute; top: 30%; left: 0; width: 100%; height: 6px; display: flex; z-index: 1;">
             <div style="flex: 2; background-color: #000;"></div>
             <div style="flex: 1; background-color: #fcdb05;"></div>
         </div>
@@ -1696,7 +1696,7 @@
 
                 <!-- FILA 2: Imagen grande full width -->
                 <div style="margin-bottom: 15px;">
-                    <img src="images/servicios/Bodas/bodasfull.jpg" alt="Baby Shower decoración"
+                    <img src="images/servicios/Bodas/bodasfull.jpg" alt="bodas"
                         style="width: 100%; height: 320px; object-fit: cover; display: block;">
                 </div>
 
@@ -2217,7 +2217,7 @@
 
                 <!-- FILA 2: Imagen grande full width -->
                 <div style="margin-bottom: 15px;">
-                    <img src="images/servicios/Sesiones Infantiles/infantilfull.jpg" alt="Baby Shower decoración"
+                    <img src="images/servicios/Sesiones Infantiles/infantilfull.jpg" alt="infantiles"
                         style="width: 100%; height: 320px; object-fit: cover; display: block;">
                 </div>
 
