@@ -117,10 +117,8 @@
   ******************************************************+-->
 
     <footer class="main-footer" style="background: transparent; padding: 0; margin: 0; line-height: 0;">
-        <a href="{{ url('/') }}" style="display: block; text-decoration: none; border: none;">
-            <img src="{{ asset('images/footer.png') }}" alt="footer"
-                style="width: 100%; max-width: 100%; height: auto; display: block; border: none; outline: none;">
-        </a>
+        <img src="{{ asset('images/footer.png') }}" alt="footer"
+            style="width: 100%; max-width: 100%; height: auto; display: block; border-radius: 0; border: none; outline: none;">
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.pkgd.min.js"></script>
