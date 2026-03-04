@@ -392,16 +392,14 @@
                 </div>
             </section>
         </div>
-        <!-- FOOTER CON GALERÍA -->
-        <div class="service-footer" style="text-align:center; padding: 30px 0 0 0; background: #fafafa;">
+<!-- FOOTER CON GALERÍA -->
+        <div class="service-footer" style="text-align:center; padding: 30px 0 60px 0; background: #fafafa;">
             <p style="font-size: 1.2rem; color: #444;">Inmortalizamos el instante más especial de tu historia de amor con
                 fotografías de <b>alta calidad</b>.</p>
-            <p
-                style="margin-top: 15px; font-weight: bold; color: #edd132; font-size: 1.4rem; text-transform: uppercase; letter-spacing: 1px;">
+            <p style="margin-top: 15px; font-weight: bold; color: #edd132; font-size: 1.4rem; text-transform: uppercase; letter-spacing: 1px;">
                 ¡Un Sí para Siempre!</p>
         </div>
     </div>
-
 
     <!-- Seccion Baby Shower -->
     <div id="baby_shower" class="service-section">
