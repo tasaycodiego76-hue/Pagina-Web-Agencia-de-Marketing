@@ -1,3 +1,4 @@
+
 /* ============================================================
    IMPORTACIONES
    ============================================================ */
@@ -11,6 +12,40 @@ body {
     margin: 0;
     padding: 0px;
     background-color: #ffffff;
+}
+
+/* RESET BÁSICO PARA CERO ERRORES */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+html {
+    overflow-y: scroll; /* Fuerza a que siempre aparezca la barra de scroll a la derecha */
+    overflow-x: hidden; /* Evita que la página se mueva a los lados */
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Jost', sans-serif;
+    -webkit-overflow-scrolling: touch; /* Hace que el scroll en iPhone sea suave */
+}
+
+/* Asegura que el contenedor de los paquetes no sea más ancho que la pantalla */
+#embarazo-estudio-full {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+/* Esto asegura que el contenedor no guarde espacios de secciones ocultas */
+.service-main-section {
+    padding-top: 50px; /* Ajusta según tu header */
+    display: block;
+    width: 100%;
+    position: relative;
 }
 
 /* ============================================================
@@ -59,6 +94,8 @@ body {
 
 .titulo-servicios::after {
     content: "";
+    width: 80px;
+    height: 4px;
     position: absolute;
     bottom: -10px;
     left: 50%;
@@ -468,4 +505,1501 @@ body {
     object-fit: cover; /* recorta proporcionalmente */
     display: block;
     border-radius: 8px;
+}
+
+
+/*SECCIÓN DE EMBARAZO */
+.sobre-nosotros {
+    display: flex;
+    align-items: stretch;
+    max-width: 860px;
+    margin: 40px auto;
+    background: #fff;
+    position: relative;
+}
+
+/* Línea arriba, cruza detrás de la imagen sobresaliendo */
+.sobre-nosotros::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(to right, #111 58%, #f5c800 42%);
+    z-index: 0;
+}
+
+.col-imagen {
+    width: 43%;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+}
+
+.col-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.col-texto {
+    width: 57%;
+    padding: 45px 30px 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.col-texto h2 {
+    font-family: 'Merriweather', Georgia, serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.col-texto p {
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #222;
+    text-align: justify;
+    margin-bottom: 16px;
+}
+
+.col-texto p strong { font-weight: 700; color: #111; }
+.col-texto p strong.subrayado { font-weight: 700; text-decoration: underline; }
+
+
+
+
+/* SECCION DE FOTOS*/
+
+
+:root {
+    --negro: #0a0a0a;
+    --dorado: #c9a84c;
+    --blanco: #ffffff;
+    --gris: #f5f3f0;
+    --gap: 8px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--gris); font-family: 'Jost', sans-serif; }
+
+.galeria-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+/* ── BLOQUE HERO ── */
+.bloque-hero {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.bloque-hero .img-hero {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(0.85);
+    transition: filter 0.4s ease;
+}
+
+.bloque-hero:hover .img-hero {
+    filter: brightness(0.95);
+}
+
+.recuadro-texto {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    background: rgba(10, 10, 10, 0.91);
+    padding: 16px 18px;
+    border-left: 3px solid var(--dorado);
+}
+
+.recuadro-texto .subtitulo {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 300;
+    color: var(--dorado);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.recuadro-texto h2 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--blanco);
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.recuadro-texto p {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.68rem;
+    font-weight: 300;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.75);
+    text-align: justify;
+}
+
+.recuadro-texto p strong {
+    color: var(--blanco);
+    font-weight: 500;
+}
+
+/* ── GRID: 1 grande izquierda + 2 pequeñas derecha ── */
+.grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 260px 260px;
+    gap: var(--gap);
+    margin-top: var(--gap);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Foto 1: ocupa las 2 filas izquierda - grande */
+.grid-galeria .celda:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+/* Foto 2: derecha arriba - pequeña */
+.grid-galeria .celda:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/* Foto 3: derecha abajo - pequeña */
+.grid-galeria .celda:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.grid-galeria .celda {
+    overflow: hidden;
+    position: relative;
+}
+
+.grid-galeria .celda img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.grid-galeria .celda:hover img {
+    transform: scale(1.03);
+}
+
+.grid-galeria .celda::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(201, 168, 76, 0);
+    transition: background 0.4s ease;
+    pointer-events: none;
+}
+
+.grid-galeria .celda:hover::after {
+    background: rgba(201, 168, 76, 0.08);
+}
+
+@media (max-width: 600px) {
+    .bloque-hero { max-width: 100%; }
+    .recuadro-texto { width: 60%; padding: 12px 14px; }
+    .recuadro-texto h2 { font-size: 1.3rem; }
+    .grid-galeria {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        max-width: 100%;
+    }
+    .grid-galeria .celda:nth-child(1) {
+        grid-column: 1;
+        grid-row: auto;
+    }
+    .grid-galeria .celda img { height: 220px; }
+}
+
+
+/*SECCION DE PAQUETES*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+        #tarifario-fotos-transparente {
+            font-family: 'Montserrat', sans-serif;
+            padding: 40px 10px;
+            color: #000;
+            /* Se eliminó el background-color para que sea transparente */
+        }
+
+        .titulo-seccion {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .titulo-seccion h1 {
+            font-weight: 900;
+            font-size: 2.2rem;
+            margin: 0;
+            line-height: 1.1;
+        }
+
+        .titulo-seccion .barra-amarilla {
+            width: 70px;
+            height: 4px;
+            background-color: #fcdb05;
+            margin: 10px auto;
+        }
+
+        .contenedor-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 1100px;
+            margin: 0 auto;
+            align-items: stretch;
+        }
+
+        .card-paquete {
+            border: 1px solid #000;
+            width: 300px;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            background: transparent; /* Ahora es transparente */
+        }
+
+        .card-paquete h2 {
+            font-weight: 900;
+            font-size: 1.8rem;
+            text-align: center;
+            margin: 0 0 10px 0;
+        }
+
+        .badge-negro {
+            background-color: #000;
+            color: #fff;
+            padding: 5px 15px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-align: center;
+            align-self: center;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        .badge-vacio {
+            height: 30px;
+            margin-bottom: 20px;
+        }
+
+        .lista-items {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            flex-grow: 1;
+        }
+
+        .lista-items li {
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .lista-items li::before {
+            content: '✔';
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .footer-card {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .precio {
+            background-color: #fcdb05;
+            display: inline-block;
+            padding: 8px 25px;
+            border-radius: 8px;
+            font-weight: 900;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .btn-wsp {
+            background-color: #25d366;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            display: block;
+            transition: transform 0.2s;
+        }
+
+        .btn-wsp:hover {
+            transform: scale(1.03);
+            background-color: #128c7e;
+        }
+
+        @media (max-width: 768px) {
+            .card-paquete { width: 100%; max-width: 320px; }
+        }
+
+        /* GALERÍA */
+        /* Importar la fuente Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+#embarazo-exteriores-full {
+    font-family: 'Montserrat', sans-serif;
+    padding: 60px 20px;
+    color: #000;
+}
+
+/* --- ENCABEZADO --- */
+.seccion-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.seccion-header h1 {
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin: 0;
+    line-height: 1.2;
+    text-transform: none;
+}
+
+.seccion-header .separador {
+    width: 80px;
+    height: 5px;
+    background-color: #fcdb05;
+    margin: 15px auto;
+}
+
+/* --- CONTENEDOR DE PAQUETES --- */
+.bloque-paquetes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto 80px auto;
+    align-items: stretch; /* Esto iguala la altura de todas las tarjetas */
+}
+
+.tarjeta {
+    border: 1.5px solid #000;
+    width: 320px;
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background: transparent;
+}
+
+.tarjeta h2 {
+    font-weight: 900;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 0 0 15px 0;
+}
+
+/* Etiquetas negras y espacios niveladores */
+.tag-negro {
+    background-color: #000;
+    color: #fff;
+    padding: 6px 15px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 25px;
+    border-radius: 4px;
+}
+
+.tag-vacio {
+    height: 35px; /* Misma altura que el tag-negro para nivelar */
+    margin-bottom: 25px;
+}
+
+/* Lista de servicios */
+.lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1; /* Empuja el footer hacia el final de la tarjeta */
+}
+
+.lista li {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.lista li::before {
+    content: '✔';
+    margin-right: 12px;
+    font-weight: bold;
+}
+
+/* --- FOOTER DE TARJETA (PRECIO Y BOTÓN) --- */
+.card-footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.precio-tag {
+    background-color: #fcdb05;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 12px;
+    font-weight: 900;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.btn-ws {
+    background-color: #25d366;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.btn-ws:hover {
+    background-color: #128c7e;
+    transform: translateY(-3px);
+}
+
+/* --- GALERÍA DE IMÁGENES --- */
+.bloque-galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px; /* Espaciado amplio entre fotos */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.bloque-galeria img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+    .tarjeta {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .bloque-galeria {
+        grid-template-columns: 1fr; /* Una sola columna en móvil */
+        gap: 20px;
+    }
+
+    .seccion-header h1 {
+        font-size: 1.8rem;
+    }
+}
+
+
+/* PAQUETES EN ESTUDIO 
+/* --- SECCIÓN EMBARAZO ESTUDIO: COMPACTA Y CENTRADA --- */
+#embarazo-estudio-full {
+    font-family: 'Montserrat', sans-serif;
+    padding: 40px 20px;
+    color: #000;
+}
+
+.estudio-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.estudio-header h1 {
+    font-weight: 900;
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.estudio-separador {
+    width: 60px;
+    height: 4px;
+    background-color: #fcdb05;
+    margin: 10px auto;
+}
+
+/* CONTENEDOR PRINCIPAL: Mantiene paquetes y fotos alineados al centro */
+.estudio-contenido-row {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* COLUMNA DE PAQUETES: Más pequeña y compacta */
+.estudio-bloque-paquetes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 280px; /* Ancho reducido para que no se vean grandes */
+    flex-shrink: 0;
+}
+
+.estudio-tarjeta {
+    border: 1px solid #000;
+    padding: 20px 15px; /* Relleno reducido */
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+}
+
+.estudio-tarjeta h2 {
+    font-weight: 900;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0 0 8px 0;
+}
+
+.estudio-tag-negro {
+    background-color: #000;
+    color: #fff;
+    padding: 4px 12px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 12px;
+    border-radius: 3px;
+}
+
+.estudio-tag-vacio {
+    height: 25px;
+    margin-bottom: 12px;
+}
+
+.estudio-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+.estudio-lista li {
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.estudio-lista li::before {
+    content: '✔';
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.estudio-footer {
+    text-align: center;
+}
+
+.estudio-precio {
+    background-color: #fcdb05;
+    display: inline-block;
+    padding: 6px 20px;
+    border-radius: 8px;
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.estudio-btn-ws {
+    background-color: #25d366;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 0.75rem;
+    display: block;
+}
+
+/* COLUMNA DE GALERÍA (Sin cambios en tamaño) */
+.estudio-galeria-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+}
+
+.pareja-fotos {
+    display: flex;
+    gap: 12px;
+}
+
+.pareja-fotos img {
+    width: 170px; /* Tamaño controlado */
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+    .estudio-contenido-row {
+        flex-direction: column;
+    }
+    .estudio-bloque-paquetes {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* GALERÍA FINAL */
+/* --- ESTILOS EXCLUSIVOS PARA PORTAFOLIO COMPACTO --- */
+.p-portafolio-contenedor {
+    font-family: 'Montserrat', sans-serif;
+    padding: 60px 20px;
+    background-color: #fff; /* Fondo blanco para limpieza */
+}
+
+.p-titulo-seccion {
+    text-align: center;
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #000;
+}
+
+/* Contenedor principal de fotos: CONTROL DE ANCHO MÁXIMO */
+.p-bloque-fotos {
+    max-width: 1000px; /* IMPORTANTE: Limita el ancho total para que no sea gigante */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Espacio vertical entre filas */
+}
+
+/* Fila de fotos: Centrado vertical y horizontal */
+.p-fila-fotos {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* NUEVO: Centra verticalmente las fotos entre sí */
+    gap: 20px; /* Espacio horizontal entre fotos */
+}
+
+/* Configuración base de la foto */
+.p-foto {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-foto img {
+    width: 100%; /* Ocupa todo el ancho de su contenedor (.p-foto) */
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px; /* Bordes suaves como en la referencia */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* Sombra muy suave para dar realce */
+}
+
+/* --- CONTROL DE TAMAÑOS POR COLUMNA --- */
+
+/* Fotos Laterales (Izquierda y Derecha): Son más pequeñas */
+.p-foto-lateral {
+    width: 28%; /* Ancho proporcional menor */
+}
+
+/* FOTO CENTRAL: Es más grande pero no ocupa todo el espacio */
+.p-foto-central {
+    width: 36%; /* Ancho proporcional mayor (un 30% más grande que las laterales) */
+}
+
+/* Ajuste Responsive para dispositivos móviles */
+@media (max-width: 768px) {
+    .p-portafolio-contenedor {
+        padding: 40px 15px;
+    }
+    .p-fila-fotos {
+        flex-direction: column; /* Una debajo de otra en celular */
+        gap: 20px;
+    }
+    .p-foto-lateral, .p-foto-central {
+        width: 100%; /* Pantalla completa en móvil */
+        max-width: 400px; /* Limita el ancho en móvil para que no se estire */
+    }
+}
+
+
+
+
+
+/*BAUTIZOS */
+
+
+
+
+#sobre-nosotros-estilo {
+    width: 100%;
+    background-color: #fff;
+    padding: 100px 20px;
+    overflow: hidden; /* Evita scroll lateral si la línea sobresale */
+}
+
+.sobre-nosotros-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.bloque-imagen { flex: 1; }
+.bloque-imagen img { width: 100%; height: auto; display: block; }
+
+.bloque-texto { 
+    flex: 1.2; 
+    position: relative; /* Base para la línea */
+}
+
+/* CONTENEDOR DE TÍTULO Y LÍNEA */
+.contenedor-titulo-linea {
+    position: relative;
+    margin-bottom: 30px;
+    padding-top: 20px; /* Espacio para la línea arriba del texto */
+}
+
+/* LA LÍNEA QUE VA DE LARGO */
+.linea-decorativa-larga {
+    position: absolute;
+    top: 0;
+    left: -100px; /* Hace que empiece un poco "dentro" de la imagen o el gap */
+    width: calc(100% + 100px); /* Se extiende a todo lo ancho */
+    display: flex;
+    height: 6px;
+}
+
+.l-negra {
+    background-color: #000;
+    flex: 2; /* Parte negra más larga */
+}
+
+.l-amarilla {
+    background-color: #fcdb05;
+    flex: 1; /* Parte amarilla al final */
+}
+
+.bloque-texto h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem; /* Grande como en la imagen */
+    color: #000;
+    margin: 0;
+    line-height: 1;
+}
+
+.cuerpo-texto {
+    max-width: 500px; /* Limita el ancho del párrafo para que se vea ordenado */
+}
+
+.bloque-texto p {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left; /* Alineado a la izquierda */
+}
+
+.bloque-texto strong { font-weight: 700; color: #000; }
+
+/* Móvil */
+@media (max-width: 850px) {
+    .sobre-nosotros-contenido { flex-direction: column; }
+    .linea-decorativa-larga { left: 0; width: 100%; }
+    .bloque-texto h2 { font-size: 2.5rem; }
+}
+
+/* PAQUETES BAUTIZOS*/ 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+#tarifario-fotos-transparente {
+    font-family: 'Montserrat', sans-serif;
+    padding: 40px 10px;
+    color: #000;
+}
+
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo-seccion h1 {
+    font-weight: 900;
+    font-size: 2.2rem;
+    margin: 0;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.titulo-seccion .barra-amarilla {
+    width: 70px;
+    height: 4px;
+    background-color: #fcdb05;
+    margin: 10px auto;
+}
+
+.contenedor-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+.card-paquete {
+    border: 1px solid #000;
+    width: 320px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background: transparent;
+}
+
+.card-paquete h2 {
+    font-weight: 900;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.badge-negro {
+    background-color: #000;
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.badge-vacio {
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.lista-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.lista-items li {
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.lista-items li::before {
+    content: '✔';
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.footer-card {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.precio {
+    background-color: #fcdb05;
+    display: inline-block;
+    padding: 8px 25px;
+    border-radius: 8px;
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.btn-wsp {
+    background-color: #25d366;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    display: block;
+    transition: transform 0.2s;
+}
+
+.btn-wsp:hover {
+    transform: scale(1.03);
+    background-color: #128c7e;
+}
+
+@media (max-width: 768px) {
+    .card-paquete { width: 100%; max-width: 320px; }
+}
+
+/* GALERIA BAUTIZO */ 
+.bloque-galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas como en la referencia */
+    gap: 20px; /* Espaciado uniforme */
+    max-width: 1100px;
+    margin: 60px auto 0 auto;
+    padding: 0 10px;
+}
+
+.bloque-galeria img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .bloque-galeria {
+        grid-template-columns: 1fr; /* 1 columna en móviles */
+        gap: 15px;
+    }
+}
+
+/*QUINCEAÑERA-SOBRE NOSOTROS*/
+
+/*
+   QUINCEAÑERA — Sobre Nosotros
+   Prefijo: qsn-
+*/
+
+.qsn-section {
+    width: 100%;
+    padding: 80px 0;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.qsn-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 0 20px;
+}
+
+/* ── Imagen ── */
+.qsn-col-img {
+    flex: 1;
+}
+
+.qsn-col-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+/* ── Texto ── */
+.qsn-col-texto {
+    flex: 1.2;
+    position: relative;
+}
+
+/* Línea negra + amarilla — solo dentro de la columna texto */
+.qsn-linea {
+    display: flex;
+    height: 7px;
+    width: 100%;
+    margin-bottom: 22px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.qsn-linea__negro {
+    background-color: #000;
+    width: 38%;
+    flex-shrink: 0;
+}
+
+.qsn-linea__amarillo {
+    background-color: #fcdb05;
+    flex-grow: 1;
+}
+
+/* Título */
+.qsn-titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 3.5rem;
+    color: #000;
+    margin: 0;
+    letter-spacing: -1px;
+    text-align: left;
+}
+
+/* Párrafos */
+.qsn-texto {
+    text-align: left;
+    font-family: 'Jost', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.65;
+    color: #1a1a1a;
+}
+
+.qsn-texto p:first-child {
+    margin-bottom: 20px;
+}
+
+.qsn-texto strong {
+    font-weight: 700;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .qsn-inner {
+        flex-direction: column;
+        gap: 36px;
+    }
+
+    .qsn-linea {
+        left: 0;
+        width: 100%;
+    }
+
+    .qsn-linea__negro {
+        width: 40%;
+    }
+
+    .qsn-titulo {
+        font-size: 2.4rem;
+    }
+}
+
+
+/*PAQUETES QUINO*/
+/* Contenedor Principal */
+.quino-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Bloque Superior (Hero) */
+.qhero-wrap {
+    position: relative;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.qhero-img img {
+    width: 100%;
+    height: auto; /* Mantiene la imagen completa sin recortes */
+    display: block;
+}
+
+.qhero-card {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    background-color: #000;
+    color: #fff;
+    padding: 35px;
+    width: 40%;
+    z-index: 10;
+    text-align: center;
+}
+
+.qhero-card__title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 5px 0;
+}
+
+.qhero-card__bar {
+    width: 50px;
+    height: 3px;
+    background-color: #fcdb05;
+    margin: 15px auto;
+}
+
+/* Bloque de Paquetes */
+.qpaq-wrap {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.qpaq-col-cards {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.qpaq-card {
+    border: 2px solid #000;
+    padding: 30px;
+    position: relative;
+}
+
+.qpaq-card__title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.qpaq-card__list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.qpaq-card__list li::before {
+    content: "✔";
+    margin-right: 10px;
+}
+
+.qpaq-card__precio {
+    background-color: #fcdb05;
+    display: inline-block;
+    padding: 8px 25px;
+    font-weight: 800;
+    font-size: 1.4rem;
+    border-radius: 5px;
+}
+
+.qpaq-col-img {
+    flex: 0.8;
+}
+
+.qpaq-col-img img {
+    width: 100%;
+    height: auto; /* Imagen vertical completa */
+    display: block;
+}
+
+/* =========================================
+   VARIABLES GLOBALES
+   ========================================= */
+:root {
+    --amarillo: #fcdb05;
+    --negro: #111111;
+    --gris-texto: #333333;
+    --gris-claro: #cccccc;
+    --blanco: #ffffff;
+    --radio: 4px;
+    --radio-md: 6px;
+}
+
+/* =========================================
+   TIPOGRAFÍA COMPARTIDA
+   ========================================= */
+.seccion-titulo {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Arial', sans-serif;
+    color: var(--negro);
+    margin-bottom: 6px;
+}
+
+.seccion-titulo strong {
+    font-weight: 900;
+}
+
+.titulo-linea {
+    width: 60px;
+    height: 4px;
+    background-color: var(--amarillo);
+    margin: 0 auto 50px auto;
+}
+
+/* =========================================
+   SECCIÓN: FORMAS DE PAGO
+   ========================================= */
+.seccion-pago {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px 40px 20px;
+    background-color: var(--blanco);
+}
+
+.seccion-pago .seccion-titulo {
+    font-weight: 900;
+}
+
+.pago-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.pago-opciones {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex: 1;
+    min-width: 260px;
+    max-width: 480px;
+}
+
+.pago-card {
+    border: 2px solid var(--negro);
+    border-radius: var(--radio);
+    padding: 28px 32px;
+}
+
+.pago-card-titulo {
+    font-size: 1.4rem;
+    font-weight: 900;
+    font-family: 'Arial Black', sans-serif;
+    color: var(--negro);
+    margin: 0 0 16px 0;
+}
+
+.pago-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.pago-lista li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 0.95rem;
+    color: var(--gris-texto);
+}
+
+.pago-dash {
+    color: var(--amarillo);
+    font-weight: 900;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    flex-shrink: 0;
+}
+
+.pago-imagen-wrap {
+    flex: 0 0 auto;
+    width: 260px;
+    align-self: flex-end;
+}
+
+.pago-imagen {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 130px 130px 0 0;
+}
+
+.pago-terminos {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #999999;
+    letter-spacing: 0.12em;
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+
+/* =========================================
+   SECCIÓN: SERVICIOS ADICIONALES
+   ========================================= */
+.seccion-adicionales {
+    width: 100%;
+    background-color: var(--blanco);
+    padding: 60px 20px 80px 20px;
+}
+
+.adicionales-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.adicionales-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Cards base */
+.adicional-card {
+    border-radius: var(--radio-md);
+    padding: 32px 28px;
+    flex: 1;
+    min-width: 220px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Card oscura */
+.adicional-card--dark {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+/* Card amarilla */
+.adicional-card--yellow {
+    background-color: var(--amarillo);
+    color: var(--negro);
+}
+
+.adicional-card-titulo {
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: 'Arial Black', sans-serif;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.gratis-label {
+    font-size: 1.8rem;
+    color: var(--amarillo);
+    display: block;
+}
+
+/* Listas dentro de cards */
+.adicional-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-grow: 1;
+}
+
+.adicional-lista li {
+    font-size: 0.9rem;
+    color: var(--gris-claro);
+}
+
+.adicional-lista--precios {
+    gap: 14px;
+}
+
+.adicional-lista--precios li {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.adicional-lista--dark-text li {
+    color: var(--negro);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 8px 0;
+}
+
+.adicional-lista-sep {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.check {
+    color: var(--amarillo);
+    margin-right: 6px;
+}
+
+.adicional-card--yellow .check {
+    color: var(--negro);
+}
+
+/* Precio badge */
+.adicional-precio {
+    background-color: var(--amarillo);
+    color: var(--negro);
+    font-weight: 900;
+    font-size: 1rem;
+    font-family: 'Arial Black', sans-serif;
+    border-radius: var(--radio);
+    padding: 8px 16px;
+    display: inline-block;
+    width: fit-content;
+}
+
+/* Por adquirir label */
+.adicional-por-adquirir {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #333333;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+@media (max-width: 768px) {
+    .seccion-titulo {
+        font-size: 1.6rem;
+    }
+
+    .pago-imagen-wrap {
+        max-width: 100%;
+    }
+
+    .pago-imagen {
+        border-radius: var(--radio);
+        min-height: 200px;
+    }
+
+    .adicional-card {
+        max-width: 100%;
+    }
 }

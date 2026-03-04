@@ -32,7 +32,7 @@ class ContactoController extends Controller
             'subject' => 'Nuevo mensaje de contacto',
             'sender' => [
                 'name' => 'Web Rodrigo Felix',
-                'email' => 'tasaycodiego76@gmail.com' // tu correo verificado en Brevo
+                'email' => 'tasaycodiego76@gmail.com'
             ],
             'to' => [
                 [
@@ -47,7 +47,6 @@ class ContactoController extends Controller
         <p><strong>Mensaje:</strong><br>{$data['message']}</p>
     "
         ]);
-
         try {
             // Enviar el correo utilizando la API de Brevo
             $apiInstance->sendTransacEmail($sendSmtpEmail);

@@ -35,8 +35,6 @@ document.addEventListener('DOMContentLoaded', startImageCarousel);
 
 
 
-
-
 //MAQUINA DE ESCRIBIR
 const frases = [
   "Fotografía de bodas inolvidables...",
@@ -69,8 +67,19 @@ function escribir() {
 document.addEventListener("DOMContentLoaded", escribir);
 
 
+//Desaparece y aparece cambio de imagen cada 3 segundo INICIO
+document.addEventListener("DOMContentLoaded", function () {
+    let slides = document.querySelectorAll(".slide");
+    let currentIndex = 0;
 
+    function changeSlide() {
+        slides[currentIndex].style.opacity = "0"; // Oculta la imagen actual
+        currentIndex = (currentIndex + 1) % slides.length;
+        slides[currentIndex].style.opacity = "1"; // Muestra la siguiente imagen
+    }
 
+    setInterval(changeSlide, 3000); // Cambia cada 3 segundos
+});
 
 
 
