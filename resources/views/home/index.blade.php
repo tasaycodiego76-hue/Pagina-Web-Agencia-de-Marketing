@@ -353,5 +353,17 @@
 
 </footer>
 
+    <!-- *****************************************************************
+  WHATSAPP
+  ******************************************************+-->
+    <a href="https://wa.me/51931826325" class="chat-button" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat">
+        <span>¿Cómo puedo ayudarte?</span>
+    </a>
+    <!-- *****************************************************************
+ FINAL-  WHATSAPP
+  ******************************************************+-->
+
+
 </body>
 </html>

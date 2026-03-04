@@ -1397,3 +1397,281 @@ body { background: var(--gris); font-family: 'Jost', sans-serif; }
     display: block;
 }
 
+/* =========================================
+   VARIABLES GLOBALES
+   ========================================= */
+:root {
+    --amarillo: #fcdb05;
+    --negro: #111111;
+    --gris-texto: #333333;
+    --gris-claro: #cccccc;
+    --blanco: #ffffff;
+    --radio: 4px;
+    --radio-md: 6px;
+}
+
+/* =========================================
+   TIPOGRAFÍA COMPARTIDA
+   ========================================= */
+.seccion-titulo {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Arial', sans-serif;
+    color: var(--negro);
+    margin-bottom: 6px;
+}
+
+.seccion-titulo strong {
+    font-weight: 900;
+}
+
+.titulo-linea {
+    width: 60px;
+    height: 4px;
+    background-color: var(--amarillo);
+    margin: 0 auto 50px auto;
+}
+
+/* =========================================
+   SECCIÓN: FORMAS DE PAGO
+   ========================================= */
+.seccion-pago {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px 40px 20px;
+    background-color: var(--blanco);
+}
+
+.seccion-pago .seccion-titulo {
+    font-weight: 900;
+}
+
+.pago-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.pago-opciones {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex: 1;
+    min-width: 260px;
+    max-width: 480px;
+}
+
+.pago-card {
+    border: 2px solid var(--negro);
+    border-radius: var(--radio);
+    padding: 28px 32px;
+}
+
+.pago-card-titulo {
+    font-size: 1.4rem;
+    font-weight: 900;
+    font-family: 'Arial Black', sans-serif;
+    color: var(--negro);
+    margin: 0 0 16px 0;
+}
+
+.pago-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.pago-lista li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 0.95rem;
+    color: var(--gris-texto);
+}
+
+.pago-dash {
+    color: var(--amarillo);
+    font-weight: 900;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    flex-shrink: 0;
+}
+
+.pago-imagen-wrap {
+    flex: 0 0 auto;
+    width: 260px;
+    align-self: flex-end;
+}
+
+.pago-imagen {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 130px 130px 0 0;
+}
+
+.pago-terminos {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #999999;
+    letter-spacing: 0.12em;
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+
+/* =========================================
+   SECCIÓN: SERVICIOS ADICIONALES
+   ========================================= */
+.seccion-adicionales {
+    width: 100%;
+    background-color: var(--blanco);
+    padding: 60px 20px 80px 20px;
+}
+
+.adicionales-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.adicionales-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Cards base */
+.adicional-card {
+    border-radius: var(--radio-md);
+    padding: 32px 28px;
+    flex: 1;
+    min-width: 220px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Card oscura */
+.adicional-card--dark {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+/* Card amarilla */
+.adicional-card--yellow {
+    background-color: var(--amarillo);
+    color: var(--negro);
+}
+
+.adicional-card-titulo {
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: 'Arial Black', sans-serif;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.gratis-label {
+    font-size: 1.8rem;
+    color: var(--amarillo);
+    display: block;
+}
+
+/* Listas dentro de cards */
+.adicional-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-grow: 1;
+}
+
+.adicional-lista li {
+    font-size: 0.9rem;
+    color: var(--gris-claro);
+}
+
+.adicional-lista--precios {
+    gap: 14px;
+}
+
+.adicional-lista--precios li {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.adicional-lista--dark-text li {
+    color: var(--negro);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 8px 0;
+}
+
+.adicional-lista-sep {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.check {
+    color: var(--amarillo);
+    margin-right: 6px;
+}
+
+.adicional-card--yellow .check {
+    color: var(--negro);
+}
+
+/* Precio badge */
+.adicional-precio {
+    background-color: var(--amarillo);
+    color: var(--negro);
+    font-weight: 900;
+    font-size: 1rem;
+    font-family: 'Arial Black', sans-serif;
+    border-radius: var(--radio);
+    padding: 8px 16px;
+    display: inline-block;
+    width: fit-content;
+}
+
+/* Por adquirir label */
+.adicional-por-adquirir {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #333333;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+@media (max-width: 768px) {
+    .seccion-titulo {
+        font-size: 1.6rem;
+    }
+
+    .pago-imagen-wrap {
+        max-width: 100%;
+    }
+
+    .pago-imagen {
+        border-radius: var(--radio);
+        min-height: 200px;
+    }
+
+    .adicional-card {
+        max-width: 100%;
+    }
+}

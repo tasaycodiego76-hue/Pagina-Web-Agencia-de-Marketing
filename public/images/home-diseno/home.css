@@ -1023,3 +1023,39 @@ header {
 }
 
 
+
+
+/* WHATSAPP BOTON */
+.chat-button {
+    position: fixed;
+    bottom: 20px; /* Distancia desde el borde inferior */
+    left: 20px; /* Distancia desde el borde izquierdo */
+    background-color: #25d366; /* Color de WhatsApp */
+    color: white;
+    padding: 12px 24px; /* Padding para el botón */
+    border-radius: 50px; /* Bordes redondeados */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el ícono y el texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para efecto 3D */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "Poppins", Arial, sans-serif; /* Fuente moderna */
+    font-size: 16px; /* Tamaño de la fuente */
+    font-weight: 500; /* Peso de la fuente (menos gruesa, pero notable) */
+    letter-spacing: 0.5px; /* Espaciado entre letras */
+    transition:
+        background-color 0.3s,
+        transform 0.2s; /* Transición suave */
+}
+
+.chat-button img {
+    width: 24px; /* Tamaño del ícono */
+    height: 24px;
+}
+
+.chat-button:hover {
+    background-color: #128c7e; /* Cambio de color al pasar el mouse */
+    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+}

@@ -831,6 +831,119 @@
 
     </div>
 </section>
+
+<section style="width: 100%; max-width: 1100px; margin: 0 auto; padding: 20px 20px 80px 20px; background-color: #fff;">
+    
+    <div style="width: 100%; position: relative;">
+        <img src="images/servicios/QUINO04.jpeg" 
+             alt="Galería Quinceañera" 
+             style="
+                width: 100%; 
+                height: auto; 
+                display: block; 
+                border-radius: 4px;
+                /* Agregamos una sombra muy sutil para que no flote en el blanco */
+                box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+             ">
+             
+        <div style="width: 60px; height: 4px; background-color: #fcdb05; margin: 40px auto 0 auto;"></div>
+    </div>
+
+</section>
+<!-- SECCIÓN: SERVICIOS ADICIONALES -->
+<section class="seccion-adicionales">
+
+    <div class="adicionales-inner">
+
+        <h2 class="seccion-titulo">Servicios <strong>Adicionales</strong></h2>
+        <div class="titulo-linea"></div>
+
+        <div class="adicionales-grid">
+
+            <!-- Card: Drone -->
+            <div class="adicional-card adicional-card--dark">
+                <h3 class="adicional-card-titulo">Drone</h3>
+                <ul class="adicional-lista">
+                    <li><span class="check">✔</span> Tomas aéreas de PRE XV + Evento</li>
+                </ul>
+                <div class="adicional-precio">S/. 350.00</div>
+            </div>
+
+            <!-- Card: Horas Adicionales -->
+            <div class="adicional-card adicional-card--dark">
+                <h3 class="adicional-card-titulo">Horas<br>Adicionales</h3>
+                <ul class="adicional-lista adicional-lista--precios">
+                    <li>
+                        <span><span class="check">✔</span> Fotografía (Por hora)</span>
+                        <div class="adicional-precio">S/. 120.00</div>
+                    </li>
+                    <li>
+                        <span><span class="check">✔</span> Video (Por hora)</span>
+                        <div class="adicional-precio">S/. 120.00</div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Card: Video PRE XV GRATIS -->
+            <div class="adicional-card adicional-card--dark">
+                <h3 class="adicional-card-titulo">
+                    Video PRE XV<br>
+                    <span class="gratis-label">GRATIS</span>
+                </h3>
+                <p class="adicional-por-adquirir">Por adquirir el:</p>
+                <ul class="adicional-lista">
+                    <li>PAQUETE FOTOGRÁFICO +</li>
+                    <li>PAQUETE VIDEO ESTÁNDAR</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SECCIÓN: FORMAS DE PAGO -->
+<section class="seccion-pago">
+
+    <h2 class="seccion-titulo">Formas de Pago</h2>
+    <div class="titulo-linea"></div>
+
+    <div class="pago-contenedor">
+
+        <div class="pago-opciones">
+
+            <!-- Opción 01 -->
+            <div class="pago-card">
+                <h3 class="pago-card-titulo">OPCIÓN 01</h3>
+                <ul class="pago-lista">
+                    <li><span class="pago-dash">—</span><span><strong>30%</strong> En la Firma de contrato</span></li>
+                    <li><span class="pago-dash">—</span><span><strong>70%</strong> En el día del evento</span></li>
+                </ul>
+            </div>
+
+            <!-- Opción 02 -->
+            <div class="pago-card">
+                <h3 class="pago-card-titulo">OPCIÓN 02</h3>
+                <ul class="pago-lista">
+                    <li><span class="pago-dash">—</span><span><strong>50%</strong> En la Firma de contrato</span></li>
+                    <li><span class="pago-dash">—</span><span><strong>50%</strong> En el día del evento</span></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Imagen con arco -->
+        <div class="pago-imagen-wrap">
+            <img src="images/servicios/QUINO03.jpeg" alt="Quinceañera" class="pago-imagen">
+        </div>
+
+    </div>
+
+    <p class="pago-terminos">Sujeto a Términos y Condiciones</p>
+
+</section>
 </div>
    
 <!-- SECCION PAREJAS -->
@@ -845,8 +958,201 @@
         </div>
     </section>
 
-    <!-- aquí va el contenido de parejas -->
+    <section style="width: 100%; max-width: 1100px; margin: 0 auto; padding: 80px 20px; font-family: 'Montserrat', sans-serif; background-color: #fff; position: relative; overflow: hidden;">
+        
+        <div style="position: absolute; top: 35%; left: 0; width: 100%; height: 6px; display: flex; z-index: 1;">
+            <div style="flex: 2; background-color: #000;"></div>
+            <div style="flex: 1; background-color: #fcdb05;"></div>
+        </div>
 
+        <div style="display: flex; gap: 50px; align-items: center; position: relative; z-index: 2;">
+            
+            <div style="flex: 1;">
+                <img src="images/servicios/PAREJA02.jpg" 
+                     alt="Sobre Nosotros" 
+                     style="width: 100%; height: auto; display: block; border-radius: 2px;">
+            </div>
+
+            <div style="flex: 1; padding-left: 20px;">
+                <h2 style="font-size: 3.5rem; font-weight: 800; margin: 0 0 30px 0; color: #000; text-align: right;">Sobre Nosotros</h2>
+                
+                <div style="text-align: left; max-width: 500px; margin-left: auto;">
+                    <p style="font-size: 1rem; line-height: 1.6; color: #333; margin-bottom: 20px;">
+                        Nos encanta capturar los <strong>momentos</strong> más <strong>especiales</strong> de tu vida, creando recuerdos que duren para siempre. Con un enfoque <strong>profesional</strong> y una mirada <strong>creativa</strong>, buscamos reflejar tu estilo y la esencia de cada celebración de una manera única.
+                    </p>
+                    <p style="font-size: 1rem; line-height: 1.6; color: #333;">
+                        Queremos que tu sesión sea una <strong>experiencia divertida</strong> y <strong>auténtica</strong>, donde te sientas cómodo y disfrutes el momento mientras inmortalizamos recuerdos que realmente cuenten tu historia.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section style="width: 100%; max-width: 1000px; margin: 0 auto; padding: 40px 20px; font-family: 'Montserrat', sans-serif; background-color: #fff;">
+    
+    <div style="position: relative; width: 100%; margin-bottom: 50px;">
+        <div style="width: 100%; overflow: hidden; border-radius: 4px;">
+            <img src="images/servicios/PAREJA05.jpg" alt="Portada Parejas" style="width: 100%; height: auto; display: block; transform: scale(1.02);">
+        </div>
+        
+        <div style="position: absolute; bottom: -30px; right: 5%; background-color: #000; color: #fff; padding: 35px; width: 42%; box-sizing: border-box; z-index: 10; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+            <h2 style="font-size: 2rem; font-weight: 800; margin: 0 0 12px 0; text-align: center; line-height: 1.1; letter-spacing: -1px;">Sesiones<br>en pareja</h2>
+            <div style="width: 50px; height: 3px; background-color: #fcdb05; margin: 0 auto 20px auto;"></div>
+            <p style="font-size: 0.9rem; line-height: 1.6; font-weight: 300; margin: 0; text-align: center; color: #e0e0e0;">
+                Celebro tu <strong>amor</strong> con una sesión fotográfica que capture su esencia y complicidad. Ofrecemos paquetes personalizados, desde <strong>sesiones al aire libre</strong> hasta <strong>estudios</strong> con iluminación especial.
+            </p>
+        </div>
+    </div>
+
+    <div style="display: flex; gap: 25px; margin-top: 80px; width: 90%; margin-left: auto; margin-right: auto;">
+        
+        <div style="flex: 1; border-radius: 4px; overflow: hidden;">
+            <img src="images/servicios/PAREJA03.jpg" alt="Pareja Exterior" style="width: 100%; height: 350px; object-fit: cover; display: block;">
+        </div>
+
+        <div style="flex: 1; border-radius: 4px; overflow: hidden;">
+            <img src="images/servicios/PAREJA04.jpg" alt="Pareja Detalle" style="width: 100%; height: 350px; object-fit: cover; display: block;">
+        </div>
+
+    </div>
+</section>
+
+
+
+<div style="width: 100%; max-width: 1100px; margin: 0 auto; padding: 40px 20px; font-family: 'Montserrat', sans-serif; background-color: #fff; color: #000;">
+
+    <div style="text-align: center; margin-bottom: 50px;">
+        <h2 style="font-size: 2.5rem; font-weight: 800; margin: 0;">Paquetes de</h2>
+        <h2 style="font-size: 2.5rem; font-weight: 800; margin: 0;">Sesiones en Exteriores</h2>
+        <div style="width: 60px; height: 4px; background-color: #fcdb05; margin: 10px auto;"></div>
+    </div>
+
+    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 80px;">
+        
+        <div style="border: 1.5px solid #000; padding: 30px 20px; flex: 1; min-width: 280px; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+                <h3 style="font-size: 2.2rem; font-weight: 800; margin: 0;">Estándar</h3>
+                <div style="background: #000; color: #fff; padding: 5px; font-size: 0.9rem; font-weight: 700; margin: 10px 0;">Nuevas parejas</div>
+                <ul style="list-style: none; padding: 0; text-align: left; font-size: 0.9rem; line-height: 1.8; margin: 20px 0;">
+                    <li>✔ <b>45min</b> de sesión</li>
+                    <li>✔ <b>01</b> Cambio de ropa</li>
+                    <li>✔ <b>20</b> Fotos en digital</li>
+                    <li>✔ <b>05</b> Fotos impresas (10X15 cm)</li>
+                    <li>✔ Material en digital</li>
+                </ul>
+            </div>
+            <div>
+                <div style="display: inline-block; background: #fcdb05; padding: 8px 25px; font-weight: 800; font-size: 1.3rem; border-radius: 6px; margin-bottom: 15px;">S/. 200.00</div>
+                <a href="https://wa.me/51931826325?text=Hola,%20me%20interesa%20el%20Paquete%20Exterior%20Estándar" target="_blank" style="display: block; background-color: #25d366; color: #fff; padding: 12px; font-size: 0.9rem; font-weight: 800; text-decoration: none; border-radius: 6px; text-transform: uppercase;">ME INTERESA ESTE PAQUETE</a>
+            </div>
+        </div>
+
+        <div style="border: 1.5px solid #000; padding: 30px 20px; flex: 1; min-width: 280px; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+                <h3 style="font-size: 2.2rem; font-weight: 800; margin: 0;">Avanzado</h3>
+                <div style="background: #000; color: #fff; padding: 5px; font-size: 0.9rem; font-weight: 700; margin: 10px 0;">Ideal para parejas sólidas</div>
+                <ul style="list-style: none; padding: 0; text-align: left; font-size: 0.9rem; line-height: 1.8; margin: 20px 0;">
+                    <li>✔ <b>01</b> Hora de sesión</li>
+                    <li>✔ <b>01</b> Cambio de ropa</li>
+                    <li>✔ <b>30</b> Fotos en digital</li>
+                    <li>✔ <b>10</b> Fotos impresas (10 X 15 cm)</li>
+                    <li>✔ <b>01</b> Foto impresa (20 X 15 cm)</li>
+                    <li>✔ Material en digital</li>
+                </ul>
+            </div>
+            <div>
+                <div style="display: inline-block; background: #fcdb05; padding: 8px 25px; font-weight: 800; font-size: 1.3rem; border-radius: 6px; margin-bottom: 15px;">S/. 250.00</div>
+                <a href="https://wa.me/51931826325?text=Hola,%20me%20interesa%20el%20Paquete%20Exterior%20Avanzado" target="_blank" style="display: block; background-color: #25d366; color: #fff; padding: 12px; font-size: 0.9rem; font-weight: 800; text-decoration: none; border-radius: 6px; text-transform: uppercase;">ME INTERESA ESTE PAQUETE</a>
+            </div>
+        </div>
+
+        <div style="border: 1.5px solid #000; padding: 30px 20px; flex: 1; min-width: 280px; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+                <h3 style="font-size: 2.2rem; font-weight: 800; margin: 0;">Premium</h3>
+                <div style="background: #000; color: #fff; padding: 5px; font-size: 0.9rem; font-weight: 700; margin: 10px 0;">Detalle de amor</div>
+                <ul style="list-style: none; padding: 0; text-align: left; font-size: 0.9rem; line-height: 1.8; margin: 20px 0;">
+                    <li>✔ <b>1.5</b> Horas de sesión</li>
+                    <li>✔ <b>02</b> Cambios de ropa</li>
+                    <li>✔ <b>35</b> Fotos en digital</li>
+                    <li>✔ <b>10</b> Fotos impresas (10 X 15 cm)</li>
+                    <li>✔ <b>01</b> Cuadro + Foto impresa (15 X 20 cm)</li>
+                    <li>✔ Material en digital</li>
+                </ul>
+            </div>
+            <div>
+                <div style="display: inline-block; background: #fcdb05; padding: 8px 25px; font-weight: 800; font-size: 1.3rem; border-radius: 6px; margin-bottom: 15px;">S/. 300.00</div>
+                <a href="https://wa.me/51931826325?text=Hola,%20me%20interesa%20el%20Paquete%20Exterior%20Premium" target="_blank" style="display: block; background-color: #25d366; color: #fff; padding: 12px; font-size: 0.9rem; font-weight: 800; text-decoration: none; border-radius: 6px; text-transform: uppercase;">ME INTERESA ESTE PAQUETE</a>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-bottom: 50px;">
+        <h2 style="font-size: 2.5rem; font-weight: 800; margin: 0;">Paquetes de</h2>
+        <h2 style="font-size: 2.5rem; font-weight: 800; margin: 0;">Sesiones de Estudio</h2>
+        <div style="width: 60px; height: 4px; background-color: #fcdb05; margin: 10px auto;"></div>
+    </div>
+
+    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 50px;">
+        
+        <div style="border: 1.5px solid #000; padding: 30px 20px; flex: 1; min-width: 280px; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+                <h3 style="font-size: 2.2rem; font-weight: 800; margin: 0;">Estándar</h3>
+                <div style="background: #000; color: #fff; padding: 5px; font-size: 0.9rem; font-weight: 700; margin: 10px 0;">Nuevas parejas</div>
+                <ul style="list-style: none; padding: 0; text-align: left; font-size: 0.9rem; line-height: 1.8; margin: 20px 0;">
+                    <li>✔ <b>01</b> Hora de sesión</li>
+                    <li>✔ <b>01</b> Cambio de ropa</li>
+                    <li>✔ <b>10</b> Fotos en digital</li>
+                    <li>✔ <b>05</b> Fotos impresas (10X15 cm)</li>
+                    <li>✔ Material en digital</li>
+                </ul>
+            </div>
+            <div>
+                <div style="display: inline-block; background: #fcdb05; padding: 8px 25px; font-weight: 800; font-size: 1.3rem; border-radius: 6px; margin-bottom: 15px;">S/. 250.00</div>
+                <a href="https://wa.me/51931826325?text=Hola,%20me%20interesa%20el%20Paquete%20Estudio%20Estándar" target="_blank" style="display: block; background-color: #25d366; color: #fff; padding: 12px; font-size: 0.9rem; font-weight: 800; text-decoration: none; border-radius: 6px; text-transform: uppercase;">ME INTERESA ESTE PAQUETE</a>
+            </div>
+        </div>
+
+        <div style="border: 1.5px solid #000; padding: 30px 20px; flex: 1; min-width: 280px; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+                <h3 style="font-size: 2.2rem; font-weight: 800; margin: 0;">Avanzado</h3>
+                <div style="background: #000; color: #fff; padding: 5px; font-size: 0.9rem; font-weight: 700; margin: 10px 0;">Ideal para parejas sólidas</div>
+                <ul style="list-style: none; padding: 0; text-align: left; font-size: 0.9rem; line-height: 1.8; margin: 20px 0;">
+                    <li>✔ <b>01</b> Hora de sesión</li>
+                    <li>✔ <b>01</b> Cambio de ropa</li>
+                    <li>✔ <b>15</b> Fotos en digital</li>
+                    <li>✔ <b>10</b> Fotos impresas (10 X 15 cm)</li>
+                    <li>✔ <b>02</b> Fotos impresas (20 X 15 cm)</li>
+                    <li>✔ Material en digital</li>
+                </ul>
+            </div>
+            <div>
+                <div style="display: inline-block; background: #fcdb05; padding: 8px 25px; font-weight: 800; font-size: 1.3rem; border-radius: 6px; margin-bottom: 15px;">S/. 300.00</div>
+                <a href="https://wa.me/51931826325?text=Hola,%20me%20interesa%20el%20Paquete%20Estudio%20Avanzado" target="_blank" style="display: block; background-color: #25d366; color: #fff; padding: 12px; font-size: 0.9rem; font-weight: 800; text-decoration: none; border-radius: 6px; text-transform: uppercase;">ME INTERESA ESTE PAQUETE</a>
+            </div>
+        </div>
+
+        <div style="border: 1.5px solid #000; padding: 30px 20px; flex: 1; min-width: 280px; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+                <h3 style="font-size: 2.2rem; font-weight: 800; margin: 0;">Premium</h3>
+                <div style="background: #000; color: #fff; padding: 5px; font-size: 0.9rem; font-weight: 700; margin: 10px 0;">Detalle de amor</div>
+                <ul style="list-style: none; padding: 0; text-align: left; font-size: 0.9rem; line-height: 1.8; margin: 20px 0;">
+                    <li>✔ <b>01</b> Hora de sesión</li>
+                    <li>✔ <b>02</b> Cambios de ropa</li>
+                    <li>✔ <b>25</b> Fotos en digital</li>
+                    <li>✔ <b>15</b> Fotos impresas (10 X 15 cm)</li>
+                    <li>✔ <b>01</b> Foto impresa + Cuadro (20 X 15 cm)</li>
+                    <li>✔ Material en digital</li>
+                </ul>
+            </div>
+            <div>
+                <div style="display: inline-block; background: #fcdb05; padding: 8px 25px; font-weight: 800; font-size: 1.3rem; border-radius: 6px; margin-bottom: 15px;">S/. 350.00</div>
+                <a href="https://wa.me/51931826325?text=Hola,%20me%20interesa%20el%20Paquete%20Estudio%20Premium" target="_blank" style="display: block; background-color: #25d366; color: #fff; padding: 12px; font-size: 0.9rem; font-weight: 800; text-decoration: none; border-radius: 6px; text-transform: uppercase;">ME INTERESA ESTE PAQUETE</a>
+            </div>
+        </div>
+    </div>
+
+</div>
 </div>
 
 
