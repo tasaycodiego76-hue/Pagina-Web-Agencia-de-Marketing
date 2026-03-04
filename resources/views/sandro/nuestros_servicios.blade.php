@@ -401,7 +401,7 @@
         </div>
     </div>
 
-<<<<<<< HEAD
+
     <!-- Seccion Baby Shower -->
     <div id="baby_shower" class="service-section">
 
@@ -655,7 +655,48 @@
                 <div style="flex: 1;">
                     <img src="images/servicios/Baby Shower/babyshower15.jpg" alt="Baby Shower"
                         style="width: 100%; height: 260px; object-fit: cover; display: block; border-radius: 5px;">
-=======
+                </div>
+            </div>
+        </div>
+
+        <!-- SERVICIOS ADICIONALES BABY SHOWER -->
+        <div style="max-width: 1100px; margin: 50px auto; padding: 20px; font-family: 'Helvetica', Arial, sans-serif;">
+            <h3 style="text-align:center; color: #333; margin-bottom: 40px; font-size: 1.8rem; text-transform: uppercase; letter-spacing: 1px;">
+                Servicios Adicionales
+            </h3>
+
+            <div style="display: flex; align-items: flex-start; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 280px; background: #1a1a1a; color: #fff; padding: 30px 25px; border-radius: 15px; text-align: center; box-shadow: 0 10px 20px rgba(0,0,0,0.1); border-top: 4px solid #edd132;">
+                    <div style="font-size: 2.5rem; margin-bottom: 10px;">🎥</div>
+                    <h4 style="color: #edd132; text-transform: uppercase; margin-bottom: 10px; font-size: 1.1rem;">Tomas con Drone</h4>
+                    <p style="font-size: 0.85rem; color: #bbb; margin-bottom: 20px;">Tomas Aéreas del Evento</p>
+                    <div style="font-size: 1.8rem; font-weight: bold; color: #fff;">S/ 350.00</div>
+                </div>
+
+                <div style="flex: 1.1; min-width: 320px; background: #fff; color: #333; padding: 30px 25px; border-radius: 20px; text-align: center; box-shadow: 0 15px 40px rgba(0,0,0,0.1); border: 1px solid #eee; border-top: 8px solid #333;">
+                    <div style="font-size: 3rem; margin-bottom: 10px;">⏰</div>
+                    <h4 style="text-transform: uppercase; margin-bottom: 15px; font-weight: 800; letter-spacing: 1px; font-size: 1.2rem;">Horas Adicionales</h4>
+                    <div style="text-align: left; max-width: 230px; margin: 0 auto;">
+                        <div style="margin-bottom: 15px; border-bottom: 1px solid #f0f0f0; padding-bottom: 10px;">
+                            <div style="color: #444; font-size: 0.85rem; margin-bottom: 5px;">✅ FOTOGRAFÍA (POR HORA)</div>
+                            <div style="font-size: 1.8rem; font-weight: 900; color: #edd132;">S/ 90.00</div>
+                        </div>
+                        <div>
+                            <div style="color: #444; font-size: 0.85rem; margin-bottom: 5px;">✅ VIDEO (POR HORA)</div>
+                            <div style="font-size: 1.8rem; font-weight: 900; color: #edd132;">S/ 90.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER BABY SHOWER -->
+        <div class="service-footer" style="text-align:center; margin-top: 50px; padding: 40px 0 0 0; background: #fafafa;">
+            <p style="font-size: 1.2rem; color: #444;">Celebra la llegada de tu bebé capturando cada momento especial con fotografías de <b>alta calidad</b>.</p>
+            <p style="margin-top: 15px; font-weight: bold; color: #edd132; font-size: 1.4rem; text-transform: uppercase; letter-spacing: 1px;">¡Momentos mágicos, recuerdos para siempre!</p>
+        </div>
+    </div>
+
     <!-- SECCION BAUTIZO -->
   <div id="bautizo" class="service-section" style="display: none;">
     
@@ -1076,7 +1117,7 @@
                 <div class="estudio-footer">
                     <div class="estudio-precio">S/. 350.00</div>
                     <a href="https://wa.me/51931826325?text=Info Estudio Estándar" class="estudio-btn-ws" target="_blank">ME INTERESA</a>
->>>>>>> e085e48826d082d0043f04fec025344a4f7e270d
+
                 </div>
             </article>
         </div>
@@ -1624,9 +1665,8 @@
         </div>
     </div>
 
-<<<<<<< HEAD
-    <!-- Seccion Bautizo -->
-
+</div>
+</div>
 
     <!-- Seccion Bodas -->
     <div id="bodas" class="service-section" style="display:none;">
@@ -2429,7 +2469,7 @@
         </div>
     </div>
 
-=======
+        <!-- ===== PAQUETES SESIONES DE ESTUDIO ===== -->
     <div style="text-align: center; margin-bottom: 50px;">
         <h2 style="font-size: 2.5rem; font-weight: 800; margin: 0;">Paquetes de</h2>
         <h2 style="font-size: 2.5rem; font-weight: 800; margin: 0;">Sesiones de Estudio</h2>
@@ -2496,18 +2536,9 @@
     </div>
 
 </div>
-</div>
 
-
-<footer style="margin:0; padding:0;">
-
-    <img src="images/servicios/FOOTER.png"
-         alt="Contacto Empresa"
-         style="width:100vw; height:auto; display:block;">
-
-</footer>
     </div>
->>>>>>> e085e48826d082d0043f04fec025344a4f7e270d
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const urlParams = new URLSearchParams(window.location.search);

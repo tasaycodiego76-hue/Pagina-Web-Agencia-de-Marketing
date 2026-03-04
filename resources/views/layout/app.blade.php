@@ -62,7 +62,6 @@
                                 <i class="fas fa-chevron-down"></i>
                             </a>
                             <div class="dropdown-content">
-                           <div class="dropdown-content">
                                 <a href="/servicios?tipo=fiesta_infantil">Fiesta Infantil</a>
                                 <a href="/servicios?tipo=pedida_mano">Pedida de Mano</a>
                                 <a href="/servicios?tipo=baby_shower">Baby Shower</a>
@@ -117,15 +116,12 @@
  FINAL-  WHATSAPP
   ******************************************************+-->
 
-<<<<<<< HEAD
     <footer class="main-footer" style="background: transparent; padding: 0; margin: 0; line-height: 0;">
         <a href="{{ url('/') }}" style="display: block; text-decoration: none; border: none;">
             <img src="{{ asset('images/footer.png') }}" alt="footer"
                 style="width: 100%; max-width: 100%; height: auto; display: block; border: none; outline: none;">
         </a>
     </footer>
-=======
->>>>>>> e085e48826d082d0043f04fec025344a4f7e270d
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.pkgd.min.js"></script>
     <script src="{{ asset('js/script.js') }}"></script>

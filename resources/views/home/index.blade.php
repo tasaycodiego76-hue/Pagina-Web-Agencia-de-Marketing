@@ -8,63 +8,6 @@
 
 @section('contenido')
     <!-- ESTO ES LA PARTE SOLO HOME -(INICIO )-->
-    
-            <div class="menu-icon" id="hamburger">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-    
-<nav id="nav">
-    <ul>
-        <li><a href="{{ url('/') }}" data-seccion="home" class="nav-link"><i class="fas fa-home"></i> Inicio</a></li>
-        <li><a href="{{ url('/quienes-somos') }}" data-seccion="quienes" class="nav-link"><i class="fas fa-users"></i> Quiénes Somos</a></li>
-        <li><a href="{{ url('/trabajos') }}" data-seccion="trabajos" class="nav-link"><i class="fas fa-briefcase"></i> Trabajos</a></li>
-
-        <li>
-                        <div class="dropdown">
-                            <a href="javascript:void(0)" id="servicios-menu" class="nav-link">
-                                <i class="fas fa-concierge-bell"></i> Nuestros Servicios
-                                <i class="fas fa-chevron-down"></i>
-                            </a>
-                              <div class="dropdown-content">
-                                <a href="/servicios?tipo=fiesta_infantil">Fiesta Infantil</a>
-                                <a href="/servicios?tipo=pedida_mano">Pedida de Mano</a>
-                                <a href="/servicios?tipo=baby_shower">Baby Shower</a>
-                                <a href="/servicios?tipo=bautizo">Bautizo</a>
-                                <a href="/servicios?tipo=bodas">Boda</a>
-                                <a href="/servicios?tipo=infantil">Sesiones Infantiles</a>
-                                <a href="/servicios?tipo=embarazo">Embarazo</a>
-                                <a href="/servicios?tipo=parejas">Parejas</a>
-                                <a href="/servicios?tipo=quinceanera">Quince Años</a>
-                            </div>
-                        </div>
-                    </li>
-
-        <li><a href="{{ url('/referencias') }}" data-seccion="referencia" class="nav-link"><i class="fas fa-bookmark"></i> Referencia</a></li>
-        <li><a href="{{ url('/contacto') }}" data-seccion="contacto" class="nav-link"><i class="fas fa-envelope"></i> Contáctanos</a></li>
-    </ul>
-</nav>
-
-            <div class="redes-sociales">
-                <a href="https://www.youtube.com" target="_blank" class="social-icon youtube">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <a href="https://www.facebook.com" target="_blank" class="social-icon facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://www.instagram.com" target="_blank" class="social-icon instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.tiktok.com" target="_blank" class="social-icon tiktok">
-                    <i class="fab fa-tiktok"></i>
-                </a>
-            </div>
-        </div>
-    </header>
-<!-- *****************************************************************
- FIN -MENU
- ***************************************************************** -->
 
    
 
@@ -122,14 +65,7 @@
         </div>
     </div>
     
-</div>
-<footer style="margin:0; padding:0;">
 
-    <img src="images/servicios/FOOTER.png"
-         alt="Contacto Empresa"
-         style="width:100vw; height:auto; display:block;">
-
-</footer>
 
     <!-- *****************************************************************
   WHATSAPP
