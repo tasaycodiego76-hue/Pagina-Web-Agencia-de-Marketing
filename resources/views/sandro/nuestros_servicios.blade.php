@@ -408,7 +408,7 @@
         <!-- PORTADA -->
         <section class="portada-section">
             <div class="portada-wrapper" style="margin-top: 20px;">
-                <img src="images/servicios/Baby Shower/Portada1.png" alt="Portada Baby Shower" class="portada-img">
+                <img src="images/servicios/Baby Shower/PORTADA_BABYSHOWER.png" alt="Portada Baby Shower" class="portada-img">
             </div>
         </section>
 
@@ -700,15 +700,12 @@
     <!-- SECCION BAUTIZO -->
   <div id="bautizo" class="service-section" style="display: none;">
     
-    <section style="width: 100%; margin-top: -40px; display: flex; justify-content: center; align-items: center; background-color: #000; padding: 20px 20px 0 20px;">
-        <div style="position: relative; width: clamp(320px, 75vw, 1100px); min-width: 320px;">
-            <img src='images/servicios/PORTADA_WEB_PAQUETE_BAUTIZO.png' 
-                 alt='Portada Bautizo' 
-                 style="width: 100%; height: auto; display: block; border-radius: 8px;">
-            <div style="position: absolute; top: 0; left: 0; width: 80px; height: 100%; background: linear-gradient(to right, #000, transparent); border-radius: 8px 0 0 8px;"></div>
-            <div style="position: absolute; top: 0; right: 0; width: 80px; height: 100%; background: linear-gradient(to left, #000, transparent); border-radius: 0 8px 8px 0;"></div>
-        </div>
-    </section>
+        <section class="portada-section">
+            <div class="portada-wrapper" style="margin-top: 20px;">
+                <img src="images/servicios/PORTADA_WEB_PAQUETE_BAUTIZO.png" alt="Portada Baby Shower" class="portada-img">
+            </div>
+        </section>
+
 
     <section style="width: 100%; padding: 80px 0; overflow: hidden; background-color: #fff;">
         <div style="max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 60px; padding: 0 20px;">
@@ -905,48 +902,11 @@
     <!-- SECCION EMBARAZO -->
     <div id="embarazo" class="service-section" style="display: none;">
         <!-- PORTADA -->
-     <section style="
-    width: 100%;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000;
-    padding: 20px 20px 0 20px;
- ">
-    <div style="
-        position: relative;
-        width: clamp(320px, 75vw, 1100px);
-        min-width: 320px;
-    ">
-        <img src='images/servicios/PORTADA_WEB_SESIONES_DE_EMBARAZO.png'
-             alt='Portada Embarazo'
-             style="
-                width: 100%;
-                height: auto;
-                display: block;
-                border-radius: 8px;
-             ">
-
-        <!-- Degradado izquierda -->
-        <div style="
-            position: absolute;
-            top: 0; left: 0;
-            width: 80px; height: 100%;
-            background: linear-gradient(to right, #000, transparent);
-            border-radius: 8px 0 0 8px;
-        "></div>
-
-        <!-- Degradado derecha -->
-        <div style="
-            position: absolute;
-            top: 0; right: 0;
-            width: 80px; height: 100%;
-            background: linear-gradient(to left, #000, transparent);
-            border-radius: 0 8px 8px 0;
-        "></div>
-    </div>
- </section>
+             <section class="portada-section">
+            <div class="portada-wrapper" style="margin-top: 20px;">
+                <img src="images/servicios/PORTADA_WEB_SESIONES_DE_EMBARAZO.png" alt="Portada Baby Shower" class="portada-img">
+            </div>
+        </section>
 
  <!-- SOBRE NOSOTROS -->
     <section class="sobre-nosotros">
@@ -1174,52 +1134,13 @@
     <!-- SECCION QUINCEAÑERA -->
      <div id="quinceanera" class="service-section" style="display: none;">
         <!-- PORTADA -->
-     <section style="
-    width: 100%;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000;
-    padding: 20px 20px 0 20px;
- ">
-    <div style="
-        position: relative;
-        width: clamp(320px, 75vw, 1100px);
-        min-width: 320px;
-    ">
-        <img src='images/servicios/QUINO_PORTADA.png'
-             alt='Portada quino'
-             style="
-                width: 100%;
-                height: auto;
-                display: block;
-                border-radius: 8px;
-             ">
-
-        <!-- Degradado izquierda -->
-        <div style="
-            position: absolute;
-            top: 0; left: 0;
-            width: 80px; height: 100%;
-            background: linear-gradient(to right, #000, transparent);
-            border-radius: 8px 0 0 8px;
-        "></div>
-
-        <!-- Degradado derecha -->
-        <div style="
-            position: absolute;
-            top: 0; right: 0;
-            width: 80px; height: 100%;
-            background: linear-gradient(to left, #000, transparent);
-            border-radius: 0 8px 8px 0;
-        "></div>
-    </div>
-    
- </section>
+            <section class="portada-section">
+            <div class="portada-wrapper" style="margin-top: 20px;">
+                <img src="images/servicios/QUINO_PORTADA.png" alt="Portada Baby Shower" class="portada-img">
+            </div>
+        </section>
 
 
- <!-- SOBRE NOSOTROS - QUINCEAÑERA -->
 <!-- SOBRE NOSOTROS - QUINCEAÑERA -->
 <section class="qsn-section">
     <div class="qsn-inner">
@@ -1528,13 +1449,12 @@
 <div id="parejas" class="service-section" style="display: none;">
 
     <!-- PORTADA -->
-    <section style="width: 100%; margin-top: -40px; display: flex; justify-content: center; align-items: center; background-color: #000; padding: 20px 20px 0 20px;">
-        <div style="position: relative; width: clamp(320px, 75vw, 1100px); min-width: 320px;">
-            <img src='images/servicios/PAREJA_PORTADA.png' alt='Portada Parejas' style="width: 100%; height: auto; display: block; border-radius: 8px;">
-            <div style="position: absolute; top: 0; left: 0; width: 80px; height: 100%; background: linear-gradient(to right, #000, transparent); border-radius: 8px 0 0 8px;"></div>
-            <div style="position: absolute; top: 0; right: 0; width: 80px; height: 100%; background: linear-gradient(to left, #000, transparent); border-radius: 0 8px 8px 0;"></div>
-        </div>
-    </section>
+        <section class="portada-section">
+            <div class="portada-wrapper" style="margin-top: 20px;">
+                <img src="images/servicios/PAREJA_PORTADA.png" alt="Portada Baby Shower" class="portada-img">
+            </div>
+        </section>
+
 
     <section style="width: 100%; max-width: 1100px; margin: 0 auto; padding: 80px 20px; font-family: 'Montserrat', sans-serif; background-color: #fff; position: relative; overflow: hidden;">
         
