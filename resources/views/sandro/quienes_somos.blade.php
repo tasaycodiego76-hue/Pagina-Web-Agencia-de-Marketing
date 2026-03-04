@@ -22,16 +22,16 @@
                 <p>COORDINADORA GENERAL</p>
             </div>
             <div class="team-member">
-                <img src="{{ asset('images/quienes_somos/nayru.jpg') }}" alt="Nayru">
-                <h3>NAYRU GOMEZ</h3>
-                <p>DISEÑO GRÁFICO</p>
+                <img src="{{ asset('images/quienes_somos/noemi.jpg') }}" alt="Noemi">
+                <h3>NOEMI TORRES</h3>
+                <p>CREACIÓN DE CONTENIDO</p>
             </div>
 
             <!-- Segunda Fila -->
             <div class="team-member">
-                <img src="{{ asset('images/quienes_somos/noemi.jpg') }}" alt="Noemi">
-                <h3>NOEMI TORRES</h3>
-                <p>CREACIÓN DE CONTENIDO</p>
+                <img src="{{ asset('images/quienes_somos/jose.jpg') }}" alt="Jose">
+                <h3>JOSE GUERRA</h3>
+                <p>EDICIÓN Y VIDEO</p>
             </div>
             <div class="team-member">
                 <img src="{{ asset('images/quienes_somos/jonathan.jpg') }}" alt="Jonathan">
@@ -46,9 +46,9 @@
 
             <!-- Tercera Fila -->
             <div class="team-member">
-                <img src="{{ asset('images/quienes_somos/jose.jpg') }}" alt="Jose">
-                <h3>JOSE GUERRA</h3>
-                <p>EDICIÓN Y VIDEO</p>
+                <img src="{{ asset('images/quienes_somos/nayru.jpg') }}" alt="Nayru">
+                <h3>NAYRU GOMEZ</h3>
+                <p>DISEÑO GRÁFICO</p>
             </div>
             <div class="team-member">
                 <img src="{{ asset('images/quienes_somos/jesus.jpg') }}" alt="Jesus">

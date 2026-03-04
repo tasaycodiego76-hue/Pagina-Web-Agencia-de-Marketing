@@ -1,54 +1,92 @@
-/* Esto asegura que el contenedor no guarde espacios de secciones ocultas */
-.service-main-section {
-    padding-top: 50px; /* Ajusta según tu header */
-    display: block;
-    width: 100%;
-    position: relative;
+/* ============================================================
+   IMPORTACIONES
+   ============================================================ */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
+
+/* ============================================================
+   BASE
+   ============================================================ */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0px;
+    background-color: #ffffff;
 }
 
+/* ============================================================
+   ANIMACIONES
+   ============================================================ */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ============================================================
+   SECCIÓN PRINCIPAL DE SERVICIOS
+   ============================================================ */
+.service-section {
+    width: 100%;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.service-main-section {
+    padding-top: 20px;
+    margin: 0;
+    width: 100%;
+}
+
+/* ============================================================
+   TÍTULO DE SERVICIOS
+   ============================================================ */
 .titulo-servicios {
-    margin-top: 0; /* Asegura que el título pegue arriba */
     text-align: center;
-    padding: 20px 0;
+    margin: 40px auto;
+    width: 100%;
+    display: block;
+    position: relative;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #1d1d1b;
 }
 
 .titulo-servicios::after {
     content: "";
-    width: 80px;
-    height: 4px;
-    background: #ffcc00; /* Color amarillo de tu logo */
     position: absolute;
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
+    width: 80px;
+    height: 5px;
+    background-color: #edd132;
+    border-radius: 2px;
 }
 
-/* Rejilla de Paquetes */
+/* ============================================================
+   REJILLA DE PAQUETES
+   ============================================================ */
 .service-container,
 .service-content {
-    display: flex;
-    flex-wrap: wrap; /* Para que si no caben, bajen a la siguiente fila */
-    justify-content: center; /* Centra las tarjetas */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
-    max-width: 1200px;
-    margin: 30px auto;
-    padding: 0 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* Tarjeta de Paquete (Cards) */
 .service-package {
+    max-width: 100%;
     background: #fff;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    display: flex;
-    flex-direction: column;
-
-    /* AJUSTE DINÁMICO */
-    flex: 1 1 350px; /* Crece si hay espacio, pero su base es 350px */
-    max-width: 600px; /* Cuando esté sola, se verá grande pero no gigante */
-    min-width: 300px; /* Para que en celular no se vea mal */
-    transition: transform 0.3s ease;
+    border-radius: 15px;
+    border: 1px solid #ddd;
 }
 
 .service-package:hover {
@@ -59,7 +97,7 @@
 /* Imagen del Paquete */
 .package-image {
     width: 100%;
-    height: 350px; /* Aumentamos de 250 a 350 para que luzca más la foto */
+    height: 350px;
     overflow: hidden;
 }
 
@@ -96,7 +134,26 @@
     font-size: 0.95rem;
 }
 
-/* Precios */
+/* Lista de ítems del paquete */
+.service-package ul li {
+    font-size: 1.05rem;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.service-package ul li span {
+    font-size: 0.85rem !important;
+    margin-right: 12px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* ============================================================
+   PRECIOS
+   ============================================================ */
 .promo-price {
     font-size: 1.2rem;
     font-weight: 700;
@@ -118,7 +175,9 @@
     text-transform: uppercase;
 }
 
-/* Botón WhatsApp */
+/* ============================================================
+   BOTÓN WHATSAPP
+   ============================================================ */
 .cta-button {
     display: inline-block;
     background-color: #25d366;
@@ -135,19 +194,278 @@
     color: #fff;
 }
 
-.service-section {
+/* ============================================================
+   SECCIÓN PORTADA
+   ============================================================ */
+.portada-section {
     width: 100%;
-    margin-top: 0 !important; /* Quita cualquier margen que las empuje hacia abajo */
-    padding-top: 0 !important;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    padding: 40px 20px;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
+.portada-wrapper {
+    position: relative;
+    width: 65%;
+    max-width: 850px;
+    min-width: 320px;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.portada-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.portada-wrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 8px;
+    background:
+        linear-gradient(to right, #000 0%, transparent 15%),
+        linear-gradient(to left, #000 0%, transparent 15%),
+        linear-gradient(to top, #000 0%, transparent 25%);
+    pointer-events: none;
+}
+
+/* ============================================================
+   SECCIÓN TARIFARIO (FOTOS TRANSPARENTE)
+   ============================================================ */
+#tarifario-fotos-transparente {
+    font-family: "Montserrat", sans-serif;
+    padding: 60px 10px;
+    color: #000;
+}
+
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo-seccion h1 {
+    font-weight: 900;
+    font-size: 2.2rem;
+    margin: 0;
+    line-height: 1.1;
+    color: #000;
+}
+
+.titulo-seccion .barra-amarilla {
+    width: 70px;
+    height: 4px;
+    background-color: #fcdb05;
+    margin: 15px auto;
+}
+
+/* Cards de paquetes */
+.contenedor-cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+.card-paquete {
+    border: 1.5px solid #000;
+    width: 320px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.card-paquete:hover {
+    background: rgba(252, 219, 5, 0.05);
+    transform: translateY(-5px);
+}
+
+.card-paquete h2 {
+    font-weight: 900;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.badge-negro {
+    background-color: #000;
+    color: #fff;
+    padding: 6px 15px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.badge-vacio {
+    height: 32px;
+    margin-bottom: 20px;
+}
+
+/* Lista de ítems del tarifario */
+.lista-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.lista-items li {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    line-height: 1.3;
+}
+
+.lista-items li::before {
+    content: "✔";
+    margin-right: 12px;
+    color: #000;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.lista-items li.item-guion::before {
+    content: "—";
+    margin-right: 10px;
+    margin-left: 20px;
+    color: #000;
+    font-weight: normal;
+}
+
+.lista-items li.item-guion {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+}
+
+/* Footer de card */
+.footer-card {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.precio {
+    background-color: #fcdb05;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 8px;
+    font-weight: 900;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 0px #000;
+}
+
+.btn-wsp {
+    background-color: #25d366;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.btn-wsp:hover {
+    background-color: #128c7e;
+    transform: scale(1.02);
+}
+
+/* ============================================================
+   SECCIÓN GALERÍA
+   ============================================================ */
+.galeria-seccion {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px 0; /* Se eliminó el padding-bottom para quitar el espacio vacío */
+    text-align: center;
+}
+
+.titulo-galeria {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.contenedor-imagenes {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 0; /* Eliminado el margin-bottom que generaba el espacio vacío */
+}
+
+.cuadro-imagen {
+    flex: 1;
+    min-width: 250px;
+    max-width: calc(33.333% - 20px);
+    background-color: #f9f9f9;
+    border: 1px solid #eaeaea;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.cuadro-imagen img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.texto-inferior {
+    color: #888;
+    font-size: 0.9rem;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 768px) {
+    .card-paquete {
+        width: 100%;
+        max-width: 340px;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+
+    .contenedor-imagenes {
+        justify-content: center;
     }
+
+    .cuadro-imagen {
+        max-width: 100%;
+    }
+}
+
+.portada-img {
+    width: 100%;
+    height: 500px; /* altura fija igual para todas */
+    object-fit: cover; /* recorta proporcionalmente */
+    display: block;
+    border-radius: 8px;
 }
