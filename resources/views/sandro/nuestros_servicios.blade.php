@@ -304,6 +304,7 @@
                 </div>
             </section>
         </div>
+           <div style="height: 80px;"></div>
     </div>
 
     <!-- Seccion Pedida de Mano -->
@@ -690,19 +691,19 @@
             </div>
         </div>
 
-        <!-- FOOTER BABY SHOWER -->
-        <div class="service-footer" style="text-align:center; margin-top: 50px; padding: 40px 0 0 0; background: #fafafa;">
+<!-- FOOTER BABY SHOWER -->
+        <div class="service-footer" style="text-align:center; margin-top: 50px; padding: 40px 0 50px 0; background: #fafafa;">
             <p style="font-size: 1.2rem; color: #444;">Celebra la llegada de tu bebé capturando cada momento especial con fotografías de <b>alta calidad</b>.</p>
             <p style="margin-top: 15px; font-weight: bold; color: #edd132; font-size: 1.4rem; text-transform: uppercase; letter-spacing: 1px;">¡Momentos mágicos, recuerdos para siempre!</p>
+            <p style="font-family: 'Montserrat', sans-serif; font-size: 0.7rem; color: #888; margin-top: 30px; letter-spacing: 1px;">SUJETO A TÉRMINOS Y CONDICIONES</p>
         </div>
     </div>
-
     <!-- SECCION BAUTIZO -->
   <div id="bautizo" class="service-section" style="display: none;">
     
         <section class="portada-section">
             <div class="portada-wrapper" style="margin-top: 20px;">
-                <img src="images/servicios/PORTADA_WEB_PAQUETE_BAUTIZO.png" alt="Portada Baby Shower" class="portada-img">
+                <img src="images/servicios/bautizo/PORTADA_WEB_PAQUETE_BAUTIZO.png" alt="Portada Baby Shower" class="portada-img">
             </div>
         </section>
 
@@ -711,7 +712,7 @@
         <div style="max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 60px; padding: 0 20px;">
             
             <div style="flex: 1;">
-                <img src="images/servicios/BAUTIZO01.jpg" alt="Bautizo" style="width: 100%; height: auto; display: block; border-radius: 4px;">
+                <img src="images/servicios/bautizo/BAUTIZO01.jpg" alt="Bautizo" style="width: 100%; height: auto; display: block; border-radius: 4px;">
             </div>
 
             <div style="flex: 1.2; position: relative;">
@@ -739,7 +740,7 @@
 <div style="width: 100%; max-width: 1100px; margin: 0 auto; padding: 40px 20px 80px 20px; background-color: #fff;">
 
     <div style="width: 100%; position: relative; z-index: 1;">
-        <img src="images/servicios/BAUTIZO02.jpg" 
+        <img src="images/servicios/bautizo/BAUTIZO02.jpg" 
              alt="Ceremonia Bautizo" 
              style="width: 100%; height: auto; display: block; border-radius: 4px;">
     </div>
@@ -768,15 +769,15 @@
     <div style="width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 25px; align-items: start;">
         
         <div style="display: flex; flex-direction: column; gap: 25px;">
-            <img src="images/servicios/BAUTIZO05.jpg" style="width: 100%; height: auto; border-radius: 4px; display: block;" alt="Evento 05">
-            <img src="images/servicios/BAUTIZO03.jpg" style="width: 100%; height: auto; border-radius: 4px; display: block;" alt="Niña 03">
+            <img src="images/servicios/bautizo/BAUTIZO05.jpg" style="width: 100%; height: auto; border-radius: 4px; display: block;" alt="Evento 05">
+            <img src="images/servicios/bautizo/BAUTIZO03.jpg" style="width: 100%; height: auto; border-radius: 4px; display: block;" alt="Niña 03">
         </div>
 
         <div style="display: flex; flex-direction: column; gap: 25px;">
-            <img src="images/servicios/BAUTIZO06.jpg" style="width: 100%; height: auto; border-radius: 4px; display: block;" alt="Detalle 06">
+            <img src="images/servicios/bautizo/BAUTIZO06.jpg" style="width: 100%; height: auto; border-radius: 4px; display: block;" alt="Detalle 06">
             
             <div style="width: 100%; overflow: hidden; border-radius: 500px 500px 4px 4px;">
-                <img src="images/servicios/BAUTIZO04.jpg" 
+                <img src="images/servicios/bautizo/BAUTIZO04.jpg" 
                      style="width: 100%; height: auto; display: block;" 
                      alt="Decoración 04">
             </div>
@@ -834,12 +835,12 @@
         </article>
     </div>
     <div class="bloque-galeria" style="margin-top: 60px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 1100px; margin-left: auto; margin-right: auto; padding: 0 10px;">
-    <img src="images/servicios/BAUTIZO07.jpg" alt="Evento Bautizo 07" style="width: 100%; border-radius: 4px;">
-    <img src="images/servicios/BAUTIZO08.jpg" alt="Decoración Bautizo 08" style="width: 100%; border-radius: 4px;">
-    <img src="images/servicios/BAUTIZO09.jpg" alt="Familia Bautizo 09" style="width: 100%; border-radius: 4px;">
-    <img src="images/servicios/BAUTIZO10.jpg" alt="Ceremonia Bautizo 10" style="width: 100%; border-radius: 4px;">
-    <img src="images/servicios/BAUTIZO11.jpg" alt="Local Bautizo 11" style="width: 100%; border-radius: 4px;">
-    <img src="images/servicios/BAUTIZO12.jpg" alt="Bautizo Detalle 12" style="width: 100%; border-radius: 4px;">
+    <img src="images/servicios/bautizo/BAUTIZO07.jpg" alt="Evento Bautizo 07" style="width: 100%; border-radius: 4px;">
+    <img src="images/servicios/bautizo/BAUTIZO08.jpg" alt="Decoración Bautizo 08" style="width: 100%; border-radius: 4px;">
+    <img src="images/servicios/bautizo/BAUTIZO09.jpg" alt="Familia Bautizo 09" style="width: 100%; border-radius: 4px;">
+    <img src="images/servicios/bautizo/BAUTIZO10.jpg" alt="Ceremonia Bautizo 10" style="width: 100%; border-radius: 4px;">
+    <img src="images/servicios/bautizo/BAUTIZO11.jpg" alt="Local Bautizo 11" style="width: 100%; border-radius: 4px;">
+    <img src="images/servicios/bautizo/BAUTIZO12.jpg" alt="Bautizo Detalle 12" style="width: 100%; border-radius: 4px;">
 </div>
 
 <section id="tarifario-fotos-transparente" style="padding: 80px 10px 40px 10px;">
@@ -887,14 +888,6 @@
         SUJETO A TÉRMINOS Y CONDICIONES
     </p>
 </section>
-</section>
-<footer style="margin:0; padding:0;">
-
-    <img src="images/servicios/FOOTER.png"
-         alt="Contacto Empresa"
-         style="width:100vw; height:auto; display:block;">
-
-</footer>
 </div>
 
 
@@ -904,14 +897,14 @@
         <!-- PORTADA -->
              <section class="portada-section">
             <div class="portada-wrapper" style="margin-top: 20px;">
-                <img src="images/servicios/PORTADA_WEB_SESIONES_DE_EMBARAZO.png" alt="Portada Baby Shower" class="portada-img">
+                <img src="images/servicios/embarazo/PORTADA_WEB_SESIONES_DE_EMBARAZO.png" alt="Portada Baby Shower" class="portada-img">
             </div>
         </section>
 
  <!-- SOBRE NOSOTROS -->
     <section class="sobre-nosotros">
         <div class="col-imagen">
-            <img src="images/servicios/EMBARAZO.png" alt="Sobre Nosotros">
+            <img src="images/servicios/embarazo/EMBARAZO.png" alt="Sobre Nosotros">
         </div>
         <div class="col-texto">
             <h2>Sobre Nosotros</h2>
@@ -934,7 +927,7 @@
     </section>
 <!-- BLOQUE 1: Imagen grande con recuadro superpuesto -->
 <div class="bloque-hero">
-    <img class="img-hero" src="images/servicios/EMBARAZOS1.jpg" alt="Embarazo">
+    <img class="img-hero" src="images/servicios/embarazo/EMBARAZOS1.jpg" alt="Embarazo">
     <div class="recuadro-texto">
         <p class="subtitulo">Sesiones de</p>
         <h2>Embarazo</h2>
@@ -949,13 +942,13 @@
 
 <div class="grid-galeria">
     <div class="celda">
-        <img src="images/servicios/EMBARAZOS5.png" alt="Embarazo 1">
+        <img src="images/servicios/embarazo/EMBARAZOS5.png" alt="Embarazo 1">
     </div>
     <div class="celda">
-        <img src="images/servicios/EMBARAZOS4.jpg" alt="Embarazo 2">
+        <img src="images/servicios/embarazo/EMBARAZOS4.jpg" alt="Embarazo 2">
     </div>
     <div class="celda">
-        <img src="images/servicios/EMBARAZOS2.jpg" alt="Embarazo 3">
+        <img src="images/servicios/embarazo/EMBARAZOS2.jpg" alt="Embarazo 3">
     </div>
 </div>
 
@@ -1028,12 +1021,12 @@
     </div>
 
     <div class="bloque-galeria">
-        <img src="images/servicios/EMBARAZO6.jpg" alt="Sesión de embarazo 1">
-        <img src="images/servicios/EMBARAZO7.jpg" alt="Sesión de embarazo 2">
-        <img src="images/servicios/EMBARAZO8.jpg" alt="Sesión de embarazo 3">
-        <img src="images/servicios/EMBARAZO9.jpg" alt="Sesión de embarazo 4">
-        <img src="images/servicios/EMBARAZO10.jpg" alt="Sesión de embarazo 5">
-        <img src="images/servicios/EMBARAZO11.jpg" alt="Sesión de embarazo 6">
+        <img src="images/servicios/embarazo/EMBARAZO6.jpg" alt="Sesión de embarazo 1">
+        <img src="images/servicios/embarazo/EMBARAZO7.jpg" alt="Sesión de embarazo 2">
+        <img src="images/servicios/embarazo/EMBARAZO8.jpg" alt="Sesión de embarazo 3">
+        <img src="images/servicios/embarazo/EMBARAZO9.jpg" alt="Sesión de embarazo 4">
+        <img src="images/servicios/embarazo/EMBARAZO10.jpg" alt="Sesión de embarazo 5">
+        <img src="images/servicios/embarazo/EMBARAZO11.jpg" alt="Sesión de embarazo 6">
     </div>
 
 </section>
@@ -1084,12 +1077,12 @@
 
         <div class="estudio-galeria-vertical">
             <div class="pareja-fotos">
-                <img src="images/servicios/EMBARAZO12.png" alt="Estudio 1">
-                <img src="images/servicios/EMBARAZO13.png" alt="Estudio 2">
+                <img src="images/servicios/embarazo/EMBARAZO12.png" alt="Estudio 1">
+                <img src="images/servicios/embarazo/EMBARAZO13.png" alt="Estudio 2">
             </div>
             <div class="pareja-fotos">
-                <img src="images/servicios/EMBARAZO14.png" alt="Estudio 3">
-                <img src="images/servicios/EMBARAZO15.png" alt="Estudio 4">
+                <img src="images/servicios/embarazo/EMBARAZO14.png" alt="Estudio 3">
+                <img src="images/servicios/embarazo/EMBARAZO15.png" alt="Estudio 4">
             </div>
         </div>
 
@@ -1104,25 +1097,25 @@
         
         <div class="p-fila-fotos">
             <div class="p-foto p-foto-lateral">
-                <img src="images/servicios/EMBARAZO16.png" alt="Sesión de estudio 16">
+                <img src="images/servicios/embarazo/EMBARAZO16.png" alt="Sesión de estudio 16">
             </div>
             <div class="p-foto p-foto-central">
-                <img src="images/servicios/EMBARAZO17.png" alt="Sesión de estudio 17">
+                <img src="images/servicios/embarazo/EMBARAZO17.png" alt="Sesión de estudio 17">
             </div>
             <div class="p-foto p-foto-lateral">
-                <img src="images/servicios/EMBARAZO18.png" alt="Sesión de estudio 18">
+                <img src="images/servicios/embarazo/EMBARAZO18.png" alt="Sesión de estudio 18">
             </div>
         </div>
 
         <div class="p-fila-fotos">
             <div class="p-foto p-foto-lateral">
-                <img src="images/servicios/EMBARAZO19.png" alt="Sesión de estudio 19">
+                <img src="images/servicios/embarazo/EMBARAZO19.png" alt="Sesión de estudio 19">
             </div>
             <div class="p-foto p-foto-central">
-                <img src="images/servicios/EMBARAZO20.png" alt="Sesión de estudio 20">
+                <img src="images/servicios/embarazo/EMBARAZO20.png" alt="Sesión de estudio 20">
             </div>
             <div class="p-foto p-foto-lateral">
-                <img src="images/servicios/EMBARAZO21.png" alt="Sesión de estudio 21">
+                <img src="images/servicios/embarazo/EMBARAZO21.png" alt="Sesión de estudio 21">
             </div>
         </div>
 
@@ -1136,7 +1129,7 @@
         <!-- PORTADA -->
             <section class="portada-section">
             <div class="portada-wrapper" style="margin-top: 20px;">
-                <img src="images/servicios/QUINO_PORTADA.png" alt="Portada Baby Shower" class="portada-img">
+                <img src="images/servicios/quinceanera/QUINO_PORTADA.png" alt="Portada Baby Shower" class="portada-img">
             </div>
         </section>
 
@@ -1147,7 +1140,7 @@
 
         <!-- Columna imagen -->
         <div class="qsn-col-img">
-            <img src="images/servicios/QUINO01.jpeg" alt="Quinceañera">
+            <img src="images/servicios/quinceanera/QUINO01.jpeg" alt="Quinceañera">
         </div>
 
         <!-- Columna texto -->
@@ -1189,7 +1182,7 @@
 
     <div class="qhero-wrap">
         <div class="qhero-img">
-            <img src="images/servicios/QUINO02.jpeg" alt="Sesiones XV Años" style="width: 100%; height: auto; display: block;">
+            <img src="images/servicios/quinceanera/QUINO02.jpeg" alt="Sesiones XV Años" style="width: 100%; height: auto; display: block;">
         </div>
         <div class="qhero-card" style="position: absolute; bottom: 5%; right: 5%; background-color: #000; color: #fff; padding: 35px; width: 40%; z-index: 10; text-align: center;">
             <p style="margin:0; font-size: 1.2rem; font-family: 'Montserrat', sans-serif;">Sesiones de</p>
@@ -1246,7 +1239,7 @@
         </div>
 
         <div class="qpaq-col-img" style="flex: 0.8;">
-            <img src="images/servicios/QUINO03.jpeg" alt="Quinceañera lateral" style="width: 100%; height: auto; display: block;">
+            <img src="images/servicios/quinceanera/QUINO03.jpeg" alt="Quinceañera lateral" style="width: 100%; height: auto; display: block;">
         </div>
 
     </div>
@@ -1262,7 +1255,7 @@
     <div style="display: flex; align-items: center; gap: 50px; justify-content: center; flex-wrap: wrap;">
         <div style="flex: 1; min-width: 320px; max-width: 450px;">
             <div style="width: 100%; overflow: hidden; border-radius: 500px 500px 0 0;">
-                <img src="images/servicios/QUINO01.jpeg" alt="Sesión XV Años" style="width: 100%; height: auto; display: block;">
+                <img src="images/servicios/quinceanera/QUINO01.jpeg" alt="Sesión XV Años" style="width: 100%; height: auto; display: block;">
             </div>
         </div>
 
@@ -1334,7 +1327,7 @@
 <section style="width: 100%; max-width: 1100px; margin: 0 auto; padding: 20px 20px 80px 20px; background-color: #fff;">
     
     <div style="width: 100%; position: relative;">
-        <img src="images/servicios/QUINO04.jpeg" 
+        <img src="images/servicios/quinceanera/QUINO04.jpeg" 
              alt="Galería Quinceañera" 
              style="
                 width: 100%; 
@@ -1435,7 +1428,7 @@
 
         <!-- Imagen con arco -->
         <div class="pago-imagen-wrap">
-            <img src="images/servicios/QUINO03.jpeg" alt="Quinceañera" class="pago-imagen">
+            <img src="images/servicios/quinceanera/QUINO03.jpeg" alt="Quinceañera" class="pago-imagen">
         </div>
 
     </div>
@@ -1451,7 +1444,7 @@
     <!-- PORTADA -->
         <section class="portada-section">
             <div class="portada-wrapper" style="margin-top: 20px;">
-                <img src="images/servicios/PAREJA_PORTADA.png" alt="Portada Baby Shower" class="portada-img">
+                <img src="images/servicios/pareja/PAREJA_PORTADA.png" alt="Portada Baby Shower" class="portada-img">
             </div>
         </section>
 
@@ -1466,7 +1459,7 @@
         <div style="display: flex; gap: 50px; align-items: center; position: relative; z-index: 2;">
             
             <div style="flex: 1;">
-                <img src="images/servicios/PAREJA02.jpg" 
+                <img src="images/servicios/pareja/PAREJA02.jpg" 
                      alt="Sobre Nosotros" 
                      style="width: 100%; height: auto; display: block; border-radius: 2px;">
             </div>
@@ -1491,7 +1484,7 @@
     
     <div style="position: relative; width: 100%; margin-bottom: 50px;">
         <div style="width: 100%; overflow: hidden; border-radius: 4px;">
-            <img src="images/servicios/PAREJA05.jpg" alt="Portada Parejas" style="width: 100%; height: auto; display: block; transform: scale(1.02);">
+            <img src="images/servicios/pareja/PAREJA05.jpg" alt="Portada Parejas" style="width: 100%; height: auto; display: block; transform: scale(1.02);">
         </div>
         
         <div style="position: absolute; bottom: -30px; right: 5%; background-color: #000; color: #fff; padding: 35px; width: 42%; box-sizing: border-box; z-index: 10; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
@@ -1506,11 +1499,11 @@
     <div style="display: flex; gap: 25px; margin-top: 80px; width: 90%; margin-left: auto; margin-right: auto;">
         
         <div style="flex: 1; border-radius: 4px; overflow: hidden;">
-            <img src="images/servicios/PAREJA03.jpg" alt="Pareja Exterior" style="width: 100%; height: 350px; object-fit: cover; display: block;">
+            <img src="images/servicios/pareja/PAREJA03.jpg" alt="Pareja Exterior" style="width: 100%; height: 350px; object-fit: cover; display: block;">
         </div>
 
         <div style="flex: 1; border-radius: 4px; overflow: hidden;">
-            <img src="images/servicios/PAREJA04.jpg" alt="Pareja Detalle" style="width: 100%; height: 350px; object-fit: cover; display: block;">
+            <img src="images/servicios/pareja/PAREJA04.jpg" alt="Pareja Detalle" style="width: 100%; height: 350px; object-fit: cover; display: block;">
         </div>
 
     </div>
@@ -1584,6 +1577,75 @@
             </div>
         </div>
     </div>
+
+    <div style="width: 100%; max-width: 1100px; margin: 0 auto; padding: 0 20px 40px 20px; font-family: 'Montserrat', sans-serif; background-color: #fff; color: #000;">
+
+    <div style="text-align: center; margin-bottom: 50px;">
+        <h2 style="font-size: 2.5rem; font-weight: 800; margin: 0;">Paquetes de</h2>
+        <h2 style="font-size: 2.5rem; font-weight: 800; margin: 0;">Sesiones de Estudio</h2>
+        <div style="width: 60px; height: 4px; background-color: #fcdb05; margin: 10px auto;"></div>
+    </div>
+
+    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 80px;">
+
+        <div style="border: 1.5px solid #000; padding: 30px 20px; flex: 1; min-width: 280px; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+                <h3 style="font-size: 2.2rem; font-weight: 800; margin: 0;">Estándar</h3>
+                <div style="background: #000; color: #fff; padding: 5px; font-size: 0.9rem; font-weight: 700; margin: 10px 0;">Nuevas parejas</div>
+                <ul style="list-style: none; padding: 0; text-align: left; font-size: 0.9rem; line-height: 1.8; margin: 20px 0;">
+                    <li>✔ <b>01</b> Hora de sesión</li>
+                    <li>✔ <b>01</b> Cambio de ropa</li>
+                    <li>✔ <b>10</b> Fotos en digital</li>
+                    <li>✔ <b>05</b> Fotos impresas (10X15 cm)</li>
+                    <li>✔ Material en digital</li>
+                </ul>
+            </div>
+            <div>
+                <div style="display: inline-block; background: #fcdb05; padding: 8px 25px; font-weight: 800; font-size: 1.3rem; border-radius: 6px; margin-bottom: 15px;">S/. 250.00</div>
+                <a href="https://wa.me/51931826325?text=Hola,%20me%20interesa%20el%20Paquete%20Estudio%20Estándar%20de%20Parejas" target="_blank" style="display: block; background-color: #25d366; color: #fff; padding: 12px; font-size: 0.9rem; font-weight: 800; text-decoration: none; border-radius: 6px; text-transform: uppercase;">ME INTERESA ESTE PAQUETE</a>
+            </div>
+        </div>
+
+        <div style="border: 1.5px solid #000; padding: 30px 20px; flex: 1; min-width: 280px; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+                <h3 style="font-size: 2.2rem; font-weight: 800; margin: 0;">Avanzado</h3>
+                <div style="background: #000; color: #fff; padding: 5px; font-size: 0.9rem; font-weight: 700; margin: 10px 0;">Ideal para parejas sólidas</div>
+                <ul style="list-style: none; padding: 0; text-align: left; font-size: 0.9rem; line-height: 1.8; margin: 20px 0;">
+                    <li>✔ <b>01</b> Hora de sesión</li>
+                    <li>✔ <b>01</b> Cambio de ropa</li>
+                    <li>✔ <b>15</b> Fotos en digital</li>
+                    <li>✔ <b>10</b> Fotos impresas (10 X 15 cm)</li>
+                    <li>✔ <b>02</b> Fotos impresas (20 X 15 cm)</li>
+                    <li>✔ Material en digital</li>
+                </ul>
+            </div>
+            <div>
+                <div style="display: inline-block; background: #fcdb05; padding: 8px 25px; font-weight: 800; font-size: 1.3rem; border-radius: 6px; margin-bottom: 15px;">S/. 300.00</div>
+                <a href="https://wa.me/51931826325?text=Hola,%20me%20interesa%20el%20Paquete%20Estudio%20Avanzado%20de%20Parejas" target="_blank" style="display: block; background-color: #25d366; color: #fff; padding: 12px; font-size: 0.9rem; font-weight: 800; text-decoration: none; border-radius: 6px; text-transform: uppercase;">ME INTERESA ESTE PAQUETE</a>
+            </div>
+        </div>
+
+        <div style="border: 1.5px solid #000; padding: 30px 20px; flex: 1; min-width: 280px; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+                <h3 style="font-size: 2.2rem; font-weight: 800; margin: 0;">Premium</h3>
+                <div style="background: #000; color: #fff; padding: 5px; font-size: 0.9rem; font-weight: 700; margin: 10px 0;">Detalle de amor</div>
+                <ul style="list-style: none; padding: 0; text-align: left; font-size: 0.9rem; line-height: 1.8; margin: 20px 0;">
+                    <li>✔ <b>01</b> Hora de sesión</li>
+                    <li>✔ <b>02</b> Cambios de ropa</li>
+                    <li>✔ <b>25</b> Fotos en digital</li>
+                    <li>✔ <b>15</b> Fotos impresas (10 X 15 cm)</li>
+                    <li>✔ <b>01</b> Foto impresa + Cuadro (20 X 15 cm)</li>
+                    <li>✔ Material en digital</li>
+                </ul>
+            </div>
+            <div>
+                <div style="display: inline-block; background: #fcdb05; padding: 8px 25px; font-weight: 800; font-size: 1.3rem; border-radius: 6px; margin-bottom: 15px;">S/. 350.00</div>
+                <a href="https://wa.me/51931826325?text=Hola,%20me%20interesa%20el%20Paquete%20Estudio%20Premium%20de%20Parejas" target="_blank" style="display: block; background-color: #25d366; color: #fff; padding: 12px; font-size: 0.9rem; font-weight: 800; text-decoration: none; border-radius: 6px; text-transform: uppercase;">ME INTERESA ESTE PAQUETE</a>
+            </div>
+        </div>
+
+    </div>
+</div>
 
 </div>
 </div>
@@ -2380,7 +2442,7 @@
         </div>
 
         <!-- FOOTER CON GALERÍA -->
-        <div class="service-footer" style="text-align:center; margin-top: 40px; padding: 40px 0; background: #fafafa;">
+        <div class="service-footer" style="text-align:center; margin-top: 100px; padding: 40px 0; background: #fafafa;">
             <p style="font-size: 1.2rem; color: #444;">Inmortalizamos los momentos más mágicos de tu pequeño con fotografías
                 de <b>alta calidad</b>.</p>
             <p
@@ -2389,76 +2451,7 @@
         </div>
     </div>
 
-        <!-- ===== PAQUETES SESIONES DE ESTUDIO ===== -->
-    <div style="text-align: center; margin-bottom: 50px;">
-        <h2 style="font-size: 2.5rem; font-weight: 800; margin: 0;">Paquetes de</h2>
-        <h2 style="font-size: 2.5rem; font-weight: 800; margin: 0;">Sesiones de Estudio</h2>
-        <div style="width: 60px; height: 4px; background-color: #fcdb05; margin: 10px auto;"></div>
-    </div>
-
-    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 50px;">
-        
-        <div style="border: 1.5px solid #000; padding: 30px 20px; flex: 1; min-width: 280px; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
-            <div>
-                <h3 style="font-size: 2.2rem; font-weight: 800; margin: 0;">Estándar</h3>
-                <div style="background: #000; color: #fff; padding: 5px; font-size: 0.9rem; font-weight: 700; margin: 10px 0;">Nuevas parejas</div>
-                <ul style="list-style: none; padding: 0; text-align: left; font-size: 0.9rem; line-height: 1.8; margin: 20px 0;">
-                    <li>✔ <b>01</b> Hora de sesión</li>
-                    <li>✔ <b>01</b> Cambio de ropa</li>
-                    <li>✔ <b>10</b> Fotos en digital</li>
-                    <li>✔ <b>05</b> Fotos impresas (10X15 cm)</li>
-                    <li>✔ Material en digital</li>
-                </ul>
-            </div>
-            <div>
-                <div style="display: inline-block; background: #fcdb05; padding: 8px 25px; font-weight: 800; font-size: 1.3rem; border-radius: 6px; margin-bottom: 15px;">S/. 250.00</div>
-                <a href="https://wa.me/51931826325?text=Hola,%20me%20interesa%20el%20Paquete%20Estudio%20Estándar" target="_blank" style="display: block; background-color: #25d366; color: #fff; padding: 12px; font-size: 0.9rem; font-weight: 800; text-decoration: none; border-radius: 6px; text-transform: uppercase;">ME INTERESA ESTE PAQUETE</a>
-            </div>
-        </div>
-
-        <div style="border: 1.5px solid #000; padding: 30px 20px; flex: 1; min-width: 280px; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
-            <div>
-                <h3 style="font-size: 2.2rem; font-weight: 800; margin: 0;">Avanzado</h3>
-                <div style="background: #000; color: #fff; padding: 5px; font-size: 0.9rem; font-weight: 700; margin: 10px 0;">Ideal para parejas sólidas</div>
-                <ul style="list-style: none; padding: 0; text-align: left; font-size: 0.9rem; line-height: 1.8; margin: 20px 0;">
-                    <li>✔ <b>01</b> Hora de sesión</li>
-                    <li>✔ <b>01</b> Cambio de ropa</li>
-                    <li>✔ <b>15</b> Fotos en digital</li>
-                    <li>✔ <b>10</b> Fotos impresas (10 X 15 cm)</li>
-                    <li>✔ <b>02</b> Fotos impresas (20 X 15 cm)</li>
-                    <li>✔ Material en digital</li>
-                </ul>
-            </div>
-            <div>
-                <div style="display: inline-block; background: #fcdb05; padding: 8px 25px; font-weight: 800; font-size: 1.3rem; border-radius: 6px; margin-bottom: 15px;">S/. 300.00</div>
-                <a href="https://wa.me/51931826325?text=Hola,%20me%20interesa%20el%20Paquete%20Estudio%20Avanzado" target="_blank" style="display: block; background-color: #25d366; color: #fff; padding: 12px; font-size: 0.9rem; font-weight: 800; text-decoration: none; border-radius: 6px; text-transform: uppercase;">ME INTERESA ESTE PAQUETE</a>
-            </div>
-        </div>
-
-        <div style="border: 1.5px solid #000; padding: 30px 20px; flex: 1; min-width: 280px; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
-            <div>
-                <h3 style="font-size: 2.2rem; font-weight: 800; margin: 0;">Premium</h3>
-                <div style="background: #000; color: #fff; padding: 5px; font-size: 0.9rem; font-weight: 700; margin: 10px 0;">Detalle de amor</div>
-                <ul style="list-style: none; padding: 0; text-align: left; font-size: 0.9rem; line-height: 1.8; margin: 20px 0;">
-                    <li>✔ <b>01</b> Hora de sesión</li>
-                    <li>✔ <b>02</b> Cambios de ropa</li>
-                    <li>✔ <b>25</b> Fotos en digital</li>
-                    <li>✔ <b>15</b> Fotos impresas (10 X 15 cm)</li>
-                    <li>✔ <b>01</b> Foto impresa + Cuadro (20 X 15 cm)</li>
-                    <li>✔ Material en digital</li>
-                </ul>
-            </div>
-            <div>
-                <div style="display: inline-block; background: #fcdb05; padding: 8px 25px; font-weight: 800; font-size: 1.3rem; border-radius: 6px; margin-bottom: 15px;">S/. 350.00</div>
-                <a href="https://wa.me/51931826325?text=Hola,%20me%20interesa%20el%20Paquete%20Estudio%20Premium" target="_blank" style="display: block; background-color: #25d366; color: #fff; padding: 12px; font-size: 0.9rem; font-weight: 800; text-decoration: none; border-radius: 6px; text-transform: uppercase;">ME INTERESA ESTE PAQUETE</a>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-    </div>
-
+      
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const urlParams = new URLSearchParams(window.location.search);
