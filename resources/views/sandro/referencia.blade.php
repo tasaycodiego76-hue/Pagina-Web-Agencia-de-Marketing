@@ -12,7 +12,8 @@
         <h2>Referencias</h2>
         <div class="reference-carousel">
             <div class="reference-track" id="track">
-                <!-- Aquí duplicamos las 6 referencias para el scroll infinito -->
+
+                {{-- Referencias estáticas (siempre visibles) --}}
                 <div class="reference-item">
                     <img src="images/referencia/descarga.jfif" alt="Cliente 1" />
                     <p>"Las fotos de nuestra boda fueron increíbles. David capturó cada momento con gran sensibilidad. No
@@ -58,28 +59,40 @@
                     <p><strong>Luis Ramírez</strong></p>
                     <p>Cliente</p>
                 </div>
-               {{-- Obtenemos todas las referencias de la base de datos --}}
-                @php $referencias = \App\Models\Referencia::all(); @endphp
+
+                {{-- Referencias dinámicas desde el archivo JSON (solo las aprobadas) --}}
+                @php
+                    $jsonPath = storage_path('app/referencias.json');
+                    $referencias = [];
+
+                    if (file_exists($jsonPath)) {
+                        $contenido = file_get_contents($jsonPath);
+                        $todas = json_decode($contenido, true) ?? [];
+                        // Filtramos solo las aprobadas
+                        $referencias = array_filter($todas, fn($r) => isset($r['aprobado']) && $r['aprobado'] === true);
+                    }
+                @endphp
 
                 @foreach($referencias as $ref)
                     <div class="reference-item">
-                        {{-- Verificamos si la foto es de una URL externa o local --}}
-                        <img src="{{ str_contains($ref->foto, 'http') ? $ref->foto : asset('images/referencia/' . $ref->foto) }}"
+                        <img src="{{ str_contains($ref['foto'], 'http') ? $ref['foto'] : asset('images/referencia/' . $ref['foto']) }}"
                             alt="Cliente" />
-                        <p>"{{ $ref->comentario }}"</p>
-                        <p><strong>{{ $ref->nombre }}</strong></p>
-                        <p>{{ $ref->cargo ?? 'Cliente' }}</p>
+                        <p>"{{ $ref['comentario'] }}"</p>
+                        <p><strong>{{ $ref['nombre'] }}</strong></p>
+                        <p>{{ $ref['cargo'] ?? 'Cliente' }}</p>
                     </div>
                 @endforeach
+
             </div>
         </div>
     </section>
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const track = document.getElementById('track');
             const items = track.innerHTML;
 
-            // Clonamos el contenido una vez para asegurar que siempre haya elementos cubriendo la pantalla
+            // Clonamos el contenido para scroll infinito
             track.innerHTML += items;
 
             // Calculamos el ancho real para que la animación no salte
@@ -89,4 +102,5 @@
             track.style.setProperty('--scroll-width', `-${totalWidth}px`);
         });
     </script>
+
 @endsection

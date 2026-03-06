@@ -44,4 +44,41 @@
         </div>
     </section>
 
+@section('contenido')
+
+@if(session('success'))
+<div id="overlay" style="
+    position: fixed; top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+">
+    <div style="
+        background: white;
+        padding: 40px;
+        border-radius: 12px;
+        text-align: center;
+        max-width: 400px;
+        width: 90%;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    ">
+<h3 style="color: #155724; margin-bottom: 10px;">¡Muchas Gracias!</h3>
+<p style="color: #555;">Tu mensaje ha sido recibido. Apreciamos mucho que hayas compartido tu experiencia con nosotros.</p>
+        <button onclick="document.getElementById('overlay').remove()" style="
+            margin-top: 20px;
+            padding: 10px 30px;
+            background: #155724;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        ">Cerrar</button>
+    </div>
+</div>
+@endif
+
 @endsection
